@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import Cliente from './pages/cliente';
+import IndexCliente from './pages/indexcliente';
+import IndexPresta from './pages/indexpresta';
+import Prestador from './pages/prestador';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Cliente/>
+      <IndexCliente/>
+      <IndexPresta/>
+      <Prestador/>
     </div>
   );
 }
