@@ -1,0 +1,67 @@
+.navcontainer {
+    color: #000000;
+    background-color: #ffffff;
+    padding: 10px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Estilos para a lista não ordenada */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Estilos para o menu */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 5%;
+}
+
+
+/* Estilos para os itens da lista */
+li {
+    color: #000000;
+    cursor: pointer;
+    margin-left: 90px;
+    transition: transform 0.2s;
+}
+
+LI:hover {
+    transform: translateY(2px);
+}
+
+
+.logo img {
+    width: 90px;
+    height: auto;
+}
+
+/* Estilos para o botão */
+.button {
+    background-color: #F39727;
+    color: #fff;
+    padding: 10px 12px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.button:hover {
+    transform: translateY(2px);
+}
+
+.button svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
