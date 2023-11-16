@@ -1,6 +1,8 @@
 import Style from './CSS/PerfilPage.module.css'
-import NavbarComponent from '../../componentes/imgs/ClientComponents/Navbar/NavBar';
-import PerfilComponent from '../../componentes/imgs/ClientComponents/PerfilComp/PerfilComponet';
+//COMPONENTES
+import NavbarComponent from '../../componentes/ClientComponents/Navbar/NavBar';
+import PerfilComponent from '../../componentes/ClientComponents/PerfilComp/PerfilComponet';
+import EsquerdaComp from '../../componentes/ClientComponents/Compesqueda/EsquedaComp';
 
 function Cliente() {
   return (
@@ -10,6 +12,7 @@ function Cliente() {
         <div className={Style.backgroundContainer}>
           <NavbarComponent />
           <PerfilComponent />
+          <EsquerdaComp/>
 
         </div>
       </div>
