@@ -1,4 +1,4 @@
-import Cliente from './pages/cliente';
+import Cliente from './pages/ClientePages/cliente';
 import IndexCliente from './pages/indexcliente';
 import IndexPresta from './pages/indexpresta';
 import Prestador from './pages/prestador';
