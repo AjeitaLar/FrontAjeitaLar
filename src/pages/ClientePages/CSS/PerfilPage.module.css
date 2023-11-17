@@ -1,5 +1,6 @@
 .backgroundContainer {
     height: 100vh;
+    width: auto;
     background-image: url(Img/Rectangle\ 57.png);
     background-size: cover;
     background-position: center center;
@@ -8,4 +9,11 @@
 
 .body{
     background-color: #EEFAFF;
+    height: 500vh;
+    width: auto;
+}
+
+.posit{
+    display: flex;
+    flex-direction: row;
 }
