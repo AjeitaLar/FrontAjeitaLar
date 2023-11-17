@@ -1,0 +1,28 @@
+.Caixa{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.Imagem{
+    width: 700px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.titulo{
+    color: #ffa500;
+    font-weight: 300;
+    font-size: 17px;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+.Descr{
+    color: #000;
+    font-weight: 300;
+    font-size: 15px;
+    margin-left: -200px;
+}

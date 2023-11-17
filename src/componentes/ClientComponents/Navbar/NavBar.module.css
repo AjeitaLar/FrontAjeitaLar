@@ -9,7 +9,7 @@
 }
 
 /* Estilos para a lista não ordenada */
-ul {
+.ull {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -29,14 +29,14 @@ ul {
 
 
 /* Estilos para os itens da lista */
-li {
+.lii {
     color: #000000;
     cursor: pointer;
     margin-left: 90px;
     transition: transform 0.2s;
 }
 
-LI:hover {
+.lii:hover {
     transform: translateY(2px);
 }
 
@@ -72,7 +72,7 @@ LI:hover {
         align-items: flex-start;
     }
 
-    li {
+    .lii {
         margin: 20px 0;
     }
 }

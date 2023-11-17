@@ -10,10 +10,10 @@ function NavbarComponent() {
                 <div className={Style.logo}>
                     <img src={Logo} alt="logo da AjeitaLar" />
                 </div>
-                <ul>
-                    <li>Perfil</li>
-                    <li>Minhas Solicitações</li>
-                    <li><div className={Style.button}>
+                <ul className={Style.ull}>
+                    <li className={Style.lii}>Perfil</li>
+                    <li className={Style.lii}>Minhas Solicitações</li>
+                    <li className={Style.lii}><div className={Style.button}>
                         <FaCirclePlus />
                     </div></li>
                 </ul>
