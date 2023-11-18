@@ -9,6 +9,7 @@ import '../../App.css';
 import '../Prestadorcomponents/css/MenuProfile.css'
 import DropdownItem from '../../props/PropsMenuP'
 
+import { NavLink } from "react-router-dom";
 
 import React, { useState, useEffect, useRef } from 'react';
 
@@ -45,12 +46,19 @@ function MenuProfile() {
                 <div className={`dropdown-menu ${open ? 'active' : 'inactive'}`} >
                     <h3>Lorena Silva<br /><span>Prestadora</span></h3>
                     <ul>
-                        <DropdownItem img={user} text={"Meu Perfil"} />
+                        <NavLink exact to="/" activeClassName="active" className="nav-links">
+                            <DropdownItem img={user} text={"Meu Perfil"} />
+                        </NavLink>
+                        
                         <DropdownItem img={edit} text={"Editar Perfil"} />
                         <DropdownItem img={inbox} text={"Mensagens"} />
                         <DropdownItem img={settings} text={"Configurações"} />
                         <DropdownItem img={help} text={"Ajuda"} />
-                        <DropdownItem img={logout} text={"Sair"} />
+
+                        <NavLink exact to="/Cliente" activeClassName="active" className="nav-links">
+                           <DropdownItem img={logout} text={"Sair"} /> 
+                        </NavLink>
+
                     </ul>
                 </div>
             </div>
