@@ -15,7 +15,7 @@ function EsquerdaComp() {
                 <div className={Style.recreparos}>
                     <h3>Reparos Requeridos</h3>
                     <div className={Style.ain}><h2>10</h2> <span className={Style.aindn}>Ainda não foram repados</span></div>
-                   <div className={Style.position}> <div className={Style.ain}><h3 className={Style.num}>30</h3> <span className={Style.repacon}>Reparos Concluidos</span></div></div>
+                    <div className={Style.position}> <div className={Style.ain}><h3 className={Style.num}>30</h3> <span className={Style.repacon}>Reparos Concluidos</span></div></div>
                 </div>
                 <hr/>
                 <div className={Style.title}><span>Opniões dos Reparadores</span></div>

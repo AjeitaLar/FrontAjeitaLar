@@ -1,0 +1,207 @@
+.navbar {
+    background-color: #ffffff;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    max-width: 1500px;
+    position: relative;
+}
+
+.Logo {
+    width: 135px;
+}
+
+.nav-logo {
+    color: #f5ac02;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.nav-logo .icon {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    margin-left: 16px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-right: 2rem;
+}
+
+.nav-links {
+    color: #f5ac02;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    border-bottom: 3px solid transparent;
+}
+
+.nav-item {
+    line-height: 40px;
+    margin-right: 1rem;
+}
+
+.nav-item:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+    width: 100%;
+    background: #f5ac02;
+}
+
+.nav-item .active {
+    color: #03142b;
+}
+
+.nav-icon {
+    display: none;
+    color: #f5ac02;
+}
+
+.nav-icon .icon {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+}
+
+.BotaoCand {
+    width: 130px;
+    height: 40px;
+    margin-right: 5rem;
+    border-radius: 10px;
+    border: 1px solid #f5ac02;
+    background-color: #f5ac02;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.BotaoCand:hover {
+    background-color: #03142b;
+    border: 1px solid #03142b;
+    color: #fff;
+    transition: .6s;
+}
+
+.modal-overlay {
+    background: #000000a6;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    width: 90%;
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 70px;
+}
+
+.ModalCand{
+    width: 100%;
+    height: 500px;
+    border-radius: 7px;
+    border: 1px solid #000;
+    margin-bottom: 2rem;
+    overflow-y: scroll;
+}
+
+.modal-content h4{
+    color: #000000;
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 960px) {
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-top: 1pxsolid #fff;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        background: #000000af;
+        left: 0px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-item .active {
+        color: #f5ac02;
+        border: none;
+    }
+
+    .nav-links {
+        padding: 1.5rem;
+        width: 100%;
+        display: table;
+    }
+
+    .BotaoCand {
+        margin-left: 6rem;
+    }
+
+    .nav-logo .icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .nav-icon {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-100%, -50%);
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        color: #f5ac02;
+    }
+}

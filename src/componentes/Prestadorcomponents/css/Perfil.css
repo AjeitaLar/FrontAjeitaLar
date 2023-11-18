@@ -1,0 +1,234 @@
+section{
+    position: relative;
+    height: 121vh;
+    background-color: #def0f8;
+}
+
+.curva{
+    width: 100%;
+    margin-top: -150px;
+}
+
+.secao1{
+    position: relative;
+    width: 90%;
+    height: 50vh;
+    background-color: #fff;
+    margin: auto;
+    margin-top: -920px;
+    display: flex;
+    text-align: center;
+    gap: 50px;
+}
+
+.Perfil{
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    margin-top: 2rem;
+    margin-left: -2rem;
+}
+
+.QuemSou{
+    position: relative;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Nome{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.QuemSou h1{
+    font-size: 50px;
+}
+
+.Desde{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Folha{
+    width: 90px;
+    margin-top: -80px;
+}
+
+.Desde p{
+    margin-left: -15px;
+    font-size: 18px;
+}
+
+.Texto{
+    position: relative;
+    width: 100%;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.algo{
+    position: relative;
+    width: 50%;
+    height: 50vh;
+}
+
+.SecaoLateral{ 
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 60vh;
+    margin-left: 69px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Localização{
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+.Localização h1{
+    width: 100%;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.Localização img{
+    margin-left: 20px;
+}
+
+.Opiniao{
+    width: 100%;
+    height: 40vh;
+    background-color: #fff;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Linhas{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+}
+
+.Linhas img{
+    margin-bottom: 6px;
+}
+
+.Linhas p{
+    font-size: 10px;
+    margin-bottom: 2px;
+}
+
+.Opiniao h1{
+    width: 100%;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.Opiniao h2{
+    width: 20%;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+.Rank{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Rank h1{
+    width: 100%;
+    margin-left: 20px;
+    font-size: 11px;
+    font-weight: 200;
+}
+
+.Rank h2{
+    width: 100%;
+    margin-left: 20px;
+    font-size: 11px;
+    font-weight: 200;
+    color: #f5ac02;
+    cursor: pointer;
+}
+
+.Rank p{
+    width: 100%;
+    font-size: 10px;
+    margin-left: 15px;
+    margin-bottom: 2px;
+    margin-bottom: 20px;
+    color: #686868;
+}
+
+.Preferencias{
+    width: 100%;
+    height: 15vh;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.Preferencias h1{
+    width: 100%;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.Preferencias h2{
+    width: 100%;
+    margin-left: 20px;
+    font-size: 11px;
+    font-weight: 200;
+    color: #f5ac02;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.Preferencias p{
+    width: 100%;
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: 200;
+    color: #686868;
+}
+
+.Feed{
+    position: relative;
+    float: left;
+    width: 64.3%;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 60vh;
+    background-color: #fff;
+    overflow-y: scroll;
+}
+
+hr{
+    width: 90%;
+    margin: auto;
+}

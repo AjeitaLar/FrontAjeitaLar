@@ -1,2 +1,11 @@
+<<<<<<< HEAD
+ICONS
+npm install react-icons
+=======
+react modal
+npm install react-modal
+>>>>>>> e3073de84d9f1b4bc2e0270a47dfbe0da6d6a8c7
 
-npm install react-icons -- icons
+router-dom
+npm install react-router-dom
+
