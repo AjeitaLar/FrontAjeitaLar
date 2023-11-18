@@ -3,7 +3,7 @@ import NavBar from '../componentes/Prestadorcomponents/NavBar'
 import Servicos from '../componentes/Prestadorcomponents/Servicos';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import Cliente from './ClientePages/cliente';
+import Cliente from './cliente';
 
 function Prestador() {
     return (

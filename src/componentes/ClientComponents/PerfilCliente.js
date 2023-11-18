@@ -37,4 +37,4 @@ function PerfilCliente() {
     )
 }
 
-export default PerfilCliente
+export default PerfilCliente;
