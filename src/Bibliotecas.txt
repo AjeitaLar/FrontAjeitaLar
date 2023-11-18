@@ -1,3 +1,6 @@
-react modal
-npm install react-icons 
-npm install react-dom 
+ICONS
+npm install react-icons
+
+router-dom
+npm install react-router-dom
+
