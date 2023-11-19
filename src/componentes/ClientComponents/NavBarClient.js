@@ -30,7 +30,7 @@ function NavBarCli() {
 
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className="nav-item">
-                        <NavLink exact to="/" activeClassName="active" className="nav-links" onClick={handleClick}>
+                        <NavLink exact to="/FeedCliente" activeClassName="active" className="nav-links" onClick={handleClick}>
                             Minhas Solicitações
                         </NavLink>
                     </li>

@@ -31,6 +31,7 @@
     width: 25%;
     height: 45vh;
     border-radius: 50%;
+    background-image: url(../../imgs/fotoperfilcli.png);
     background-color: aqua;
     background-size:cover ;
     background-position: center center;
@@ -61,6 +62,11 @@
     margin-left: 15%;
 }
 
+.conteudo{
+    display: flex;
+    flex-direction: row;
+}
+
 .lateralcli{
     width: 25%;
     height: 85vh;
@@ -76,6 +82,7 @@
 }
 
 .loc h3 {
+    text-align: left;
     padding: 3%;
     margin-left: 3%;
     font-size: 24px;
@@ -204,3 +211,19 @@ hr{
     font-size: 15px;
     cursor: pointer;
 }
+
+.cont{
+    display: flex;
+    flex-direction: row;
+}
+
+.feedcli{
+    padding: 5%;
+    background-color: #fff;
+    width: 54%;
+    height: 100vh;
+    overflow-y: scroll;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
