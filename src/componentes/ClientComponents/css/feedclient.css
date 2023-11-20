@@ -10,8 +10,16 @@
 }
 
 .feed-container{
-    width: 90%;
+    width: 50%;
     height: 100vh;
     margin: auto;
     background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -2px -10px rgba(0, 0, 0, 0.1);
+    padding-left: 10%; 
+    padding-right: 10%;  
+    padding-top: 5%;
+    overflow-y: scroll;
+    
 }
+

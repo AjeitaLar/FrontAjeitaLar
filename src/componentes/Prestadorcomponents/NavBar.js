@@ -26,7 +26,7 @@ function NavBar() {
         setIsOpen(false);
     }
     return (
-
+        
         <>
             <nav className="navbar">
                 <div className="nav-container">

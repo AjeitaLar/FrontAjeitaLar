@@ -44,6 +44,10 @@
 
 }
 
+.infoper svg{
+    color: rgb(255, 251, 8);
+}
+
 .infoper h1 {
     font-size: 60px;
     font-style: normal;
@@ -171,6 +175,12 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+
+.title span{
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
 }
 
 .comen {
