@@ -7,7 +7,6 @@ import MenuProfile from "../Prestadorcomponents/MenuProfile";
 import PropsOrcamento from '../../props/PropsOrcamento'
 import LogoD from "../imgs/logo doido.png"
 import fotoperfil from '../imgs/fotoperfil.png';
-
 Modal.setAppElement("#root");
 
 function NavBarCli() {
@@ -35,13 +34,13 @@ function NavBarCli() {
 
                     <ul className={click ? "nav-climenu active" : "nav-climenu"}>
                         <li className="menu-item">
-                            <NavLink exact to="/" activeClassName="active" className="menu-links">
+                            <NavLink exact to="/PerCliente" activeClassName="active" className="menu-links">
                                 Inicio
                             </NavLink>
                         </li>
 
                         <li className="menu-item">
-                            <NavLink exact to="/FeedCli" activeClassName="active" className="menu-links">
+                            <NavLink exact to="/Feedcli" activeClassName="active" className="menu-links">
                                 Meus Posts
                             </NavLink>
                         </li>

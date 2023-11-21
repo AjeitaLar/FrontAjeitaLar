@@ -4,14 +4,17 @@ import FotoPerfil from '../imgs/fotoperfilcli.png'
 import Feed1 from '../imgs/feed.png';
 import Feed2 from '../imgs/feed2.png'
 import PropsFeed from '../../props/PropsFeed'
+import NavBarCli from "./NavbarClie";
 //ICONS
 import { FaLocationDot } from "react-icons/fa6";
 import { BsEmojiLaughing } from "react-icons/bs";
 import { FaStar } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
 
-function Cliente() {
+function PerfilCliente() {
     return (
+        <>
+        <NavBarCli/>
         <section className="cliperfil">
             <div className="perficontainer">
                 {/*FOTO DE PERFIL*/}
@@ -100,7 +103,8 @@ function Cliente() {
             </div>
 
         </section>
+        </>
     )
 }
 
-export default Cliente
+export default PerfilCliente
