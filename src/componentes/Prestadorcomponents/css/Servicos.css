@@ -96,6 +96,15 @@ legend{
     margin-top: 20px;
 }
 
+.T_Servico label{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+select{
+    margin-bottom: 5px;
+}
+
 .Estados, .Municipios {
     position: relative;
     width: 95%;

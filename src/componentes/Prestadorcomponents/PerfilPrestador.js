@@ -1,6 +1,6 @@
 import '../Prestadorcomponents/css/Perfil.css'
 import CurvaLaranja from '../imgs/Rectangle.png'
-import FotoPerfil from '../imgs/fotoperfil.png'
+import fotoperfil from '../imgs/fotoperfil.png'
 import Estrela from '../imgs/Star.png'
 import Selo from '../imgs/SeloPremium.png'
 import Reputacao from '../imgs/Reputaçao.png'
@@ -21,7 +21,7 @@ function PerfilPrestador() {
             <img className="curva" src={CurvaLaranja} alt="Laranja" />
 
             <div className="secao1">
-                <img className="Perfil" src={FotoPerfil} alt="FotoPerfil" />
+                <img className="Perfil" src={fotoperfil} alt="FotoPerfil" />
                 <div className="QuemSou">
                     <div className="Nome">
                         <h1>Lorena Silva</h1>
