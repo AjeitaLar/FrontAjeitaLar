@@ -5,8 +5,11 @@ section{
 }
 
 .curva{
+    position: absolute;
     width: 100%;
+    height: 135vh;
     margin-top: -150px;
+
 }
 
 .secao1{
@@ -15,7 +18,7 @@ section{
     height: 50vh;
     background-color: #fff;
     margin: auto;
-    margin-top: -920px;
+    margin-top: 10px;
     display: flex;
     text-align: center;
     gap: 50px;
@@ -23,7 +26,7 @@ section{
 
 .Perfil{
     position: relative;
-    width: 20rem;
+    width: 30%;
     height: 20rem;
     margin-top: 2rem;
     margin-left: -2rem;
@@ -79,18 +82,25 @@ section{
     height: 50vh;
 }
 
+.Secao2{
+    position: relative;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
 .SecaoLateral{ 
     position: relative;
     float: left;
-    width: 25%;
+    width: 30%;
     height: 60vh;
-    margin-left: 69px;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
 }
 
 .Localização{
+    position: relative;
     width: 100%;
     height: 10vh;
     background-color: #fff;
@@ -112,6 +122,7 @@ section{
 }
 
 .Opiniao{
+    position: relative;
     width: 100%;
     height: 40vh;
     background-color: #fff;
@@ -151,6 +162,7 @@ section{
 }
 
 .Rank{
+    position: relative;
     width: 100%;
     height: 150px;
     display: flex;
@@ -184,8 +196,9 @@ section{
 }
 
 .Preferencias{
+    position: relative;
     width: 100%;
-    height: 15vh;
+    height: 20vh;
     background-color: #fff;
     margin-bottom: 5px;
 }
@@ -220,7 +233,7 @@ section{
 .Feed{
     position: relative;
     float: left;
-    width: 64.3%;
+    width: 69.4%;
     margin-top: 10px;
     margin-left: 10px;
     height: 60vh;

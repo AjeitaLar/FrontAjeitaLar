@@ -1,6 +1,6 @@
 .Servicos {
     position: relative;
-    height: 90vh;
+    height: 91.5vh;
     background-color: #def0f8;
     display: flex;
     justify-content: space-around;
@@ -9,7 +9,8 @@
 .curva2 {
     position: absolute;
     width: 100%;
-    margin-top: -400px;
+    height: 105vh;
+    margin-top: -150px;
 }
 
 .SecaoLado {

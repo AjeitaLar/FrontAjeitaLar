@@ -42,6 +42,8 @@ function PerfilPrestador() {
                 <div className="algo"></div>
             </div>
 
+            <div className="Secao2">
+
             <div className="SecaoLateral">
 
                 <div className="Localização">
@@ -108,6 +110,7 @@ function PerfilPrestador() {
             imagem={Feed1}
             />
 
+            </div>
             </div>
         </section>
     );
