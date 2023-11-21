@@ -1,4 +1,4 @@
-import "../ClientComponents/css/FeedClient.css";
+import "../ClientComponents/css/feedclient.css";
 import FotoPerfil from '../imgs/fotoperfilcli.png'
 import Feed1 from '../imgs/feed.png';
 import Feed2 from '../imgs/feed2.png'
