@@ -3,26 +3,47 @@
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .Imagem{
-    width: 700px;
-    margin-left: 50px;
+    width: 95%;
     margin-bottom: 50px;
 }
 
 .titulo{
+    width: 35%;
     color: #ffa500;
     font-weight: 300;
-    font-size: 17px;
-    margin-left: 100px;
-    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: end;
 }
 
 .Descr{
+    width: 55%;
     color: #000;
     font-weight: 300;
-    font-size: 15px;
-    margin-left: -200px;
+    font-size: 20px;
+    padding: 10px;
+    text-align: start;
+}
+
+/* Telas Grandes */
+
+@media screen and (min-width: 1600px){
+    .Imagem{
+        width: 95%;
+    }
+    
+    .titulo{
+        font-size: 25px;
+        padding: 10px;
+    }
+    
+    .Descr{
+        font-size: 25px;
+        padding: 10px;
+    }
 }

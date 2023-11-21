@@ -1,6 +1,6 @@
 .Servicos {
     position: relative;
-    height: 91.5vh;
+    height: auto;
     background-color: #def0f8;
     display: flex;
     justify-content: space-around;
@@ -9,7 +9,7 @@
 .curva2 {
     position: absolute;
     width: 100%;
-    height: 105vh;
+    height: 80vh;
     margin-top: -150px;
 }
 
@@ -20,15 +20,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.T_Servico {
-    position: relative;
-    width: 95%;
-    height: 260px;
-    background-color: #fff;
-    margin-bottom: 10px;
-    margin-top: 20px;
 }
 
 p,
@@ -88,25 +79,47 @@ fieldset{
     margin: auto;
     color: #000;
     border: 1px solid #000;
+    margin-bottom: 10px;
 }
 
 legend{
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
-.Regiao {
+.T_Servico {
     position: relative;
     width: 95%;
-    height: 170px;
+    height: auto;
     background-color: #fff;
     margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.Estados, .Municipios {
+    position: relative;
+    width: 95%;
+    height: auto;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.Municipios fieldset{
+    height: 350px;
+    overflow-y: scroll;
+}
+
+.Buscar{
+    width: 94%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #000;
 }
 
 .M_Serviços {
     position: relative;
     width: 65%;
-    height: 650px;
+    max-height: 86vh;
     background-color: #fff;
     margin-top: 20px;
     overflow-y: scroll;
@@ -115,6 +128,7 @@ legend{
 .BotaoCandidatar{
         width: 130px;
         height: 40px;
+        float: right;
         margin-right: 5rem;
         border-radius: 10px;
         border: 1px solid #f5ac02;
@@ -238,7 +252,7 @@ textarea{
 .BotaoEnviar {
     width: 130px;
     height: 40px;
-    margin-left: -4rem;
+    float: right;
     border-radius: 10px;
     border: 1px solid #03142b;
     background-color: #03142b;
@@ -249,8 +263,41 @@ textarea{
 }
 
 .BotaoEnviar:hover {
+    background-color: #020c1a;
+    border: 1px solid #020c1a;
+    color: #fff;
+    transition: .6s;
+}
+
+.BotaoFechar {
+    width: 130px;
+    height: 40px;
+    float: right;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #f5ac02;
+    background-color: #f5ac02;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: .6s;
+    cursor: pointer;
+}
+
+.BotaoFechar:hover {
     background-color: #03142b;
     border: 1px solid #03142b;
     color: #fff;
     transition: .6s;
+}
+
+
+@media screen and (min-width: 1600px){
+    .M_Serviços {
+        max-height: 90.5vh;
+    }
+
+    .Municipios fieldset{
+        height: auto;
+        overflow-y: scroll;
+    }
 }

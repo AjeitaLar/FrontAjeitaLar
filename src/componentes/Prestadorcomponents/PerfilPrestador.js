@@ -2,7 +2,8 @@ import '../Prestadorcomponents/css/Perfil.css'
 import CurvaLaranja from '../imgs/Rectangle.png'
 import FotoPerfil from '../imgs/fotoperfil.png'
 import Estrela from '../imgs/Star.png'
-import Folha from '../imgs/insignia.png'
+import Selo from '../imgs/SeloPremium.png'
+import Reputacao from '../imgs/Reputaçao.png'
 import local from '../imgs/local.png'
 import LinhaG from '../imgs/Line 15.png'
 import LinhaM from '../imgs/Line 16.png'
@@ -27,13 +28,12 @@ function PerfilPrestador() {
                     </div>
                     <div className="Desde">
                         <p>Desde 20/10/2023</p>
-                        <div>
+                        <div className='Estrelas'>
                             <img className="Estrela" src={Estrela} alt="Estrela" />
                             <img className="Estrela" src={Estrela} alt="Estrela" />
                             <img className="Estrela" src={Estrela} alt="Estrela" />
                             <img className="Estrela" src={Estrela} alt="Estrela" />
                         </div>
-                        <img className="Folha" src={Folha} alt="Folha" />
                     </div>
 
                     <div className="Texto">
@@ -41,7 +41,11 @@ function PerfilPrestador() {
                     </div>
                 </div>
 
-                <div className="algo"></div>
+                <div className="algo">
+                <img className="Selo" src={Selo} alt="Selo Premium" />
+                <img className="Reputacao" src={Reputacao} alt="Reputação" />
+                
+                </div>
             </div>
 
             <div className="Secao2">

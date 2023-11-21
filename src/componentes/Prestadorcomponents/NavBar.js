@@ -112,7 +112,7 @@ function NavBar() {
 
 
                                 </div>
-                                <button className="BotaoCand" onClick={closeModal}>Fechar</button>
+                                <button className="BotaoFechar" onClick={closeModal}>Fechar</button>
                             </Modal>
                         </li>
                         <li className="nav-items">

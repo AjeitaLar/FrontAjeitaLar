@@ -66,25 +66,100 @@ function Serviços() {
 
                 </div>
 
-                <div className='Regiao'>
+                <div className='Estados'>
                     <fieldset>
-                        <legend>Regiões</legend>
+                        <legend>Estados</legend>
 
                         <div>
-                            <input type="checkbox" id="scales" name="scales" />
-                            <label for="scales">Zona Norte</label>
+                            <input type="checkbox" checked id="scales" name="scales" />
+                            <label for="scales">São Paulo</label>
+                        </div>
+                    </fieldset>
+
+                </div>
+
+                <div className='Municipios'>
+                    <fieldset>
+                        <legend>Municípios</legend>
+
+                        <div>
+                            <input className='Buscar' type="text" placeholder='Buscar municípios' />
                         </div>
                         <div>
                             <input type="checkbox" id="scales" name="scales" />
-                            <label for="scales">Zona Sul</label>
+                            <label for="scales">São Paulo</label>
                         </div>
                         <div>
                             <input type="checkbox" id="scales" name="scales" />
-                            <label for="scales">Zona Leste</label>
+                            <label for="scales">Guarulhos</label>
                         </div>
                         <div>
                             <input type="checkbox" id="scales" name="scales" />
-                            <label for="scales">Zona Oeste</label>
+                            <label for="scales">Campinas</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">São Bernardo do Campo</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">Santo André</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">Osasco</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">Sorocaba</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">Ribeirão Preto</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">São José dos Campos</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">São José do Rio Preto</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">Mogi das Cruzes</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">Sorocaba</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">Jundiaí</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">Piracicaba</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">Santos</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">Mauá</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">Diadema</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">Carapicuíba</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="scales" name="scales" />
+                            <label for="scales">Bauru</label>
                         </div>
 
                     </fieldset>
@@ -151,8 +226,8 @@ function Serviços() {
                         <textarea name="mensagem" id="message" placeholder='Digite sua mensagem' required></textarea>
                     </div>
 
-                    <button className="BotaoCand" onClick={closeModal}>Fechar</button>
                     <button className="BotaoEnviar" onClick={closeModal}>Enviar</button>
+                    <button className="BotaoFechar" onClick={closeModal}>Fechar</button>
 
                 </Modal>
                 <hr />
@@ -213,8 +288,8 @@ function Serviços() {
                         <textarea name="mensagem" id="message" placeholder='Digite sua mensagem' required></textarea>
                     </div>
 
-                    <button className="BotaoCand" onClick={closeModal}>Fechar</button>
                     <button className="BotaoEnviar" onClick={closeModal}>Enviar</button>
+                    <button className="BotaoFechar" onClick={closeModal}>Fechar</button>
 
                 </Modal>
                 <hr />
