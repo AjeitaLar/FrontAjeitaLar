@@ -1,3 +1,6 @@
+ ---ANTES DE TUDO---
+NPM INSTALL
+
 ICONS
 npm install react-icons
 
@@ -6,4 +9,7 @@ npm install react-router-dom
 
 MODAl
 npm install react-modal
+
+
+-----Quando for add uma nova rota adicione na App.js-----
 
