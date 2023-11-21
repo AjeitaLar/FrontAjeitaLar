@@ -25,7 +25,7 @@ function Feedcli() {
                     <hr />
 
                     <PropsFeed
-                        titulo='Solicitando um reparo'
+                        titulo='Solicitando um reparo' 
                         Descr='Troca de lâmpada com descarte ecológico '
                         imagem={Feed1}
                     />
