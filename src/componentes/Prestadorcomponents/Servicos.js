@@ -6,7 +6,7 @@ import Feed1 from '../imgs/feed.png'
 import Feed2 from '../imgs/feed2.png'
 import Modal from 'react-modal'
 import { useState } from "react";
-
+import NavBar from './NavBar';
 Modal.setAppElement("#root");
 
 function Serviços() {
@@ -21,6 +21,9 @@ function Serviços() {
         setIsOpen(false);
     }
     return (
+        <>
+            <NavBar/>
+
         <section className='Servicos'>
             <img className="curva2" src={CurvaLaranja} alt="Laranja" />
 
@@ -241,6 +244,7 @@ function Serviços() {
 
 
         </section>
+        </>
     )
 }
 

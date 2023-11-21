@@ -10,10 +10,12 @@ import LinhaP from '../imgs/Line 17.png'
 import Feed1 from '../imgs/feed.png'
 import Feed2 from '../imgs/feed2.png'
 import PropsFeed from '../../props/PropsFeed'
-
+import NavBar from './NavBar'
 
 function PerfilPrestador() {
     return (
+        <>
+            <NavBar></NavBar>
         <section>
             <img className="curva" src={CurvaLaranja} alt="Laranja" />
 
@@ -113,6 +115,7 @@ function PerfilPrestador() {
             </div>
             </div>
         </section>
+        </>
     );
 };
 
