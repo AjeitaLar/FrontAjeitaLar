@@ -101,29 +101,22 @@ legend {
 
 .T_Servico label {
     margin-left: 10px;
-    margin-right: 10px;
+}
+
+.T_Servico fieldset{
+    height: 250px;
+    overflow-y: scroll;
 }
 
 .Drop {
-    padding: 10px;
-}
-
-.Drop label {
-    display: block;
-    margin-bottom: 5px;
+    padding: 5px;
 }
 
 .Drop select {
     padding: 5px;
     font-size: 15px;
     background-color: #ffffff;
-    color: #f5ac02;
-    transition: .5s;
-}
-
-.Drop select:hover{
-    background-color: #f5ac02;
-    color: #ffffff;
+    color: #000;
     transition: .5s;
 }
 
@@ -132,22 +125,22 @@ legend {
     font-weight: bold;
 }
 
+#dropdown1{
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
 /* Estilo para o dropdown quando está focado */
 .Drop select:focus {
-    outline: 2px solid #ffae00;
+    outline: 2px solid #000;
     outline-offset: -2px;
 }
 
 /* Estilo para as opções no dropdown */
 .Drop option {
     background-color: #fff;
-    color: #ffae00;
-}
-
-/* Estilo para as opções no dropdown quando hover */
-.Drop option:hover {
-    background-color: #ffae00;
-    color: #000000;
+    color: #000;
 }
 
 .Estados,
@@ -160,15 +153,15 @@ legend {
 }
 
 .Municipios fieldset {
-    height: 350px;
+    height: 320px;
     overflow-y: scroll;
 }
 
 .Buscar {
     width: 94%;
     height: 30px;
-    border-radius: 10px;
     border: 1px solid #000;
+    margin-left: 10px;
 }
 
 .M_Serviços {
