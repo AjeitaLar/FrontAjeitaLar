@@ -30,25 +30,25 @@ function NavBarCli() {
 
     return (
         <>
-            <nav className="navbar">
-                <div className="nav-container">
-                    <NavLink exact to="/" className="nav-logo">
-                        <span><img src={LogoD} alt="Logo AjeitaLaar" className="Logo" /></span>
+            <nav className="navbar2">
+                <div className="nav-container2">
+                    <NavLink exact to="/" className="nav-logo2">
+                        <span><img src={LogoD} alt="Logo AjeitaLaar" className="Logo2" /></span>
                     </NavLink>
 
-                    <ul className={click ? "nav-menu active" : "nav-menu"}>
-                        <li className="nav-item">
-                            <NavLink exact to="/PerCliente" activeClassName="active" className="nav-links" onClick={handleClick}>
+                    <ul className={click ? "nav-menu2 active" : "nav-menu2"}>
+                        <li className="nav-item2">
+                            <NavLink exact to="/PerCliente" activeClassName="active" className="nav-links2" onClick={handleClick}>
                                 Inicio
                             </NavLink>
                         </li>
 
-                        <li className="nav-item">
-                            <NavLink exact to="/Feedcli" activeClassName="active" className="nav-links" onClick={handleClick}>
+                        <li className="nav-item2">
+                            <NavLink exact to="/Feedcli" activeClassName="active" className="nav-links2" onClick={handleClick}>
                                 Meus Posts
                             </NavLink>
                         </li>
-                        <li className="nav-item">
+                        <li className="nav-items2">
                             <button className="Btn" onClick={openModal}>Novo Reparo</button>
 
                             <Modal
@@ -143,13 +143,13 @@ function NavBarCli() {
                             <MenuProfile />
                         </li>
                     </ul>
-                    <div className="menu-icon" onClick={handleClick}>
+                    <div className="nav-icon2" onClick={handleClick}>
                         {click ? (
-                            <span className="icons">
+                            <span className="icon2">
                                 <HamburgetMenuClose />{" "}
                             </span>
                         ) : (
-                            <span className="icons">
+                            <span className="icon2">
                                 <HamburgetMenuOpen />
                             </span>
                         )}
