@@ -58,7 +58,6 @@ function NavBarCli() {
                                 contentLabel="Example Modal"
                                 overlayClassName="modal-overlay"
                                 className="modal-content1">
-
                                 <h4>Faça um novo requerimento</h4>
 
                                 <div className="ModalCand">
@@ -96,6 +95,7 @@ function NavBarCli() {
                                                 <label>
                                                     <p>Tem restrição de horário?</p>
                                                     <input className="esco" name="grupoOpcoes" type="radio" required /> Sim <br />
+
                                                     <input className="esco" name="grupoOpcoes" type="radio" required /> Não
                                                 </label>
 
@@ -107,14 +107,25 @@ function NavBarCli() {
 
                                                 <label>
                                                     <p>Quais materiais?</p>
-                                                    <input type="text" placeholder="Ex: resistência, escada" required />
+                                                    <input className="campotxt" type="text" placeholder="Ex: resistência, escada" required />
                                                 </label>
+
                                             </div>
 
-                                            <label>
-                                                <p>Quais materiais?</p>
-                                                <input className="campotxt" type="text" placeholder="Ex: resistência, escada" required />
-                                            </label>
+                                            <div className="formdi">
+                                                <p>CEP:</p>
+                                                <input className="end" type="text" required />
+                                                <p>Rua:</p>
+                                                <input className="end" type="text" required />
+                                                <p>Bairro:</p>
+                                                <input className="end" type="text" required />
+                                                <p>Cidade</p>
+                                                <input className="end" type="text" required />
+                                                <div className="infoadd">
+                                                    <p>Informações adicionais</p>
+                                                    <input className="end" type="text" />
+                                                </div>
+                                            </div>
 
                                         </div>
                                     </div>

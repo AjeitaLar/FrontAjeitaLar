@@ -51,6 +51,7 @@ function PropsFeedCli({ Feddimg, Perfilname, Descri, perfoto }) {
                         btn3='Recusar'
                     />
                     <hr />
+                    
 
                     <PropsOrcamento
                         title='Nome do Perfil'
@@ -61,6 +62,7 @@ function PropsFeedCli({ Feddimg, Perfilname, Descri, perfoto }) {
                         btn3='Recusar'
                     />
                     <hr />
+                    
 
                     <PropsOrcamento
                         title='Nome do Perfil'
@@ -71,6 +73,7 @@ function PropsFeedCli({ Feddimg, Perfilname, Descri, perfoto }) {
                         btn3='Recusar'
                     />
                     <hr />
+                    
 
                     <PropsOrcamento
                         title='Nome do Perfil'

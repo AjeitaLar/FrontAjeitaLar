@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header{
+    width: 98%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+header img{
+    width: 150px;
+}
+
+.ContReparo{
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ButReparo{
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.ButReparo button{
+    width: auto;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    padding: 0px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.ButReparo button:nth-child(1){
+    margin: 0 10px 0 0 ;
+    
+}
+
+.ButReparo button:hover{
+    background-color: #4E5886;
+    color: #fff;
+    transition: all .3s;
+}
+
+.BtnConta button{
+    height: 35px;
+    padding: 0px 15px;
+    margin: 10px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #03142B;
+    color: #fff;
+    border-radius: 20px;
+    /* padding: 9px 36px; */
+    cursor: pointer;
+
+}
+
