@@ -4,6 +4,8 @@ import Feed1 from '../imgs/feed.png';
 import Feed2 from '../imgs/feed2.png'
 import PropsFeed from '../../props/PropsFeed'
 import NavBarCli from "./NavbarClie";
+import PropsFeedCli from "../../props/PropsFeedclient";
+
 
 function Feedcli() {
     return (
@@ -11,11 +13,11 @@ function Feedcli() {
             <NavBarCli/>
             <section className="misolici">
                 <div className="feed-container">
-                <PropsFeed
-                        titulo='Solicitando um reparo'
-                        Descr='Troca de lâmpada com descarte ecológico '
-                        imagem={Feed1}
-                    />
+               <PropsFeedCli
+                  Perfilname="Marcos"  
+                  Descri="sdfhdjljgflsdjglsjg"
+                  Feddimg={Feed1}
+               />
                     <hr />
 
                     <PropsFeed

@@ -58,7 +58,7 @@ function NavBarCli() {
                                 onRequestClose={closeModal}
                                 contentLabel="Example Modal"
                                 overlayClassName="modal-overlay"
-                                className="modal-content">
+                                className="modal-content1">
                                 <h4>Faça um novo requerimento</h4>
 
                                 <div className="ModalCand">
