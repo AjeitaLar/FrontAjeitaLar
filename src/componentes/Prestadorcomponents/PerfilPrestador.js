@@ -17,7 +17,7 @@ function PerfilPrestador() {
     return (
         <>
             <NavBar></NavBar>
-        <section>
+        <section className="perfiltudo">
             <img className="curva" src={CurvaLaranja} alt="Laranja" />
 
             <div className="secao1">

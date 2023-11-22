@@ -36,7 +36,7 @@ function NavBar() {
 
                     <ul className={click ? "nav-menu active" : "nav-menu"}>
                         <li className="nav-item">
-                            <NavLink exact to="/" activeClassName="active" className="nav-links" onClick={handleClick}>
+                            <NavLink exact to="/PerfilPrestador" activeClassName="active" className="nav-links" onClick={handleClick}>
                                 Inicio
                             </NavLink>
                         </li>
@@ -109,7 +109,6 @@ function NavBar() {
                                 botao='Ver Publicação'
                                 />
                                 <hr/>
-
 
                                 </div>
                                 <button className="BotaoFechar" onClick={closeModal}>Fechar</button>
