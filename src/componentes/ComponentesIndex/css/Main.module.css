@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 .ContInfo{
     width: 500px;
     margin-left: 60px;
@@ -74,6 +73,7 @@
 /*  */
 
 .ContScrollPage{
+    margin-top: 100px !important;
     display: flex;
     justify-content: center;
 }

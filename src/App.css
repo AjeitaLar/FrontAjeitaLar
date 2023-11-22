@@ -3,7 +3,9 @@
     padding: 0;
     font-family: sans-serif;
 }
-
+body {
+    overflow-x: hidden;
+}
 /* Works on Firefox */
 * {
     scrollbar-width: thin;
