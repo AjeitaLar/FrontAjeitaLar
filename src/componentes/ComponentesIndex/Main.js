@@ -108,7 +108,7 @@ function Main(){
             </Element>
             
             <section className={Styles.ContVideo}>
-                <ReactPlayer url='https://youtu.be/KAS94-Lcboc?si=erMH2HrjPm7k-mL3' className={Styles.Video} />
+                <ReactPlayer url='https://www.youtube.com/watch?v=85AOLj_8Oog' className={Styles.Video} />
             </section>
 
             <Element name="section2">
