@@ -11,6 +11,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { BsEmojiLaughing } from "react-icons/bs";
 import { FaStar } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
+import { RiVipCrownLine } from "react-icons/ri";
 
 function PerfilCliente() {
     return (
@@ -27,6 +28,9 @@ function PerfilCliente() {
                     <div className="infoper">
                         <h1>Teodoro Souza</h1>
                         <span>Desde 20/10/2023  <FaStar /> <FaStar /> <FaStar /> <FaStar /></span>
+                        <div className="premiun">
+                            Seja premium
+                        </div>
                     </div>
 
                     <div className="avali">
@@ -52,8 +56,6 @@ function PerfilCliente() {
                             <p><NavLink to="/FeedClient"><FaLocationDot /></NavLink> Jardim d'abril, Osasco-SP</p>
                         </div>
                         {/*SECTION DE LOCALIZAÇÃO*/}
-
-
                         <div className="esqava">{/*SECTION QUE CONTEM OS ELEMENTOS INFERIORES DA LATERAL*/}
 
                             {/*COMENTARIOS*/}

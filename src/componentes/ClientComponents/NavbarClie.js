@@ -8,7 +8,6 @@ import PropsOrcamento from '../../props/PropsOrcamento'
 import LogoD from "../imgs/logo doido.png"
 import fotoperfil from '../imgs/fotoperfil.png';
 import { IoMdImages } from "react-icons/io";
-import { FaCirclePlus } from "react-icons/fa6";
 Modal.setAppElement("#root");
 
 function NavBarCli() {
@@ -66,16 +65,19 @@ function NavBarCli() {
                                         <h3>Descreva com detalhes o que você precisa</h3>
                                         <div className="cixtxt">
                                             <textarea name="detalhe" id="detalhe" rows="150" placeholder='Ex: Preciso trocar a resistência do meu chuveiro da marca...' required></textarea>
-
-                                            <div className="imgiconMo">
-                                                <div className="iconimg">
-                                                    <IoMdImages />
-                                                </div>
-
-                                                <div className="plusicon">
-                                                    <FaCirclePlus />
-                                                </div>
+                                            <div className="file-input">
+                                                <label htmlFor="arquivo" className="imgenvio">
+                                                    <span className="file-icon"><IoMdImages/></span>
+                                                </label>
+                                                <input
+                                                    type="file"
+                                                    name="arquivo"
+                                                    id="arquivo"
+                                                    className="input-hidden"
+                                                    placeholder="Enviar imagem"
+                                                />
                                             </div>
+
                                         </div>
 
 
