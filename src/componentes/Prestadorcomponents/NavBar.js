@@ -110,7 +110,6 @@ function NavBar() {
                                 />
                                 <hr/>
 
-
                                 </div>
                                 <button className="BotaoFechar" onClick={closeModal}>Fechar</button>
                             </Modal>

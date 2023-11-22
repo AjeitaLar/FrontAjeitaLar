@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import Modal from 'react-modal'
-import { RxHamburgerMenu } from "react-icons/rx";
+import { HamburgetMenuClose, HamburgetMenuOpen } from "../Prestadorcomponents/Icons";
 import "../ClientComponents/css/NavBarcli.css";
 import MenuProfile from "../Prestadorcomponents/MenuProfile";
 import PropsOrcamento from '../../props/PropsOrcamento'
@@ -9,11 +9,11 @@ import LogoD from "../imgs/logo doido.png"
 import fotoperfil from '../imgs/fotoperfil.png';
 import { IoMdImages } from "react-icons/io";
 import { FaCirclePlus } from "react-icons/fa6";
+
+
 Modal.setAppElement("#root");
 
 function NavBarCli() {
-
-
     const [click, setClick] = useState(false);
 
     const handleClick = () => setClick(!click);
@@ -30,27 +30,26 @@ function NavBarCli() {
 
     return (
         <>
-            <nav className="clinav">
-                <div className="clinav-contaiter">
-                    <NavLink exact to="/" className="logo">
-                        <span><img src={LogoD} alt="Logo AjeitaLaar" className="LogoD" /></span>
+            <nav className="navbar">
+                <div className="nav-container">
+                    <NavLink exact to="/" className="nav-logo">
+                        <span><img src={LogoD} alt="Logo AjeitaLaar" className="Logo" /></span>
                     </NavLink>
 
-                    <ul className={click ? "nav-climenu active" : "nav-climenu"}>
-                        <li className="menu-item">
-                            <NavLink exact to="/PerCliente" activeClassName="active" className="menu-links">
+                    <ul className={click ? "nav-menu active" : "nav-menu"}>
+                        <li className="nav-item">
+                            <NavLink exact to="/PerCliente" activeClassName="active" className="nav-links" onClick={handleClick}>
                                 Inicio
                             </NavLink>
                         </li>
 
-                        <li className="menu-item">
-                            <NavLink exact to="/Feedcli" activeClassName="active" className="menu-links">
+                        <li className="nav-item">
+                            <NavLink exact to="/Feedcli" activeClassName="active" className="nav-links" onClick={handleClick}>
                                 Meus Posts
                             </NavLink>
                         </li>
-                        <li className="menu-item">
-                            <button className="btn" onClick={openModal}>Novo Reparo</button>
-
+                        <li className="nav-item">
+                            <button className="Btn" onClick={openModal}>Novo Reparo</button>
 
                             <Modal
                                 dal
@@ -78,7 +77,6 @@ function NavBarCli() {
                                                 </div>
                                             </div>
                                         </div>
-
 
                                         <h3>Ficha Técnica</h3>
 
@@ -130,23 +128,21 @@ function NavBarCli() {
                             </Modal>
                         </li>
 
-                        <li className="menu-item">
+                        <li className="menu-items">
                             <MenuProfile />
                         </li>
-
-                        <div className="menu-icon" onClick={handleClick}>
-                            {click ? (
-                                <span className="icons">
-                                    <RxHamburgerMenu />{" "}
-                                </span>
-                            ) : (
-                                <span className="icons">
-                                    <RxHamburgerMenu />
-                                </span>
-                            )}
-                        </div>
-
                     </ul>
+                    <div className="menu-icon" onClick={handleClick}>
+                        {click ? (
+                            <span className="icons">
+                                <HamburgetMenuClose />{" "}
+                            </span>
+                        ) : (
+                            <span className="icons">
+                                <HamburgetMenuOpen />
+                            </span>
+                        )}
+                    </div>
                 </div>
             </nav >
         </>

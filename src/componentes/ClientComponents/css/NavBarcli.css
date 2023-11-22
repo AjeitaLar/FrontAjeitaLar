@@ -1,14 +1,16 @@
-.clinav {
+.navbar {
+    background-color: #ffffff;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
-
+    top: 0;
+    z-index: 20;
 }
 
-.clinav-contaiter {
+.nav-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,11 +20,12 @@
     position: relative;
 }
 
-.LogoD {
+.Logo {
     width: 135px;
 }
 
-.logo {
+.nav-logo {
+    color: #f5ac02;
     align-items: center;
     margin-left: 20px;
     cursor: pointer;
@@ -34,35 +37,34 @@
     justify-items: center;
 }
 
-.logo .icons {
+.nav-logo .icon {
     display: inline-block;
     width: 3rem;
     height: 3rem;
     margin-left: 16px;
-
 }
 
-.nav-climenu {
+.nav-menu {
     display: flex;
     list-style: none;
     text-align: center;
     margin-right: 2rem;
 }
 
-.menu-links {
-    color: #1E86B1;
+.nav-links {
+    color: #f5ac02;
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
     border-bottom: 3px solid transparent;
 }
 
-.menu-item {
+.nav-item {
     line-height: 40px;
     margin-right: 1rem;
 }
 
-.menu-item:after {
+.nav-item:after {
     content: "";
     display: block;
     height: 3px;
@@ -71,44 +73,47 @@
     transition: width 0.7s ease, background-color 0.5s ease;
 }
 
-.menu-item:hover:after {
+.nav-item:hover:after {
     width: 100%;
-    background-color: #1E86B1;
+    background: #f5ac02;
 }
 
-.menu-item .active {
-    color: #000;
+.nav-item .active {
+    color: #03142b;
 }
 
-.menu-icon {
+.nav-icon {
     display: none;
-    color: #1E86B1;
+    color: #f5ac02;
 }
 
-.menu-icon .icons {
+.nav-icon .icon {
     display: inline-block;
     width: 2rem;
     height: 2rem;
 }
 
-.btn {
-    width: 150px;
+.Btn {
+    width: 130px;
     height: 40px;
-    margin-left: 0.5rem;
-    margin-right: 3rem;
+    margin-right: 5rem;
     border-radius: 10px;
-    border: 1px solid #1E86B1;
-    background-color: #1E86B1;
+    border: 1px solid #f5ac02;
+    background-color: #f5ac02;
     color: #fff;
     font-size: 1.2rem;
     transition: .6s;
     cursor: pointer;
-
 }
 
-.btn:hover {
-    background-color: #000;
-    border: 1px solid #000;
+.BotaoFechar{
+    float: right;
+}
+
+.Btn:hover {
+    background-color: #03142b;
+    border: 1px solid #03142b;
+    color: #fff;
     transition: .6s;
 }
 
@@ -229,7 +234,6 @@
     display: flex;
     flex-direction: column;
     margin: 2%;
-
 }
 
 .formdi {
@@ -241,9 +245,7 @@
     padding-top: 6%;
     padding-left: 4%;
     padding-right: 10%;
-
 }
-
 
 .fichacix label {
     display: block;
@@ -288,4 +290,58 @@
 .modalbtn1 {
     background-color: #FFC38C;
     border: 0;
+}
+
+@media screen and (max-width: 960px) {
+    .nav-menu {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px solid #fff;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        background: #000000af;
+        left: 0px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-item .active {
+        color: #1E86B1;
+        border: none;
+    }
+
+    .nav-links {
+        padding: 1.5rem;
+        width: 100%;
+        display: table;
+    }
+
+    .BotaoCand {
+        margin-left: 6rem;
+    }
+
+    .nav-logo .icon {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .nav-icon {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-100%, -50%);
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        color: #1E86B1;
+    }
 }
