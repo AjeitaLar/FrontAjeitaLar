@@ -10,9 +10,10 @@ import PerfilFoto from "../imgs/fotoperfilcli.png"
 function Feedcli() {
     return (
         <>
-            <NavBarCli/>
+            <NavBarCli />
             <section className="misolici">
                 <div className="feed-container">
+<<<<<<< HEAD
                <PropsFeedCli
                     perfoto={PerfilFoto}
                   Perfilname="Teodoro Souza"  
@@ -20,6 +21,27 @@ function Feedcli() {
                   Feddimg={Feed1}
                />
                     <hr />
+=======
+                    <PropsFeedCli
+                        Perfilname="Marcos"
+                        Descri="sdfhdjljgflsdjglsjg"
+                        Feddimg={Feed1}
+                    />
+                    <hr />
+
+                    <PropsFeed
+                        titulo='Solicitando um reparo'
+                        Descr='Troca de lâmpada com descarte ecológico '
+                        imagem={Feed2}
+                    />
+                    <hr />
+
+                    <PropsFeed
+                        titulo='Solicitando um reparo'
+                        Descr='Troca de lâmpada com descarte ecológico '
+                        imagem={Feed1}
+                    />
+>>>>>>> 8de693a06043651b71900ad2b654bf26c73cd0a9
                 </div>
             </section>
         </>

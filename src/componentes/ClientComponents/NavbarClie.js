@@ -28,61 +28,63 @@ function NavBarCli() {
         setIsOpen(false);
     }
 
-    return (
-        <>
-            <nav className="clinav">
-                <div className="clinav-contaiter">
-                    <NavLink exact to="/" className="logo">
-                        <span><img src={LogoD} alt="Logo AjeitaLaar" className="LogoD" /></span>
-                    </NavLink>
+return (
+    <>
+        <nav className="clinav">
+            <div className="clinav-contaiter">
+                <NavLink exact to="/" className="logo">
+                    <span><img src={LogoD} alt="Logo AjeitaLaar" className="LogoD" /></span>
+                </NavLink>
 
-                    <ul className={click ? "nav-climenu active" : "nav-climenu"}>
-                        <li className="menu-item">
-                            <NavLink exact to="/PerCliente" activeClassName="active" className="menu-links">
-                                Inicio
-                            </NavLink>
-                        </li>
+                <ul className={click ? "nav-climenu active" : "nav-climenu"}>
+                    <li className="menu-item">
+                        <NavLink exact to="/PerCliente" activeClassName="active" className="menu-links">
+                            Inicio
+                        </NavLink>
+                    </li>
 
-                        <li className="menu-item">
-                            <NavLink exact to="/Feedcli" activeClassName="active" className="menu-links">
-                                Meus Posts
-                            </NavLink>
-                        </li>
-                        <li className="menu-item">
-                            <button className="btn" onClick={openModal}>Novo Reparo</button>
-
-
-                            <Modal
-                                dal
-                                isOpen={modalIsOpen}
-                                onRequestClose={closeModal}
-                                contentLabel="Example Modal"
-                                overlayClassName="modal-overlay"
-                                className="modal-content1">
-                                <h4>Faça um novo requerimento</h4>
-
-                                <div className="ModalCand">
-                                    <div className="modalposition">
-                                        <h3>Descreva com detalhes o que você precisa</h3>
-                                        <div className="cixtxt">
-                                            <textarea name="detalhe" id="detalhe" rows="150" placeholder='Ex: Preciso trocar a resistência do meu chuveiro da marca...' required></textarea>
-
-                                            <div className="imgiconMo">
-                                                <div className="iconimg">
-                                                    <IoMdImages />
-                                                </div>
-
-                                                <div className="plusicon">
-                                                    <FaCirclePlus />
-                                                </div>
-                                            </div>
-                                        </div>
+                    <li className="menu-item">
+                        <NavLink exact to="/Feedcli" activeClassName="active" className="menu-links">
+                            Meus Posts
+                        </NavLink>
+                    </li>
+                    <li className="menu-item">
+                    <button className="btn" onClick={openModal}>Novo Reparo</button>
 
 
-                                        <h3>Ficha Técnica</h3>
+                <Modal
+                    dal
+                    isOpen={modalIsOpen}
+                    onRequestClose={closeModal}
+                    contentLabel="Example Modal"
+                    overlayClassName="modal-overlay"
+                    className="modal-content1">
 
-                                        <div className="fichacix">
+                <h4>Faça um novo requerimento</h4>
 
+                <div className="ModalCand">
+                    <div className="modalposition">
+                        <h3>Descreva com detalhes o que você precisa</h3>
+                    <div className="cixtxt">
+                        <textarea name="detalhe" id="detalhe" rows="150" placeholder='Ex: Preciso trocar a resistência do meu chuveiro da marca...' required></textarea>
+
+                        <div className="imgiconMo">
+                            <div className="iconimg">
+                                <IoMdImages />
+                            </div>
+
+                            <div className="plusicon">
+                                <FaCirclePlus />
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <h3>Ficha Técnica</h3>
+
+                    <div className="fichacix">
+
+<<<<<<< HEAD
                                             <div className="formesq">
                                                 <label>
                                                     <p>Tipo de reparo</p>
@@ -93,50 +95,67 @@ function NavBarCli() {
                                                     <p>Tipo de imóvel</p>
                                                     <input className="campotxt" type="text" placeholder="Ex: Casa" required />
                                                 </label>
+=======
+                    <div className="formesq">
+                    <label>
+                        <p>Tipo de reparo</p>
+                        <input type="text" placeholder="Ex: Troca de resistência" required />
+                    </label>
 
-                                                <label>
-                                                    <p>Tem restrição de horário?</p>
-                                                    <input className="esco" name="grupoOpcoes" type="radio" required /> Sim <br />
+                    <label>
+                        <p>Tipo de imóvel</p>
+                        <input type="text" placeholder="Ex: Casa" required />
+                    </label>
+>>>>>>> 8de693a06043651b71900ad2b654bf26c73cd0a9
 
-                                                    <input className="esco" name="grupoOpcoes" type="radio" required /> Não
-                                                </label>
+                    <label>
+                        <p>Tem restrição de horário?</p>
+                        <input className="esco" name="grupoOpcoes" type="radio" required /> Sim <br />
+                        <input className="esco" name="grupoOpcoes" type="radio" required /> Não
+                    </label>
 
-                                                <label>
-                                                    <p>O prestador necessita comprar ou trazer os materiais?</p>
-                                                    <input className="esco" name="grupoOpcoes" type="radio" required /> Sim <br />
-                                                    <input className="esco" name="grupoOpcoes" type="radio" required /> Não
-                                                </label>
+                    <label>
+                        <p>O prestador necessita comprar ou trazer os materiais?</p>
+                        <input className="esco" name="grupoOpcoes" type="radio" required /> Sim <br />
+                        <input className="esco" name="grupoOpcoes" type="radio" required /> Não
+                    </label>
 
+                    <label>
+                        <p>Quais materiais?</p>
+                        <input type="text" placeholder="Ex: resistência, escada" required />
+                    </label>
+            </div>
+
+<<<<<<< HEAD
                                                 <label>
                                                     <p>Quais materiais?</p>
                                                     <input className="campotxt" type="text" placeholder="Ex: resistência, escada" required />
                                                 </label>
+=======
+            <div className="formdi">
+                <p>CEP:</p>
+                <input className="end" type="text" required />
+                <p>Rua:</p>
+                <input className="end" type="text" required />
+                <p>Bairro:</p>
+                <input className="end" type="text" required />
+                <p>Cidade</p>
+                <input className="end" type="text" required />
+            <div className="infoadd">
+                <p>Informações adicionais</p>
+                <input className="end" type="text" />
+            </div>
+            </div>
+>>>>>>> 8de693a06043651b71900ad2b654bf26c73cd0a9
 
-                                            </div>
+        </div>
+        </div>
+        </div>
 
-                                            <div className="formdi">
-                                                <p>CEP:</p>
-                                                <input className="end" type="text" required />
-                                                <p>Rua:</p>
-                                                <input className="end" type="text" required />
-                                                <p>Bairro:</p>
-                                                <input className="end" type="text" required />
-                                                <p>Cidade</p>
-                                                <input className="end" type="text" required />
-                                                <div className="infoadd">
-                                                    <p>Informações adicionais</p>
-                                                    <input className="end" type="text" />
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="butal">
-                                    <button className="btn modalbtn1" onClick={closeModal}>Fechar</button>
-                                    <button className="btn modalbtn" onClick={closeModal}>Enviar</button>
-                                </div>
+            <div className="butal">
+                <button className="btn modalbtn1" onClick={closeModal}>Fechar</button>
+                <button className="btn modalbtn" onClick={closeModal}>Enviar</button>
+            </div>
 
                             </Modal>
                         </li>
