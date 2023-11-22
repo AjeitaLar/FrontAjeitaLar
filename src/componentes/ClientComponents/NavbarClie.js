@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import Modal from 'react-modal'
 import { HamburgetMenuClose, HamburgetMenuOpen } from "../Prestadorcomponents/Icons";
 import "../ClientComponents/css/NavBarcli.css";
-import MenuProfile from "../Prestadorcomponents/MenuProfile";
+import MenuProfileC from "./MenuProfileC";
 import PropsOrcamento from '../../props/PropsOrcamento'
 import LogoD from "../imgs/logo doido.png"
 import fotoperfil from '../imgs/fotoperfil.png';
@@ -140,7 +140,7 @@ function NavBarCli() {
                         </li>
 
                         <li className="menu-items">
-                            <MenuProfile />
+                            <MenuProfileC />
                         </li>
                     </ul>
                     <div className="nav-icon2" onClick={handleClick}>
