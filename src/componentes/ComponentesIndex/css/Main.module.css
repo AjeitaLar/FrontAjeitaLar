@@ -74,13 +74,15 @@
 /*  */
 
 .ContScrollPage{
+    
     display: flex;
     justify-content: center;
+    position: relative;
 }
 
 .ScrollPage{
     width: 850px;
-    margin-top: 250px;
+    margin-top: 300px;
     background-color: #9AC6FF;
     display: flex;
     justify-content: center;
@@ -423,3 +425,6 @@ h5{
 
 /*  */
 
+@media (max-width: 1920px){
+    
+}
