@@ -86,12 +86,12 @@ function NavBarCli() {
                                             <div className="formesq">
                                                 <label>
                                                     <p>Tipo de reparo</p>
-                                                    <input type="text" placeholder="Ex: Troca de resistência" required />
+                                                    <input className="campotxt" type="text" placeholder="Ex: Troca de resistência" required />
                                                 </label>
 
                                                 <label>
                                                     <p>Tipo de imóvel</p>
-                                                    <input type="text" placeholder="Ex: Casa" required />
+                                                    <input className="campotxt" type="text" placeholder="Ex: Casa" required />
                                                 </label>
 
                                                 <label>
@@ -109,7 +109,7 @@ function NavBarCli() {
 
                                                 <label>
                                                     <p>Quais materiais?</p>
-                                                    <input type="text" placeholder="Ex: resistência, escada" required />
+                                                    <input className="campotxt" type="text" placeholder="Ex: resistência, escada" required />
                                                 </label>
 
                                             </div>

@@ -249,7 +249,7 @@ label {
     color: #333;
   }
   
-  input, .end {
+ .campotxt, .end {
     padding: 10px;
     font-size: 14px;
     border: 1px solid rgba(53, 53, 53, 0.241);
