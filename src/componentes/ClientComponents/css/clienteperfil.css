@@ -44,6 +44,18 @@
 
 }
 
+.premiun{
+    margin-top: 5%;
+    margin-left: 1.5%;
+    background-color: #DF931D;
+    text-align: center;
+    padding: 2%;
+    border-radius: 10px;
+    width: 30%;
+    color: #fff;
+}
+
+
 .infoper svg{
     color: rgb(255, 251, 8);
 }
@@ -105,8 +117,10 @@
 }
 
 .esqava {
+    padding-top: 0.5%;
     background-color: #fff;
     margin-bottom: 5%;
+    margin-top: 1%;
 }
 
 .recreparos {
@@ -119,15 +133,18 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    margin-left: 6%;
+    padding-bottom: 10%;
 }
 
 .ain {
+    margin-left: 10%;
     display: flex;
     flex-direction: row;
 }
 
 .recreparos h2 {
-    color: #868686;
+    color: #DF931D;
     font-size: 64px;
     font-style: normal;
     font-weight: 400;
@@ -135,9 +152,9 @@
 }
 
 .aindn {
-    margin-left: 1%;
+    margin-left: 5%;
     margin-top: 13%;
-    color: #868686;
+    color: #000000;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -145,7 +162,7 @@
 }
 
 .num {
-    color: #868686;
+    color: #DF931D;
     font-size: 30px;
     font-style: normal;
     font-weight: 400;
@@ -155,7 +172,7 @@
 .repacon {
     margin-top: 6%;
     margin-left: 2%;
-    color: #868686;
+    color: #000000;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;

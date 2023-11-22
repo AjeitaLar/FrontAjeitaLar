@@ -23,7 +23,7 @@
     padding: 0px 15px;
     font-size: 1.2rem;
     border: none;
-    background-color: #5093EB;
+    background-color: #DF931D;
     color: #fff;
     border-radius: 20px;
     margin-top: 30px;
@@ -35,7 +35,7 @@
     height: 880px; 
     flex-shrink: 0;
     border-radius: 1077px;
-    background: #9AC6FF;
+    background: #FFD29C;
     position: absolute;
     top: -250px;
     right: -300px;
@@ -61,7 +61,7 @@
     width: 500px;
     height: 500px;
     flex-shrink: 0;
-    background: url(../img_home/Ellipse2.png), rgba(211, 211, 211, 0) 50%;
+    background: url(../img_home/Group\ 3.png), rgba(211, 211, 211, 0) 50%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,7 +83,7 @@
 .ScrollPage{
     width: 850px;
     margin-top: 300px;
-    background-color: #9AC6FF;
+    background-color: #FFD29C;
     display: flex;
     justify-content: center;
     border-radius: 20px 20px 0px 0px;
@@ -98,7 +98,7 @@
     cursor: pointer;
 }
 .ScrollPage button:hover{
-    background-color: #1E86B1;
+    background-color: #DF931D;
     color: #fff;
     border-radius: 20px 20px 0px 0px;
     transition: all .3s;
@@ -118,7 +118,7 @@
     width: 700px;
     height: 700px;
     border-radius: 923px;
-    background: #B7D6FF;
+    background: #FFD29C;
     position: absolute;
     top: 900px;
     right: -90px;
@@ -128,7 +128,7 @@
     width: 680px;
     height: 680px;
     border-radius: 923px;
-    background-image: url(../img_home/ImgSlide3.png);
+    background-image: url(../img_home/Group\ 15.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -249,6 +249,12 @@ span{
     border-radius: 20px;
     margin-top: 30px;
     cursor: pointer;
+}
+.BtnComoFunc button:nth-child(2){
+    background-color: #fcac34;
+}
+.BtnComoFunc button:nth-child(2):hover{
+    background-color: #df7a00dc;
 }
 .BtnComoFunc button:nth-child(1){
     margin-right: 10px;

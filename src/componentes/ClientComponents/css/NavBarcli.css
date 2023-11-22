@@ -1,14 +1,16 @@
-.clinav {
+.navbar2 {
+    background-color: #ffffff;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
     position: sticky;
-
+    top: 0;
+    z-index: 20;
 }
 
-.clinav-contaiter {
+.nav-container2 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,11 +20,12 @@
     position: relative;
 }
 
-.LogoD {
+.Logo2 {
     width: 135px;
 }
 
-.logo {
+.nav-logo2 {
+    color: #1E86B1;
     align-items: center;
     margin-left: 20px;
     cursor: pointer;
@@ -34,22 +37,21 @@
     justify-items: center;
 }
 
-.logo .icons {
+.nav-logo2 .icon2 {
     display: inline-block;
     width: 3rem;
     height: 3rem;
     margin-left: 16px;
-
 }
 
-.nav-climenu {
+.nav-menu2 {
     display: flex;
     list-style: none;
     text-align: center;
     margin-right: 2rem;
 }
 
-.menu-links {
+.nav-links2 {
     color: #1E86B1;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -57,12 +59,12 @@
     border-bottom: 3px solid transparent;
 }
 
-.menu-item {
+.nav-item2 {
     line-height: 40px;
     margin-right: 1rem;
 }
 
-.menu-item:after {
+.nav-item2:after {
     content: "";
     display: block;
     height: 3px;
@@ -71,31 +73,30 @@
     transition: width 0.7s ease, background-color 0.5s ease;
 }
 
-.menu-item:hover:after {
+.nav-item2:hover:after {
     width: 100%;
-    background-color: #1E86B1;
+    background: #1E86B1;
 }
 
-.menu-item .active {
-    color: #000;
+.nav-item2 .active {
+    color: #03142b;
 }
 
-.menu-icon {
+.nav-icon2 {
     display: none;
     color: #1E86B1;
 }
 
-.menu-icon .icons {
+.nav-icon2 .icon2 {
     display: inline-block;
     width: 2rem;
     height: 2rem;
 }
 
-.btn {
-    width: 150px;
+.Btn {
+    width: 130px;
     height: 40px;
-    margin-left: 0.5rem;
-    margin-right: 3rem;
+    margin-right: 5rem;
     border-radius: 10px;
     border: 1px solid #1E86B1;
     background-color: #1E86B1;
@@ -103,12 +104,16 @@
     font-size: 1.2rem;
     transition: .6s;
     cursor: pointer;
-
 }
 
-.btn:hover {
-    background-color: #000;
-    border: 1px solid #000;
+.BotaoFechar{
+    float: right;
+}
+
+.Btn:hover {
+    background-color: #03142b;
+    border: 1px solid #03142b;
+    color: #fff;
     transition: .6s;
 }
 
@@ -184,34 +189,34 @@
     outline: none;
 }
 
-.imgiconMo {
-    display: flex;
-    flex-direction: row;
-    margin: 1%;
-
-}
-
-.iconimg svg {
+.file-input {
+    position: relative;
+    display: inline-block; 
+  }
+  
+  .input-hidden {
+    display: none;
+  }
+  
+  .imgenvio {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #565656;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .file-icon svg {
+    margin-right: 8px;
     margin: 2%;
     border: 1px solid #000;
     font-size: 35px;
     padding: 10%;
     cursor: pointer;
-}
-
-.iconimg {
-    margin-left: 2%;
-}
-
-.plusicon {
-    margin-left: 2%;
-    cursor: pointer;
-}
-
-.plusicon svg {
-    margin: 50%;
-    font-size: 25px;
-}
+  }
 
 /*TEXTAREA*/
 
@@ -229,7 +234,6 @@
     display: flex;
     flex-direction: column;
     margin: 2%;
-
 }
 
 .formdi {
@@ -241,9 +245,7 @@
     padding-top: 6%;
     padding-left: 4%;
     padding-right: 10%;
-
 }
-
 
 .fichacix label {
     display: block;
@@ -288,4 +290,58 @@
 .modalbtn1 {
     background-color: #FFC38C;
     border: 0;
+}
+
+@media screen and (max-width: 960px) {
+    .nav-menu2 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px solid #fff;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu2.active {
+        background: #000000af;
+        left: 0px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .nav-item2 .active {
+        color: #1E86B1;
+        border: none;
+    }
+
+    .nav-links2 {
+        padding: 1.5rem;
+        width: 100%;
+        display: table;
+    }
+
+    .Btn {
+        margin-left: 6rem;
+    }
+
+    .nav-logo2 .icon2 {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .nav-icon2 {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-100%, -50%);
+        width: 2rem;
+        height: 2rem;
+        cursor: pointer;
+        color: #1E86B1;
+    }
 }

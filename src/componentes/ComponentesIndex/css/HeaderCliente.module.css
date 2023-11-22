@@ -51,7 +51,7 @@ header img{
 } */
 
 .ButReparo button:hover{
-    background-color: #4E5886;
+    background-color: #f1ac45;
     color: #fff;
     transition: all .3s;
 }
@@ -62,7 +62,7 @@ header img{
     margin: 10px;
     font-size: 1.2rem;
     border: none;
-    background-color: #03142B;
+    background-color: #DF931D;
     color: #fff;
     border-radius: 20px;
     /* padding: 9px 36px; */

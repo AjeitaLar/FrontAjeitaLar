@@ -1,4 +1,4 @@
-import fotoperfil from '../imgs/fotoperfil.png';
+import fotoperfil from '../imgs/avatar.png';
 import user from '../imgs/user.png';
 import edit from '../imgs/edit.png';
 import inbox from '../imgs/envelope.png';
@@ -6,7 +6,7 @@ import settings from '../imgs/settings.png';
 import help from '../imgs/question.png';
 import logout from '../imgs/log-out.png';
 import '../../App.css';
-import '../Prestadorcomponents/css/MenuProfile.css'
+import './css/MenuProfileC.css'
 import DropdownItem from '../../props/PropsMenuP'
 
 import { NavLink } from "react-router-dom";
@@ -39,14 +39,14 @@ function MenuProfile() {
     return (
         <div className="App">
             <div className='menu-container' ref={menuRef}>
-                <div className='menu-trigger' onClick={() => { setOpen(!open) }}>
+                <div className='menu-trigger2' onClick={() => { setOpen(!open) }}>
                     <img src={fotoperfil}></img>
                 </div>
 
-                <div className={`dropdown-menu ${open ? 'active' : 'inactive'}`} >
-                    <h3>Lorena Silva<br /><span>Prestadora</span></h3>
+                <div className={`dropdown-menu2 ${open ? 'active' : 'inactive'}`} >
+                    <h3>Teodoro Souza<br /><span>Cliente</span></h3>
                     <ul>
-                        <NavLink exact to="/" activeClassName="active" className="nav-links">
+                        <NavLink exact to="/" activeClassName="active" className="nav-links2">
                             <DropdownItem img={user} text={"Meu Perfil"} />
                         </NavLink>
                         
@@ -55,7 +55,7 @@ function MenuProfile() {
                         <DropdownItem img={settings} text={"Configurações"} />
                         <DropdownItem img={help} text={"Ajuda"} />
 
-                        <NavLink exact to="/PerCliente" activeClassName="active" className="nav-links">
+                        <NavLink exact to="/PerCliente" activeClassName="active" className="nav-links2">
                             <DropdownItem img={logout} text={"Sair"} /> 
                         </NavLink>
 
