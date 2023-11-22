@@ -55,7 +55,7 @@ function MenuProfile() {
                         <DropdownItem img={settings} text={"Configurações"} />
                         <DropdownItem img={help} text={"Ajuda"} />
 
-                        <NavLink exact to="/Cliente" activeClassName="active" className="nav-links">
+                        <NavLink exact to="/PerCliente" activeClassName="active" className="nav-links">
                            <DropdownItem img={logout} text={"Sair"} /> 
                         </NavLink>
 

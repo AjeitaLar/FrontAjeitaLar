@@ -7,6 +7,8 @@ import MenuProfile from "../Prestadorcomponents/MenuProfile";
 import PropsOrcamento from '../../props/PropsOrcamento'
 import LogoD from "../imgs/logo doido.png"
 import fotoperfil from '../imgs/fotoperfil.png';
+import { IoMdImages } from "react-icons/io";
+import { FaCirclePlus } from "react-icons/fa6";
 Modal.setAppElement("#root");
 
 function NavBarCli() {
@@ -60,73 +62,82 @@ function NavBarCli() {
                                 <h4>Faça um novo requerimento</h4>
 
                                 <div className="ModalCand">
-                                    <h3>Descreva com detalhes o que você precisa</h3>
-                                    <div className="cixtxt">
-                                        <textarea name="detalhe" id="detalhe" rows="150" placeholder='Ex: Preciso trocar a resistência do meu chuveiro da marca...' required></textarea>
+                                    <div className="modalposition">
+                                        <h3>Descreva com detalhes o que você precisa</h3>
+                                        <div className="cixtxt">
+                                            <textarea name="detalhe" id="detalhe" rows="150" placeholder='Ex: Preciso trocar a resistência do meu chuveiro da marca...' required></textarea>
 
-                                        <div className="imgicon">
-                                            <div className="iconimg">
-                                                i
-                                            </div>
-
-                                            <div className="plusicon">
-                                                +
-                                            </div>
-                                        </div>
-
-
-                                        <h3>Fixa Técnica</h3>
-
-                                        <div className="fichacix">
-                                            <label htmlFor="tipo de reparo">
-                                                <div className="formesq">
-                                                    <label>
-                                                        Tipo de reparo
-                                                        <input type="text" placeholder="Ex: Troca de resistência" required />
-                                                    </label>
-
-                                                    <label>
-                                                        Tipo de imóvel
-                                                        <input type="text" placeholder="Ex: Casa" required />
-                                                    </label>
-
-                                                    <label>
-                                                        <p>Tem restrição de horário?</p>
-                                                        <input type="radio" required /> Sim
-                                                        <input type="radio" required /> Não
-                                                    </label>
-
-                                                    <label>
-                                                        <p>O prestador necessita comprar ou trazer os materiais?</p>
-                                                        <input type="radio" required /> Sim
-                                                        <input type="radio" required /> Não
-                                                    </label>
-
-                                                    <label>
-                                                        <p>Quais materiais?</p>
-                                                        <input type="text" placeholder="Ex: resistência, escada" required />
-                                                    </label>
-
-                                                    <div className="formdi">
-                                                        <h3>Endereço</h3>
-                                                        <p>CEP:</p>
-                                                        <input type="text" required />
-                                                        <p>Rua</p>
-                                                        <input type="text" required />
-                                                        <p>Bairro:</p>
-                                                        <input type="text" required />
-                                                        <p>Cidade</p>
-                                                        <input type="text" required />
-                                                    </div>
+                                            <div className="imgiconMo">
+                                                <div className="iconimg">
+                                                    <IoMdImages />
                                                 </div>
 
-                                            </label>
+                                                <div className="plusicon">
+                                                    <FaCirclePlus />
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <h3>Ficha Técnica</h3>
+
+                                        <div className="fichacix">
+
+                                            <div className="formesq">
+                                                <label>
+                                                    <p>Tipo de reparo</p>
+                                                    <input type="text" placeholder="Ex: Troca de resistência" required />
+                                                </label>
+
+                                                <label>
+                                                    <p>Tipo de imóvel</p>
+                                                    <input type="text" placeholder="Ex: Casa" required />
+                                                </label>
+
+                                                <label>
+                                                    <p>Tem restrição de horário?</p>
+                                                    <input className="esco" name="grupoOpcoes" type="radio" required /> Sim <br />
+
+                                                    <input className="esco" name="grupoOpcoes" type="radio" required /> Não
+                                                </label>
+
+                                                <label>
+                                                    <p>O prestador necessita comprar ou trazer os materiais?</p>
+                                                    <input className="esco" name="grupoOpcoes" type="radio" required /> Sim <br />
+                                                    <input className="esco" name="grupoOpcoes" type="radio" required /> Não
+                                                </label>
+
+                                                <label>
+                                                    <p>Quais materiais?</p>
+                                                    <input type="text" placeholder="Ex: resistência, escada" required />
+                                                </label>
+
+                                            </div>
+
+                                            <div className="formdi">
+                                                <p>CEP:</p>
+                                                <input className="end" type="text" required />
+                                                <p>Rua:</p>
+                                                <input className="end" type="text" required />
+                                                <p>Bairro:</p>
+                                                <input className="end" type="text" required />
+                                                <p>Cidade</p>
+                                                <input className="end" type="text" required />
+                                                <div className="infoadd">
+                                                    <p>Informações adicionais</p>
+                                                    <input className="end" type="text" />
+                                                </div>
+                                            </div>
+
                                         </div>
                                     </div>
-
                                 </div>
 
-                                <button className="btn" onClick={closeModal}>Fechar</button>
+                                <div className="butal">
+                                    <button className="btn modalbtn1" onClick={closeModal}>Fechar</button>
+                                    <button className="btn modalbtn" onClick={closeModal}>Enviar</button>
+                                </div>
+
                             </Modal>
                         </li>
 
@@ -148,7 +159,7 @@ function NavBarCli() {
 
                     </ul>
                 </div>
-            </nav>
+            </nav >
         </>
     )
 }

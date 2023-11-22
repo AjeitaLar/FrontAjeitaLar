@@ -94,7 +94,7 @@
 .btn{
     width: 150px;
     height: 40px;
-    margin-left: 0.2rem;
+    margin-left: 0.5rem;
     margin-right: 3rem;
     border-radius: 10px;
     border: 1px solid #1E86B1;
@@ -128,9 +128,8 @@
     width: 90%;
     max-width: 800px;
     background-color: #ffffff;
-    padding: 10px;
+    padding: 25px;
     border-radius: 15px;
-    margin-top: 70px;
 }
 
 .ModalCand{
@@ -140,6 +139,7 @@
     border: 1px solid #000;
     margin-bottom: 2rem;
     overflow-y: scroll;
+    padding-bottom: 3%;
 }
 
 .modal-content h4{
@@ -147,7 +147,142 @@
     font-size: 2rem;
     font-weight: 500;
     text-align: center;
-    padding: 20px;
+    margin-bottom: 2%;
+}
+
+/*FORMULARIO*/
+
+/*TEXTAREA*/
+.modalposition{
+    margin: 2%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.modalposition h3{
+    text-align: left;
+    font-size: 25px;
+}
+
+.cixtxt{
+    margin-top: 0;
+    border: 1px solid #000;
+    border-bottom: 2%;
+    width: 100%;
+}
+
+#detalhe{
+    margin-top: 1%;
+    margin-left: 2%;
+    width: 90%;
+    height: 18vh;
+    border: 0;
+    outline: none;
+ }
+
+ .imgiconMo{
+    display: flex;
+    flex-direction: row;
+    margin: 1%;
+    
+ }
+
+ .iconimg svg{
+    margin: 2%;
+    border: 1px solid #000;
+    font-size: 35px;
+    padding: 10%;
+    cursor: pointer;
+ }
+
+.iconimg{
+    margin-left: 2%;
+}
+
+ .plusicon{
+    margin-left: 2%;
+    cursor: pointer;
+ }
+
+ .plusicon svg{
+    margin: 50%;
+    font-size: 25px;
+ }
+/*TEXTAREA*/
+
+/*FICHA TECNICA*/
+
+.fichacix{
+    margin-top: 0;
+    border: 1px solid #000;
+    width: 100%; 
+    display: flex;
+    flex-direction: row;
+}
+
+.formesq{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+    
+}
+
+.formdi{
+    margin: 4%;
+}
+
+.formesq p, .formdi p{
+    padding-top: 6%;
+    padding-left: 4%;
+    padding-right: 10%;
+    
 }
 
 
+label {
+    display: block;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  input, .end {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid rgba(53, 53, 53, 0.241);
+    border-bottom: 0.5px solid #000;
+    border-radius: 5px;
+    width: 70%;
+    box-sizing: border-box;
+    margin-top: 5px;
+    outline: none;
+  }
+  
+  .esco{
+    width: 5%;
+    font-size: 14px;
+  }
+
+  .end{
+    width: 100%;
+  }
+
+  .infoadd{
+    margin-top: 28%;
+  }
+ 
+  .butal{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-left: 28.3rem;
+  }
+
+  .modalbtn1{
+    background-color: #FFC38C;
+    border: 0;
+  }
