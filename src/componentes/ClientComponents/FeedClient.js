@@ -10,14 +10,14 @@ import PropsFeedCli from "../../props/PropsFeedclient";
 function Feedcli() {
     return (
         <>
-            <NavBarCli/>
+            <NavBarCli />
             <section className="misolici">
                 <div className="feed-container">
-               <PropsFeedCli
-                  Perfilname="Marcos"  
-                  Descri="sdfhdjljgflsdjglsjg"
-                  Feddimg={Feed1}
-               />
+                    <PropsFeedCli
+                        Perfilname="Marcos"
+                        Descri="sdfhdjljgflsdjglsjg"
+                        Feddimg={Feed1}
+                    />
                     <hr />
 
                     <PropsFeed
@@ -28,7 +28,7 @@ function Feedcli() {
                     <hr />
 
                     <PropsFeed
-                        titulo='Solicitando um reparo' 
+                        titulo='Solicitando um reparo'
                         Descr='Troca de lâmpada com descarte ecológico '
                         imagem={Feed1}
                     />
