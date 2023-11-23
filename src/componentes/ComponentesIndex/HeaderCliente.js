@@ -1,15 +1,15 @@
 import Logo from './img_home/logo.png'
-import Styles from './css/Header.module.css'
+import Styles from './css/HeaderCliente.module.css'
 import { Link } from "react-router-dom";
 
-function Header(){
+function HeaderCliente(){
     return(
         <header>
             <nav className={Styles.ContReparo}>
                 <img src={Logo} alt='logo'/>
 
                 <div className={Styles.ButReparo}>
-                    <Link to='/Main'>
+                    <Link to='/'>
                         <button>
                             Reparador
                         </button>
@@ -40,4 +40,4 @@ function Header(){
     )
 }
 
-export default Header;
+export default HeaderCliente;

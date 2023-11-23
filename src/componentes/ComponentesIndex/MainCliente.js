@@ -1,9 +1,9 @@
-import Styles from './css/Main.module.css'
-import Menina from './img_home/MulherCelular2.png'
+import Styles from './css/MainCliente.module.css'
+import Menina from './img_home/MulherCelular3.png'
 import User from './img_home/Change User.png'
 import Post from './img_home/Google News.png'
 import Mensage from './img_home/Multiple Messages.png'
-import ImgQuemSomos from './img_home/estilo header.png'
+import ImgQuemSomos from './img_home/Group 14.png'
 import Seguranca from './img_home/ImgSeguranca.png'
 import Eco from './img_home/Group 10 (1).png'
 import CircEco from './img_home/49455-removebg-preview 1.png'
@@ -15,12 +15,12 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa";
 import { Link as ScrollLink } from 'react-scroll';
 import { Element } from 'react-scroll';
-import Header from './Header'
+import HeaderCliente from './HeaderCliente'
 
-function Main(){
+function MainCliente(){
     return(
     <>
-    <Header/>
+    <HeaderCliente/>
         <main>
             <section className={Styles.ContInfo}>
                 <h1>
@@ -182,4 +182,4 @@ function Main(){
     )
 }
 
-export default Main
+export default MainCliente
