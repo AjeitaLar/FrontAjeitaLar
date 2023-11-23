@@ -116,7 +116,7 @@
 
 .mensagem, .resposta{
     width: 50%;
-    height: 2vh;
+    height: 5vh;
     background-color: #00B4FF;
     border-radius: 30px;
     padding: 1.5%;
@@ -128,7 +128,7 @@
 .resposta{
     margin-top: 10%;
     background-color: #ff7b00;
-    width: 7%;
+    width: 10%;
     text-align: center;
     margin-left: 85%;
 }
