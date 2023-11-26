@@ -74,13 +74,13 @@ function PerfilPrestador() {
 
                     <div className="Rank">
                         <h1>Regular</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing lectus.</p>
+                        <p>Um trabalho bem feito </p>
 
                         <h1>Ruim</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing lectus.</p>
+                        <p>Poderia ter feito melhor</p>
 
                         <h1>Bom</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing lectus.</p>
+                        <p>Um excelente trabalho, gostei muito, parabéns </p>
 
                         <h2>Ver mais +</h2>
                     </div>

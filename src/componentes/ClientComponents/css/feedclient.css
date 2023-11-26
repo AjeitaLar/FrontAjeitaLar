@@ -1,29 +1,119 @@
-.misolici{
+.misolici {
     position: relative;
     width: 100%;
-    height: auto;
-    background-color: #def0f8;
-    background-image: url(../../imgs/curvaazul.png);
-    background-position: left;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top: 10px;
-}
-
-.feed-container{
-    width: 80%;
     height: 100vh;
-    margin: auto;
-    background-color: #fff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 -2px -10px rgba(0, 0, 0, 0.1);
-    padding-left: 5%; 
-    padding-right: 5%; 
-    overflow-x: hidden;
-    overflow-y: scroll;
+    padding-top: 10px;
+    background-color: #def0f8;
+    z-index: -1;
 }
 
-.hri{
-    width: 100%;
-    margin-left: 5%;
+/*LATERAL*/
+
+.lateralfeed {
+    width: 20%;
+    background-color: #fcfcfc;
+    margin-left: 2%;
+    height: 78vh;
+    border-radius: 5px;
+    filter: drop-shadow(7px 4px 4px rgba(0, 0, 0, 0.25));
 }
+
+.curvazul {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin-top: -20px;
+
+}
+
+.pinfo {
+    margin-top: 2%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 30vh;
+}
+
+.perfilfo {
+    width: 50%;
+    height: 15vh;
+    border-radius: 50%;
+    margin-top: 10%;
+
+}
+
+.pinfo h2 {
+    padding: 5%;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.pinfo p {
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.line {
+    width: 100%;
+}
+
+.reque, .plane, .config {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 30vh;
+}
+
+.reque h3 {
+    margin-left: 5%;
+    text-align: left;
+    padding-bottom: 5%;
+    color: #00B4FF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.reque button, .plane button, .config button {
+    background-color: #fff;
+    border: 0;
+    padding: 5%;
+    text-align: left;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+}
+
+
+.reque svg, .plane svg, .config svg{
+    color: #DF931D;
+    font-size: 20px;
+}
+
+.plane, .config{
+    height: 6vh;
+}
+
+.plane button{
+    padding-bottom: 10%;
+}
+
+.config p{
+    padding-top: 15%;
+
+}
+
+
+/*LATERAL*/ 
