@@ -1,5 +1,7 @@
 import "./css/feedclient.css";
 import NavBarCli from "./NavbarClie";
+import Modal from 'react-modal'
+import { useState } from "react";
 //PROPS
 import FotoPerfil from '../imgs/fotoperfilcli.png'
 import Feed1 from '../imgs/feed.png';
@@ -21,6 +23,20 @@ import { IoSettingsOutline } from "react-icons/io5";
 
 
 function Feedcli() {
+    const [click, setClick] = useState(false);
+
+    const handleClick = () => setClick(!click);
+
+    const [modalIsOpen, setIsOpen] = useState(false);
+
+    function openModal() {
+        setIsOpen(true);
+    }
+
+    function closeModal() {
+        setIsOpen(false);
+    }
+
     return (
         <>
             <NavBarCli />
@@ -36,23 +52,24 @@ function Feedcli() {
                     </div>
                     <div className="reque">
                         <h3>Requerimentos</h3>
-                        <button><CiFilter /> Filtrar requerimentos</button>
-                        <button><TbProgress /> Status de requerimento</button>
-                        <button><IoPeopleCircleSharp /> Candidatos</button>
+                        <button className="latebtn"><CiFilter /> Filtrar requerimentos</button>
+                        <button className="latebtn"><TbProgress /> Status de requerimento</button>
+                        <button className="latebtn"><IoPeopleCircleSharp /> Candidatos</button>
                         <hr className="line" />
                     </div>
 
                     <div className="plane">
-                        <button> <FaCrown />  Planos e vantagens</button>
+                        <button className="latebtn"> <FaCrown />  Planos e vantagens</button>
 
                     </div>
-                    
+
                     <div className="config">
-                        <button><IoSettingsOutline />  Configuração</button>
+                        <button className="latebtn"><IoSettingsOutline />  Configuração</button>
                     </div>
                 </div>
 
-                <div className="feedcon"></div>
+                <div className="feedcon">    
+                </div>
 
             </section>
         </>

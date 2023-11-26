@@ -5,6 +5,8 @@
     padding-top: 10px;
     background-color: #def0f8;
     z-index: -1;
+    display: flex;
+    flex-direction: row;
 }
 
 /*LATERAL*/
@@ -16,6 +18,7 @@
     height: 78vh;
     border-radius: 5px;
     filter: drop-shadow(7px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 99999;
 }
 
 .curvazul {
@@ -84,7 +87,7 @@
     line-height: normal;
 }
 
-.reque button, .plane button, .config button {
+.latebtn {
     background-color: #fff;
     border: 0;
     padding: 5%;
@@ -93,7 +96,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    cursor: pointer;
+    z-index: 9999;
+    
 }
 
 
@@ -117,3 +121,16 @@
 
 
 /*LATERAL*/ 
+.feedcon{
+    width: 72%;
+    height: 100vh;
+    background-color: #fff;
+    margin-left: 3%;
+    border-radius: 5px;
+    padding-left: 5%;
+    z-index: 9999;
+}
+
+.post{
+    width: 100%;
+}
