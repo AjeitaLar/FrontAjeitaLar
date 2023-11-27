@@ -4,10 +4,10 @@ import NavBar from '../componentes/Prestadorcomponents/NavBar'
 function Prestador() {
     return (
         <>
-            <NavBar></NavBar>
-            <PerfilPrestador></PerfilPrestador>
+            <NavBar />
+            <PerfilPrestador />
         </>
     );
 }
-  
-  export default Prestador;
+
+export default Prestador;

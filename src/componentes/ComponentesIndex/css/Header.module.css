@@ -50,8 +50,14 @@ header img{
     
 } */
 
-.ButReparo button:hover{
-    background-color: #4E5886;
+.Reparador:hover{
+    background-color: #df931d;
+    color: #fff;
+    transition: all .3s;
+}
+
+.Cliente:hover{
+    background-color: #1e86b1;
     color: #fff;
     transition: all .3s;
 }

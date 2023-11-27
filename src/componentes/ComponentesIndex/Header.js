@@ -10,12 +10,12 @@ function Header(){
 
                 <div className={Styles.ButReparo}>
                     <Link to='/Main'>
-                        <button>
+                        <button className={Styles.Reparador}>
                             Reparador
                         </button>
                     </Link>
                     <Link to='/MainCliente'>
-                        <button>
+                        <button className={Styles.Cliente}>
                             Preciso de reparo
                         </button>
                     </Link>
