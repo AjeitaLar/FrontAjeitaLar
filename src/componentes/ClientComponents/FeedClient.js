@@ -8,6 +8,7 @@ import Feed1 from '../imgs/feed.png';
 import Feed2 from '../imgs/feed2.png'
 import PropsFeedCli from "../../props/PropsFeedclient";
 import PerfilFoto from "../imgs/fotoperfilcli.png"
+import PropsOrcamento from "../../props/PropsOrcamento";
 //IMG
 import CurvaAzul from "../imgs/curvaazul.png"
 import FotoPerfilCli from "../imgs/fotoperfilcli.png"
@@ -54,7 +55,64 @@ function Feedcli() {
                         <h3>Requerimentos</h3>
                         <button className="latebtn"><CiFilter /> Filtrar requerimentos</button>
                         <button className="latebtn"><TbProgress /> Status de requerimento</button>
-                        <button className="latebtn"><IoPeopleCircleSharp /> Candidatos</button>
+                        <button className="latebtn" onClick={openModal} ><IoPeopleCircleSharp /> Candidatos</button>
+                        <Modal isOpen={modalIsOpen}
+                            onRequestClose={closeModal}
+                            contentLabel="Example Modal"
+                            overlayClassName="modal-overlay"
+                            className="modal-content1">
+                            <h4>Gostariam de fazer este serviço</h4>
+
+                            <div className="ModalCand">
+
+                                <PropsOrcamento
+                                    title='Nome do Perfil'
+                                    subtitle='Troca de lampada'
+                                    mensa='Olá! gostaria de fazer um orçamento '
+                                    img={FotoPerfil}
+                                    btn2='Ver publi'
+                                    btn3='Recusar'
+                                />
+                                <hr />
+
+
+                                <PropsOrcamento
+                                    title='Nome do Perfil'
+                                    subtitle='Troca de lampada'
+                                    mensa='Olá! gostaria de fazer um orçamento '
+                                    img={FotoPerfil}
+                                    btn2='Ver publi'
+                                    btn3='Recusar'
+                                />
+                                <hr />
+
+
+                                <PropsOrcamento
+                                    title='Nome do Perfil'
+                                    subtitle='Troca de lampada'
+                                    mensa='Olá! gostaria de fazer um orçamento '
+                                    img={FotoPerfil}
+                                    btn2='Ver publi'
+                                    btn3='Recusar'
+                                />
+                                <hr />
+
+
+                                <PropsOrcamento
+                                    title='Nome do Perfil'
+                                    subtitle='Troca de lampada'
+                                    mensa='Olá! gostaria de fazer um orçamento '
+                                    img={FotoPerfil}
+                                    btn2='Ver publi'
+                                    btn3='Recusar'
+                                />
+                                <hr />
+
+
+                            </div>
+                            <button className="BotaoFechar" onClick={closeModal}>Fechar</button>
+                        </Modal>
+
                         <hr className="line" />
                     </div>
 
@@ -68,7 +126,30 @@ function Feedcli() {
                     </div>
                 </div>
 
-                <div className="feedcon">    
+                <div className="feedcon">
+                    <PropsFeedCli
+                        perfoto={FotoPerfil}
+                        Perfilname="Teodoro Souza"
+                        Descri="Preciso de um reparo para a minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água "
+                        Feddimg={Feed1}
+                    />
+
+                    <PropsFeedCli
+                        perfoto={FotoPerfil}
+                        Perfilname="Teodoro Souza"
+                        Descri="Preciso de um reparo para a minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água "
+                        Feddimg={Feed1}
+                    />
+
+                    <PropsFeedCli
+                        perfoto={FotoPerfil}
+                        Perfilname="Teodoro Souza"
+                        Descri="Preciso de um reparo para a minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água "
+                        Feddimg={Feed1}
+                    />
+
+
+
                 </div>
 
             </section>
