@@ -3,7 +3,7 @@ import Modal from 'react-modal'
 import { useState } from "react";
 import { HiMiniPaperAirplane } from "react-icons/hi2";
 
-function PropsOrcamento({ img, title, subtitle, mensa, btn2, btn3 }) {
+function PropsOrcamento({ img, title, mensa, btn2, btn3 }) {
     const [click, setClick] = useState(false);
 
     const handleClick = () => setClick(!click);

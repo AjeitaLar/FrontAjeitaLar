@@ -9,19 +9,19 @@ import MainCliente from './componentes/ComponentesIndex/MainCliente';
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Router>
         <Routes>
           <Route exact path='PerCliente' element={<PerfilCliente />} />
           <Route exact path='Feedcli' element={<Feedcli />} />
           <Route exact path='PerfilPrestador' element={<PerfilPrestador />} />
           <Route exact path='/' element={<Index />} />
-          <Route exact path='/MainCliente' element={<MainCliente />}></Route>
+          <Route exact path='MainCliente' element={<MainCliente />}></Route>
           <Route exact path='Servicos' element={<Servicos />} />
         </Routes>
       </Router>
 
-    </div>
+    </>
   );
 }
 
