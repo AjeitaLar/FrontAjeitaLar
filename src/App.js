@@ -6,6 +6,7 @@ import Feedcli  from './componentes/ClientComponents/FeedClient';
 import Servicos from './componentes/Prestadorcomponents/Servicos';
 import Index from './componentes/ComponentesIndex/Main'
 import MainCliente from './componentes/ComponentesIndex/MainCliente';
+import Artigos from './componentes/Prestadorcomponents/Artigos';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/' element={<Index />} />
           <Route exact path='MainCliente' element={<MainCliente />}></Route>
           <Route exact path='Servicos' element={<Servicos />} />
+          <Route exact path='Artigos' element={<Artigos />} />
         </Routes>
       </Router>
 

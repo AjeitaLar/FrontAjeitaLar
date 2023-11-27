@@ -46,7 +46,7 @@ function NavBar() {
                             </NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink exact to="/dfgd" activeClassName="active" className="nav-links" onClick={handleClick}>
+                            <NavLink exact to="/Artigos" activeClassName="active" className="nav-links" onClick={handleClick}>
                                 Artigos
                             </NavLink>
                         </li>
