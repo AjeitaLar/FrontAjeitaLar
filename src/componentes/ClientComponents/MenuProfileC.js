@@ -37,7 +37,7 @@ function MenuProfile() {
     });
 
     return (
-        <div className="App">
+        <div className="menuPcli">
             <div className='menu-container' ref={menuRef}>
                 <div className='menu-trigger2' onClick={() => { setOpen(!open) }}>
                     <img src={fotoperfil}></img>
