@@ -11,7 +11,7 @@ function HeaderCliente(){
                 <div className={Styles.ButReparo}>
                     <Link to='/'>
                         <button className={Styles.Reparador}>
-                            Reparador
+                            Sou Reparador
                         </button>
                     </Link>
                     <Link to='/MainCliente'>
