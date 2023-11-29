@@ -1,7 +1,7 @@
 import './Registro.css'
 import { Link } from "react-router-dom";
 
-function RegistroCliente() {
+function RegistroPrestador() {
     return (
         <div className="auth-containerr">
             <h2>Registre-se</h2>
@@ -21,10 +21,10 @@ function RegistroCliente() {
                 <input type="checkbox" id="scales" name="scales" />
                 <label for="scales">Aceito os termos de privacidade</label>
                 </div>
-                <Link to='/LoginCliente'><button className='Btn_Registro' type="submit">Registre-se</button></Link>
+                <Link to='/LoginPrestador'><button className='Btn_Registro' type="submit">Registre-se</button></Link>
             </form>
         </div>
     );
 };
 
-export default RegistroCliente;
+export default RegistroPrestador;

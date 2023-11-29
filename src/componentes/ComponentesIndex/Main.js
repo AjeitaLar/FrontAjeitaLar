@@ -16,8 +16,6 @@ import { FaTiktok } from "react-icons/fa";
 import { Link as ScrollLink } from 'react-scroll';
 import { Element } from 'react-scroll';
 import Header from './Header'
-import Login from '../Registro_Login/Login/Login'
-import Registro from '../Registro_Login/Registro/Registro'
 
 function Main(){
     return(
@@ -176,12 +174,8 @@ function Main(){
                     </div>
                 </section>
                 
-        </Element>        
-            </footer>
-        
-        <Login />
-        <Registro />
-        
+            </Element>        
+        </footer>
     </>
     )
 }

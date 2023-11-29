@@ -174,10 +174,8 @@ function MainCliente(){
                     </div>
                 </section>
                 
-        </Element>        
-            </footer>
-        
-        
+            </Element>        
+        </footer>
     </>
     )
 }
