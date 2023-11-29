@@ -9,6 +9,10 @@ import UserFlecha from '../imgs/UserFlecha.png'
 import Not1 from '../imgs/not1.jpg'
 import Not2 from '../imgs/not2.jpg'
 import Not3 from '../imgs/not3.jpg'
+import Not4 from '../imgs/not4.jpg'
+import Not5 from '../imgs/not5.jpg'
+import Not6 from '../imgs/not6.jpg'
+
 
 function Artigos() {
     return (
@@ -83,6 +87,28 @@ function Artigos() {
                     <p>Nossa plataforma visa a conscientização do descarte ecológico dos resíduos que podem ser gerados nos reparos.  </p>
                 </div>
             </section>
+
+            <section className='Noticias'>
+
+                <div className='Not1'>
+                    <img src={Not4} alt='Noticia 1' className='Noticia1' />
+                    <h2>MEIO AMBIENTE</h2>
+                    <h1>Ação para descarte correto de lixo seletivo é neste sábado, em Farroupilha</h1>
+                </div>
+
+                <div className='Not2'>
+                    <img src={Not5} alt='Noticia 2' className='Noticia2' />
+                    <h2>CONSCIENTIZAÇÃO</h2>
+                    <h1>Campanha do DAAE destaca descarte correto de resíduos cortantes</h1>
+                </div>
+
+                <div className='Not3'>
+                    <img src={Not6} alt='Noticia 3' className='Noticia3' />
+                    <h2>AUTÔNOMOS</h2>
+                    <h1>A importância do descarte consciente</h1>
+                </div>
+            </section>
+
         </section>
 
     )
