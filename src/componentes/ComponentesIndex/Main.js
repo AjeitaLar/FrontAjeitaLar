@@ -8,6 +8,8 @@ import Seguranca from './img_home/ImgSeguranca.png'
 import Eco from './img_home/Group 10 (1).png'
 import CircEco from './img_home/49455-removebg-preview 1.png'
 import Bgc from './img_home/bgc2.png'
+import Vinculos from './img_home/Logo_Vinculos_Redondo.png'
+import Rescostura from './img_home/Logo_Recostura.png'
 import ReactPlayer from 'react-player/youtube'
 import { FaFacebook } from "react-icons/fa";
 import { RiWhatsappFill } from "react-icons/ri";
@@ -27,7 +29,7 @@ function Main(){
                     Precisa de um reparo?
                 </h1>
                 <p>
-                    Aqui você encontra o trabalhador perfeito para realizar os pequenos reparos da sua residência!
+                    Aqui você encontra o trabalhador perfeito para realizar os reparos da sua residência!
                 </p>
                 <button className={Styles.BtnEntrar}>
                     Entrar
@@ -82,7 +84,7 @@ function Main(){
                             </p>
                             <div className={Styles.BtnComoFunc}>
                                 <button>
-                                    Repardor
+                                    Sou Repardor
                                 </button>
                                 <button>
                                     Preciso de reparos
@@ -125,6 +127,7 @@ function Main(){
                 <div className={Styles.TextSeguranca}>
                     <h1>SEGURANÇA</h1>
                     <p>Junto a BGC - uma empresa de gestão de dados e analise de risco de pessoas, garantimos a segurança dos seus dados e a veracidade de todos os presente na nossa plataforma. </p>
+                    <img src={Bgc} alt='avatar user' className={Styles.Bgc} />
                 </div>
                 <img src={Seguranca} alt='avatar user' className={Styles.ImgSeguranca} />
             </section>
@@ -137,13 +140,17 @@ function Main(){
                     <p>Nossa plataforma visa a conscientização do descarte ecológico dos resíduos que podem ser gerados nos reparos.  </p>
                 </div>
             </section>
-            <section className={Styles.Bgc}>
+            <section className={Styles.parceiros}>
                 
                 <h1>
                     
                     PARCEIROS
                 </h1>
-                <img src={Bgc} alt='Logo startap Bgc' />
+                <div className={Styles.logos}>
+                    <img src={Vinculos} alt='Logo startap Vinculos' />
+                    <img src={Bgc} alt='Logo startap Bgc' />
+                    <img src={Rescostura} alt='Logo startap Rescostura' />
+                </div>
             </section>
         </main>
         <hr/>

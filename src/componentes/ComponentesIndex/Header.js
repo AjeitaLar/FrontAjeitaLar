@@ -11,7 +11,7 @@ function Header(){
                 <div className={Styles.ButReparo}>
                     <Link to='/MainCliente'>
                         <button className={Styles.Reparador}>
-                           Sou Reparadaor
+                           Sou Reparador
                         </button>
                     </Link>
                     <Link to='/'>
