@@ -22,7 +22,7 @@ function Artigos() {
                 <img src={Curso} alt='Imagem Curso' className='ImgCurso' />
                 <div className='TextCurso'>
                     <h1>Quer se tornar um Profissional ?</h1>
-                    <p>Transforme sua paixão por serviços domésticos em uma carreira de sucesso ao se profissionalizar com a Ajeita Lar</p>
+                    <p>Transforme sua paixão por serviços domésticos em uma carreira de sucesso ao se profissionalizar com a AjeitaLar</p>
                 </div>
             </section>
 
