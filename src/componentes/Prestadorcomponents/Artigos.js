@@ -55,7 +55,7 @@ function Artigos() {
             </section>
 
             <div className='NoticiaText'>
-            <h1>Noticias do trabalhador</h1>
+            <h1>Notícias do trabalhador</h1>
             </div>
 
             <section className='Noticias'>

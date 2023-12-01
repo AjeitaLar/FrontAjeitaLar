@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 function LoginPrestador() {
     return (
+        <section className='Login_fundo'>
         <div className="auth-container">
             <h2>Login</h2>
             <form>
@@ -19,6 +20,7 @@ function LoginPrestador() {
                 <Link to='/PerfilPrestador'><button className='Btn_Login' type="submit">Login</button></Link>
             </form>
         </div>
+        </section>
     );
 };
 
