@@ -1,10 +1,13 @@
-import './Login.css';
+import './Login2.css';
 import { Link } from "react-router-dom";
+import LinhasLogin from '../../imgs/LinhasLogin.png'
 
 function LoginPrestador() {
     return (
         <section className='Login_fundo'>
-        <div className="auth-container">
+            <img src={LinhasLogin} alt="Linhas Laranja" />
+
+        <div className="Login_container">
             <h2>Login</h2>
             <form>
                 <div>

@@ -1,39 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .Login_fundo{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-color: #ac7116;
 }
 
-.auth-container {
+.Login_fundo img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.Login_container {
     width: 50%;
-    margin: 20px auto;
-    padding: 20px;
     border: 1px solid #ccc;
     border-radius: 20px;
     text-align: center;
     background-color: #e8f8ff;
 }
 
-.auth-container h3{
+.Login_container h3{
     cursor: pointer;
     text-decoration:underline;
 }
 
-.auth-container h2{
+.Login_container h2{
     color: #df931d;
     text-shadow: 2px 2px #ac7116;
     font-size: 3em;
     padding: 30px;
 }
 
-.auth-container form {
+.Login_container form {
     display: flex;
     flex-direction: column;
 }
 
 
-.auth-container input {
+.Login_container input {
     padding: 15px;
     margin-bottom: 15px;
     background-color: #df911db7;
