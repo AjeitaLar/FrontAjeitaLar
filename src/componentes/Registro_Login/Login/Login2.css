@@ -9,19 +9,29 @@
     height: 100vh;
 }
 
-.Login_fundo img{
+.Linhas_Login{
     position: absolute;
     width: 100%;
     height: 100%;
     z-index: -1;
 }
 
+.Logo_Login{
+    position: relative;
+    width: 150px;
+}
+
 .Login_container {
-    width: 50%;
+    position: relative;
+    width: 40%;
+    height: 60vh;
     border: 1px solid #ccc;
     border-radius: 20px;
     text-align: center;
     background-color: #e8f8ff;
+    top: 20vh;
+    right: 20vh;
+    float: right;
 }
 
 .Login_container h3{

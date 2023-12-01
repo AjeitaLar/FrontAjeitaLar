@@ -1,11 +1,14 @@
 import './Login2.css';
 import { Link } from "react-router-dom";
-import LinhasLogin from '../../imgs/LinhasLogin.png'
+import LinhasLogin from '../../imgs/LOGIN.png'
+import Logo from '../../imgs/logo doido.png'
 
 function LoginPrestador() {
     return (
-        <section className='Login_fundo'>
-            <img src={LinhasLogin} alt="Linhas Laranja" />
+        <section className='Registro_fundo'>
+
+            <img src={LinhasLogin} className='Linhas_Login' alt="Linhas Laranja" />
+            <img src={Logo} className='Logo_Login' alt="Logo" />
 
         <div className="Login_container">
             <h2>Login</h2>
