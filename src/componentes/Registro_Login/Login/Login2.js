@@ -1,7 +1,7 @@
 import './Login.css';
 import { Link } from "react-router-dom";
 
-function LoginCliente() {
+function LoginPrestador() {
     return (
         <div className="auth-container">
             <h2>Login</h2>
@@ -16,10 +16,10 @@ function LoginCliente() {
                 <div>
                     <h3>Esqueci a senha</h3>
                 </div>
-                <Link to='/PerCliente'><button className='Btn_Login' type="submit">Login</button></Link>
+                <Link to='/PerfilPrestador'><button className='Btn_Login' type="submit">Login</button></Link>
             </form>
         </div>
     );
 };
 
-export default LoginCliente;
+export default LoginPrestador;

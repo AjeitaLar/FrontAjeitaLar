@@ -41,6 +41,7 @@
     width: 100%;
     height: auto;
     position: relative;
+    margin-top: 20px;
 }
 
 .TextEco1{
@@ -115,10 +116,10 @@
 .Noticias{
     position: relative;
     width: 90%;
-    height: auto;
+    height: 430px;
     background-color: #fff;
     margin: auto;
-    margin-bottom: 10vh;
+    margin-top: 15px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -140,6 +141,7 @@
     color: #d27c2c;
     font-size: 1rem;
     padding: 5px;
+    margin-top: 15px;
 }
 
 .Not1 h1, .Not2 h1, .Not3 h1{

@@ -9,12 +9,12 @@ function HeaderCliente(){
                 <img src={Logo} alt='logo'/>
 
                 <div className={Styles.ButReparo}>
-                    <Link to='/'>
+                    <Link to='/MainCliente'>
                         <button className={Styles.Reparador}>
-                            Reparador
+                            Sou Reparador
                         </button>
                     </Link>
-                    <Link to='/MainCliente'>
+                    <Link to='/'>
                         <button className={Styles.Cliente}>
                             Preciso de reparo
                         </button>
@@ -24,12 +24,12 @@ function HeaderCliente(){
             </nav>
             
             <nav className={Styles.BtnConta}>
-                <Link to='/PerfilPrestador'>
+                <Link to='/LoginPrestador'>
                 <button>
                     Entrar
                 </button>
                 </Link>
-                <Link to='/PerCliente'>
+                <Link to='/RegistroPrestador'>
                 <button>
                     Cadastre-se
                 </button>
