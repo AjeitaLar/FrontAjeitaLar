@@ -29,9 +29,15 @@ function MainCliente(){
                 <p>
                     Aqui você encontra o trabalhador perfeito para realizar os pequenos reparos da sua residência!
                 </p>
-                <button className={Styles.BtnEntrar}>
-                    Entrar
-                </button>
+                <section className={Styles.ContBtnLogin}>
+                    <button className={Styles.BtnEntrar}>
+                        Entrar
+                    </button>
+                    <button className={Styles.BtnEntrar}>
+                        cadastre-se
+                    </button>
+                </section>
+                
             </section>
             <section>
                 <div className={Styles.ImgCirc1}></div>

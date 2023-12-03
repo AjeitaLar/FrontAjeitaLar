@@ -18,6 +18,12 @@
 
 }
 
+/*  */
+
+.ContBtnLogin{
+    display: none;
+}
+
 .BtnEntrar{
     height: 35px;
     padding: 0px 15px;
@@ -29,6 +35,10 @@
     margin-top: 30px;
     cursor: pointer;
 }
+.BtnEntrar:nth-child(1){
+    margin-right: 20px;
+       
+} 
 
 .ImgCirc1{
     width: 880px;
@@ -452,6 +462,116 @@ h5{
     .RepH1{
         margin-left: 165px;
     }
+    .TextQuemSomos{
+        margin-left: 200px;
+    }
+    .Seguranca{
+        
+        justify-content: center;
+    }
+    .ComoFunc{
+    
+        justify-content: space-evenly;
+    }
+    .ImgCircEco{
+        width: 550px;
+        position: absolute;
+        top: 450px;
+        left: 250px;
+    }
+    .TextEco{
+        top: 370px;
+        right: 200px;
+    }
+}
+
+@media (max-width: 768px){
+    
+    .ContInfo {
+        margin-top: 0;
+    }
+    .ContInfo h1{
+        font-size: 50px;
+    }
+    .ContInfo p{
+        width: 400px;
+        font-size: 16px;
+    }
+
+    .ImgCirc1{
+        width: 500px;
+        height: 500px; 
+        top: -200px;
+        right: -300px;
+    }
+
+    .ImgCirc2{
+        width: 400px;
+        height: 400px;
+        top: -120px;
+        right: -204px;
+    }
+
+    .ImgCirc3{
+        width: 200px;
+        height: 200px;
+        top: 140px;
+        right: 50px; 
+    }
+     .ContBtnLogin{
+        display: block;
+    } 
+
+    .BtnEntrar{
+        height: 40px;
+        padding: 0px 20px;
+        font-size: 1.4rem;
+        border: none;
+        border-radius: 20px;
+        margin-top: 30px;
+        cursor: pointer;
+        margin-right: 20px;
+    }
+    
+
+    /*  */
+
+    .ScrollPage{
+        width: 850px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+
+
+    .RepH1{
+        width: 400px;
+        margin-left: 50px;
+        font-size: 50px;
+    }
+
+    .CircRep{
+        width: 500px;
+        height: 500px;
+        top: 650px;
+        right: -150px;
+    }
+
+    .CircRep2{
+        width: 450px;
+        height: 450px;
+        top: 700px;
+        right: -90px;
+    }
+
+    .CircRep3{
+        width: 270px;
+        height: 270px;
+        top: 850px;
+        right: 200px;
+        z-index: -1 ;
+    
+    }
+
     .TextQuemSomos{
         margin-left: 200px;
     }
