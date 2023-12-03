@@ -21,13 +21,6 @@ function Serviços() {
         setIsOpen(false);
     }
 
-    const [selectedOption, setSelectedOption] = useState('Selecione uma opção');
-    const options = ['Opção 1', 'Opção 2', 'Opção 3', 'Opção 4'];
-    const options1 = ['Opção ', 'Opção ', 'Opção ', 'Opção '];
-
-    const handleSelectChange = (e) => {
-        setSelectedOption(e.target.value);
-    };
         return (
             <>
                 <NavBar />
@@ -41,30 +34,72 @@ function Serviços() {
                             <fieldset>
                                 <legend>Tipos de serviços</legend>
 
-                                <div className="Drop">
-                                    <label htmlFor="dropdown">Selecione uma opção:</label>
-                                    <select id="dropdown" value={selectedOption} onChange={handleSelectChange}>
-                                        <option disabled>Selecione uma opção</option>
-                                        {options.map((option, index) => (
-                                            <option key={index} value={option}>
-                                                {option}
-                                            </option>
-                                        ))}
-                                    </select>
-                                </div>
-                                
-                                <div className="Drop">
-                                    <label htmlFor="dropdown">Selecione uma opção:</label>
-                                    <select id="dropdown" value={selectedOption} onChange={handleSelectChange}>
-                                        <option disabled>Selecione uma opção</option>
-                                        {options1.map((option, index) => (
-                                            <option key={index} value={option}>
-                                                {option}
-                                            </option>
-                                        ))}
-                                    </select>
+                                <div>
+                                    <input className='Buscar' type="text" placeholder='Buscar tipos de serviços' />
                                 </div>
 
+                                <div className="Drop">
+                                    <label htmlFor="dropdown">Encanamento</label>
+                                    <select id="dropdown1">
+                                        <option>Nenhum</option>
+                                        <option>Desentupir</option>
+                                        <option>Vazamentos</option>
+                                    </select>
+                                </div>
+                                <div className="Drop">
+                                    <label htmlFor="dropdown">Pintura</label>
+                                    <select id="dropdown1">
+                                        <option>Nenhum</option>
+                                        <option>Parede</option>
+                                        <option>Teto</option>
+                                        <option>Portas</option>
+                                        <option>Janelas</option>
+                                        <option>Móveis</option>
+                                    </select>
+                                </div>
+                                <div className="Drop">
+                                    <label htmlFor="dropdown">Eletricidade</label>
+
+                                    <select id="dropdown1">
+                                        <option>Nenhum</option>
+                                        <option>Interruptores</option>
+                                        <option>Tomadas</option>
+                                        <option>Lampadas</option>
+                                        <option>Afiação</option>
+                                    </select>
+                                </div>
+                                <div className="Drop">
+                                    <label htmlFor="dropdown">Marcenaria</label>
+
+                                    <select id="dropdown1">
+                                        <option>Nenhum</option>
+                                        <option>Cadeiras</option>
+                                        <option>Mesas</option>
+                                        <option>Portas</option>
+                                        <option>Armários</option>
+                                        <option>Gavetas</option>
+                                        <option>Estantes</option>
+                                    </select>
+                                </div>
+                                <div className="Drop">
+                                    <label htmlFor="dropdown">Alvenaria</label>
+                                    <select id="dropdown1">
+                                        <option>Nenhum</option>
+                                        <option>Rachaduras</option>
+                                        <option>Buracos</option>
+                                        <option>Pisos</option>
+                                    </select>
+                                </div>
+                                <div className="Drop">
+                                    <label htmlFor="dropdown">Instalações</label>
+                                    <select id="dropdown1">
+                                        <option>Nenhum</option>
+                                        <option>Prateleiras</option>
+                                        <option>Suportes</option>
+                                        <option>Cortinas</option>
+                                        <option>Chuveiro</option>
+                                    </select>
+                                </div>
                             </fieldset>
 
                         </div>

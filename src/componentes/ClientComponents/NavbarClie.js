@@ -132,8 +132,8 @@ function NavBarCli() {
                                 </div>
 
                                 <div className="butal">
-                                    <button className="btn modalbtn1" onClick={closeModal}>Fechar</button>
-                                    <button className="btn modalbtn" onClick={closeModal}>Enviar</button>
+                                    <button className=" modalbtn1" onClick={closeModal}>Fechar</button>
+                                    <button className="BotaoFechar modalbtn" onClick={closeModal}>Enviar</button>
                                 </div>
 
                             </Modal>

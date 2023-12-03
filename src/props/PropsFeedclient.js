@@ -20,7 +20,7 @@ function PropsFeedCli({ Feddimg, Perfilname, Descri, perfoto }) {
         setIsOpen(false);
     }
     return (
-        <div className="feedcon">
+        <div className="feedcont">
             <div className="toppost">
                 <img src={perfoto} alt="perfoto" className="perfoto" />
                 <h2 className="Perfilname">{Perfilname}</h2>

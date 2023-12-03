@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Login_fundo{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Linhas_Login{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.Logo_Login{
+    position: relative;
+    width: 150px;
+}
+
+.Login_container {
+    position: relative;
+    width: 40%;
+    height: 60vh;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #e8f8ff;
+    top: 20vh;
+    right: 20vh;
+    float: right;
+}
+
+.Login_container h3{
+    cursor: pointer;
+    text-decoration:underline;
+}
+
+.Login_container h2{
+    color: #df931d;
+    text-shadow: 2px 2px #ac7116;
+    font-size: 3em;
+    padding: 30px;
+}
+
+.Login_container form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Login_container input {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #df911db7;
+    border-radius: 20px;
+    border: 1px solid #df911db7;
+    box-shadow: 0 3px #3d3d3d80;
+}
+
+.Senha {
+    width: 65%;
+    background-image: url("../../imgs/Senha.png");
+    background-repeat: no-repeat;
+    background-size: 3.5em;
+    background-position: left;
+}
+
+.Senha::placeholder{
+    padding: 30px;
+    color: #fff;
+}
+
+.Email {
+    width: 65%;
+    background-image: url("../../imgs/Email.png");
+    background-repeat: no-repeat;
+    background-size: 2.2em;
+    background-position:left;
+}
+
+.Email::placeholder{
+    padding: 30px;
+    color: #fff;
+}
+
+.Btn_Login {
+    width: 50%;
+    height: 50px;
+    background-color: #df931d;
+    color: white;
+    font-size: 2em;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: auto;
+    margin-top: 50px;
+    transition: .5s;
+}
+
+.Btn_Login:hover {
+    background-color: #ac7116;
+    transition: .5s;
+}

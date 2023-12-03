@@ -316,8 +316,8 @@ span{
     margin-left: -200px;
 }
 .TextQuemSomos{
-    width: 600px;
-    margin-left: 20px;
+    width: 700px;
+    margin-left: 30px;
 }
 .TextQuemSomos h1{
     font-size: 50px;
@@ -353,7 +353,9 @@ span{
     font-size: 25px;
     margin-top: 40px;   
 }
-
+.TextSeguranca .Bgc{
+    width: 350px;
+}
 /* */
 
 .Eco{
@@ -393,18 +395,20 @@ span{
 /*  */
 
 
-.Bgc{    
+.parceiros{    
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 100px;
     letter-spacing: 10px;
 }
-.Bgc h1{    
+.parceiros h1{    
     font-size: 50px;
     color: #DF931D;
 }
-
+.logos img{
+    width: 250px;
+}
 /*  */
 hr{
     width: 80%;
