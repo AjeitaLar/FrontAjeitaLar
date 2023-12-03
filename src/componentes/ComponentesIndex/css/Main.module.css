@@ -243,7 +243,7 @@ span{
 
 .TitleComoFunc h1{
     color: #DF931D;
-    font-size: 40px;
+    font-size: 50px;
 }
 .TitleComoFunc p{
     font-size: 23px;
@@ -429,6 +429,11 @@ h5{
     font-size: 40px;
     margin-right: 5px;
 }
+
+.IconsRedes a{
+    color: black;
+}
+
 .ContRedes h5{
     margin-top: 20px;
     text-align: center;
@@ -441,6 +446,8 @@ h5{
 .LinksFoot h5{
     margin-left: 20px;
 }
+
+
 
 /*  */
 
@@ -466,11 +473,9 @@ h5{
         margin-left: 200px;
     }
     .Seguranca{
-        
         justify-content: center;
     }
     .ComoFunc{
-    
         justify-content: space-evenly;
     }
     .ImgCircEco{
@@ -487,6 +492,10 @@ h5{
 
 @media (max-width: 768px){
     
+    html{
+        width: 900px;
+    }
+
     .ContInfo {
         margin-top: 0;
     }
@@ -495,7 +504,7 @@ h5{
     }
     .ContInfo p{
         width: 400px;
-        font-size: 16px;
+        font-size: 23px;
     }
 
     .ImgCirc1{
@@ -541,9 +550,9 @@ h5{
     .ScrollPage{
         width: 850px;
         margin-top: 50px;
-        margin-left: 50px;
     }
 
+    /*  */
 
     .RepH1{
         width: 400px;
@@ -574,25 +583,277 @@ h5{
     
     }
 
-    .TextQuemSomos{
-        margin-left: 200px;
-    }
-    .Seguranca{
-        
-        justify-content: center;
-    }
+    /*  */
+
     .ComoFunc{
+        margin-top: 500px;
+    }
     
+    .ImgComoFunc{
+        width: 300px;
+        height: 250px;
+    }
+    
+    .TitleComoFunc{
+        width: 500px;
+        height: auto;
+        margin-left: -30px;
+    }
+    
+    .TitleComoFunc p{
+        margin-top: 10px;
+    }
+    
+    .ImgInfComoFunc{
+        width: 60px;
+    }
+
+    /*  */
+
+    .Video {
+        width: 800px !important;
+        height: 400px !important;
+        margin-top: 150px;    
+    }
+
+    /*  */
+
+    .QuemSomos{
+        margin-top: 100px;
+    }
+    .ImgQuemSomos{
+        width: 500px;
+    }
+    .TextQuemSomos h1{
+        font-size: 50px;
+    }
+    .TextQuemSomos p{
+        font-size: 23px;
+        margin-top: 40px;  
+        margin-right: 20px;   
+    }
+
+    /*  */
+
+    .Seguranca{
+        margin-top: 0;
+    }
+    
+    .ImgSeguranca{
+        width: 500px;
+    }
+    .TextSeguranca{
+        width: 600px;
+        margin-left: 50px;
+        margin-top: 100px;
+    }
+    .TextSeguranca p{
+        font-size: 23px;   
+    }
+    .TextSeguranca .Bgc{
+        width: 250px;
+    }
+
+    /* */
+
+    .Eco{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .ImgEco{
+        width: 100%;
+        height: auto;
+        margin-top: 150px;
+    }
+    
+    .ImgCircEco{
+        width: 400px;
+        top: 250px;
+        left: 50px;
+    }
+    
+    .TextEco{
+        width: 500px;
+        top: 150px;
+        right: 40px;
+    }
+    .TextEco p{
+        font-size: 23px;
+        margin-top: 20px;  
+    }
+
+    /*  */
+
+    .parceiros{  
+        width: 100%;  
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+        letter-spacing: 10px;
+    }
+    .parceiros h1{    
+        font-size: 50px;
+    }
+    
+    .logos{
+        width: 100%;
+        display: flex;
         justify-content: space-evenly;
     }
+    .logos img{
+        width: 250px;
+    }
+    
+    /*  */
+
+    .ContFoot{
+        width: 100%;
+    }
+    
+    .IconsRedes svg{
+        font-size: 50px;
+    }
+    .ContRedes h5{
+        font-size: 20px;
+    }
+    .LinksFoot h5{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 425px){
+    *{
+        overflow-x: hidden;
+    }
+    main{
+        width: 750px;
+    }
+    html{
+        width: 750px;
+    }
+
+    .ImgCirc1{
+        width: 350px;
+        height: 350px; 
+        top: -100px;
+        right: -450px;
+    }
+
+    .ImgCirc2{
+        width: 300px;
+        height: 300px;
+        top: -50px;
+        right: -400px;
+    }
+
+    .ImgCirc3{
+        width: 150px;
+        height: 150px;
+        top: 140px;
+        right: -210px; 
+    }
+
+    /*  */
+
+    .ScrollPage{
+        width: 700px;
+        margin-top: 50px;
+    }
+
+    /*  */
+
+    .CircRep{
+        width: 400px;
+        height: 400px;
+        top: 650px;
+        right: -350px;
+    }
+
+    .CircRep2{
+        width: 350px;
+        height: 350px;
+        top: 700px;
+        right: -290px;
+    }
+
+    .CircRep3{
+        width: 200px;
+        height: 200px;
+        top: 850px;
+        right: -60px;
+ 
+    }
+
+    /*  */
+
+    .ComoFunc{
+        margin-top: 400px;
+    }
+    
+    .ImgComoFunc{
+        display: none;
+    }
+
+    .TitleComoFunc{
+        margin-left: 0px;
+    }
+
+    /*  */
+
+     .ImgSeguranca{
+        width: 400px;
+    }
+    .TextSeguranca{
+        margin-left: 20px;
+    }
+    .TextSeguranca .Bgc{
+        width: 250px;
+    }
+
+    /* */
+
+    .Eco{
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    
+    .ImgEco{
+        margin-top: 100px;
+    }
+    
     .ImgCircEco{
-        width: 550px;
-        position: absolute;
-        top: 450px;
-        left: 250px;
+        width: 300px;
+        top: 200px;
+        left: 50px;
     }
+    
     .TextEco{
-        top: 370px;
-        right: 200px;
+        width: 400px;
+        top: 100px;
     }
+
+    /*  */
+
+    .logos img{
+        width: 200px;
+    }
+    
+    /*  */
+
+    hr{
+        display: none;
+    }
+
+    .ContFoot{
+        width: 700px;
+        justify-content: start;
+        margin-left: 10px;
+        border-top: 1px solid black;
+        padding-top: 20px;
+    }
+
 }

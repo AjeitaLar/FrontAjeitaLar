@@ -93,3 +93,12 @@ header img{
         display: none;
     }
 }
+
+@media (max-width: 425px){
+    .ContReparo{
+        justify-content: space-evenly;
+    }
+    .ContReparo img{
+        margin-left: -100px;
+    }
+}

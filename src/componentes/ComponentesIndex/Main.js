@@ -165,9 +165,9 @@ function Main(){
                 <section className={Styles.ContFoot}>
                     <div className={Styles.ContRedes}>
                         <div className={Styles.IconsRedes}>
+                            <a href='https://www.instagram.com/ajeitalar/' target='_blanck'><AiFillInstagram/></a>
                             <FaFacebook/>
                             <RiWhatsappFill/>
-                            <AiFillInstagram/>
                             <FaTiktok/>
                             </div>
                         <h5>
