@@ -349,3 +349,21 @@ textarea {
         overflow-y: scroll;
     }
 }
+
+@media screen and (max-width: 960px){
+    .Servicos{
+        flex-wrap: wrap;
+    }
+
+    .SecaoLado{
+        width: 100%;
+    }
+
+    .Buscar{
+        width: 97.5%;
+    }
+
+    .M_Serviços{
+        width: 95%;
+    }
+}

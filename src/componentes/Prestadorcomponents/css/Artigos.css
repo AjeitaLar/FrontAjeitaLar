@@ -154,3 +154,50 @@
 .Noticia1, .Noticia2, .Noticia3{
     width: 100%;
 }
+
+@media screen and (max-width: 960px){
+    .tags{
+        flex-wrap:wrap;
+        height: auto;
+    }
+
+    .Mei, .Cnpj, .Como, .ArteNegocios{
+        width: 40%;
+    }
+
+    .Noticias{
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    .Not1, .Not2, .Not3{
+        width: 95%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .Curso{
+        height: 100vh;
+    }
+
+    .TextCurso h1{
+        font-size: 2rem;
+    }
+    
+    .TextCurso p{
+        font-size: 1.2rem;
+    }
+
+    .TextEco1{
+        width: 300px;
+        top: 30px;
+        right: 20px;
+    }
+    .TextEco1 h1{
+        font-size: 50px;
+    }
+    .TextEco1 p{
+        font-size: 20px;
+        margin-top: 20px;  
+    }
+}

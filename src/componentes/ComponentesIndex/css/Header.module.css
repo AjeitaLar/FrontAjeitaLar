@@ -81,3 +81,24 @@ header img{
         margin-left: 150px;
     }
 }
+@media (max-width: 768px){
+    .ContReparo{
+        width: 100%;
+        justify-content: space-around;
+    }
+    .ContReparo img{
+        margin-left: -30px;
+    }
+    .BtnConta{
+        display: none;
+    }
+}
+
+@media (max-width: 425px){
+    .ContReparo{
+        justify-content: space-evenly;
+    }
+    .ContReparo img{
+        margin-left: -100px;
+    }
+}

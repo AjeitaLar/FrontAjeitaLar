@@ -31,9 +31,15 @@ function Main(){
                 <p>
                     Aqui você encontra o trabalhador perfeito para realizar os reparos da sua residência!
                 </p>
-                <button className={Styles.BtnEntrar}>
-                    Entrar
-                </button>
+                <section className={Styles.ContBtnLogin}>
+                    <button className={Styles.BtnEntrar}>
+                        Entrar
+                    </button>
+                    <button className={Styles.BtnEntrar}>
+                        cadastre-se
+                    </button>
+                </section>
+                
             </section>
             <section>
                 <div className={Styles.ImgCirc1}></div>
@@ -159,9 +165,9 @@ function Main(){
                 <section className={Styles.ContFoot}>
                     <div className={Styles.ContRedes}>
                         <div className={Styles.IconsRedes}>
+                            <a href='https://www.instagram.com/ajeitalar/' target='_blanck'><AiFillInstagram/></a>
                             <FaFacebook/>
                             <RiWhatsappFill/>
-                            <AiFillInstagram/>
                             <FaTiktok/>
                             </div>
                         <h5>

@@ -31,9 +31,15 @@ function MainCliente(){
                 <p>
                     Aqui você encontra os pedidos perfeito para realizar os reparos!
                 </p>
-                <button className={Styles.BtnEntrar}>
-                    Entrar
-                </button>
+                <section className={Styles.ContBtnLogin}>
+                    <button className={Styles.BtnEntrar}>
+                        Entrar
+                    </button>
+                    <button className={Styles.BtnEntrar}>
+                        cadastre-se
+                    </button>
+                </section>
+                
             </section>
             <section>
                 <div className={Styles.ImgCirc1}></div>

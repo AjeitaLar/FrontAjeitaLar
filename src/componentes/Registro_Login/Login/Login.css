@@ -1,70 +1,96 @@
-.auth-container {
-    width: 50%;
-    margin: 20px auto;
-    padding: 20px;
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Login_fundo2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Linhas_Login2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.Logo_Login2{
+    position: relative;
+    width: 150px;
+}
+
+.Login_container2 {
+    position: relative;
+    width: 40%;
+    height: 60vh;
     border: 1px solid #ccc;
     border-radius: 20px;
     text-align: center;
     background-color: #e8f8ff;
+    top: 20vh;
+    right: 20vh;
+    float: right;
 }
 
-.auth-container h3{
+.Login_container2 h3{
     cursor: pointer;
     text-decoration:underline;
 }
 
-.auth-container h2{
-    color: #df931d;
-    text-shadow: 2px 2px #ac7116;
+.Login_container2 h2{
+    color: #1E85B1;
+    text-shadow: 2px 2px #125775;
     font-size: 3em;
     padding: 30px;
 }
 
-.auth-container form {
+.Login_container2 form {
     display: flex;
     flex-direction: column;
 }
 
 
-.auth-container input {
+.Login_container2 input {
     padding: 15px;
     margin-bottom: 15px;
-    background-color: #df911db7;
+    background-color: #1e85b1c9;
     border-radius: 20px;
-    border: 1px solid #df911db7;
+    border: 1px solid #1e85b1c9;
     box-shadow: 0 3px #3d3d3d80;
 }
 
-.Senha {
-    width: 65%;
+.Senha2 {
+    width: 75%;
     background-image: url("../../imgs/Senha.png");
     background-repeat: no-repeat;
     background-size: 3.5em;
     background-position: left;
 }
 
-.Senha::placeholder{
+.Senha2::placeholder{
     padding: 30px;
     color: #fff;
 }
 
-.Email {
-    width: 65%;
+.Email2 {
+    width: 75%;
     background-image: url("../../imgs/Email.png");
     background-repeat: no-repeat;
     background-size: 2.2em;
     background-position:left;
 }
 
-.Email::placeholder{
+.Email2::placeholder{
     padding: 30px;
     color: #fff;
 }
 
-.Btn_Login {
+.Btn_Login22 {
     width: 50%;
     height: 50px;
-    background-color: #df931d;
+    background-color: #1E85B1;
     color: white;
     font-size: 2em;
     border: none;
@@ -75,7 +101,7 @@
     transition: .5s;
 }
 
-.Btn_Login:hover {
-    background-color: #ac7116;
+.Btn_Login22:hover {
+    background-color: #125775;
     transition: .5s;
 }

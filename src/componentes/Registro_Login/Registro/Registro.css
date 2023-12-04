@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .reg {
     background-image: url(../../imgs/registre.png);
     width: 100%;
@@ -6,12 +7,60 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+=======
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Registro_fundo2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Linhas_Registro2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.Logo_Registro2{
+    position: relative;
+    width: 150px;
+}
+
+
+.Registro_container2 {
+    position: relative;
+    width: 40%;
+    height: 65vh;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #e8f8ff;
+    float: right;
+    top: 20vh;
+    right: 20vh;
+}
+
+.Registro_container2 h2{
+    color: #1E85B1;
+    text-shadow: 2px 2px #125775;
+    font-size: 3em;
+    padding: 30px;
+}
+
+.Registro_container2 form {
+>>>>>>> 56fb0f9e45272c24af6c00a1e07fda5973e77c36
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
 }
 
+<<<<<<< HEAD
 .auth-containerrc {
     width: 45%;
     height: 90vh;
@@ -49,20 +98,86 @@
     background-color: #ffc86a;
     width: 48%;
     margin-right: 2%;
+=======
+.Registro_container2 input {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #1e85b1c9;
+    border-radius: 20px;
+    border: 1px solid #1e85b1c9;
+    box-shadow: 0 3px #3d3d3d80;
+}
+
+.Usuario2 {
+    background-image: url("../../imgs/Usuario.png");
+    background-repeat: no-repeat;
+    background-size: 3em;
+    background-position: left;
+}
+
+.Usuario2::placeholder{
+    padding: 30px;
+>>>>>>> 56fb0f9e45272c24af6c00a1e07fda5973e77c36
     color: #fff;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+<<<<<<< HEAD
 
 .input-container svg {
+=======
+.Senha2 {
+    width: 100%;
+    background-image: url("../../imgs/Senha.png");
+    background-repeat: no-repeat;
+    background-size: 3.5em;
+    background-position: left;
+}
+
+.Senha2::placeholder{
+    padding: 30px;
+>>>>>>> 56fb0f9e45272c24af6c00a1e07fda5973e77c36
     color: #fff;
     margin-right: 5px;
     font-size: 17px;
 }
 
+<<<<<<< HEAD
 
 .input-container input {
     flex: 1;
+=======
+.Email2 {
+    width: 100%;
+    background-image: url("../../imgs/Email.png");
+    background-repeat: no-repeat;
+    background-size: 2.2em;
+    background-position:left;
+}
+
+.Email2::placeholder{
+    padding: 30px;
+    color: #fff;
+}
+
+.input[type=checkbox]:checked:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 0;
+    background-color: #1E85B1;
+}
+
+.Btn_Registro2 {
+    width: 50%;
+    height: 50px;
+    background-color: #1E85B1;
+    color: white;
+    font-size: 2em;
+>>>>>>> 56fb0f9e45272c24af6c00a1e07fda5973e77c36
     border: none;
     outline: none;
     background-color: transparent;
@@ -70,6 +185,7 @@
     font-size: 16px;
 }
 
+<<<<<<< HEAD
 
 .flex-row {
     display: flex;
@@ -114,4 +230,9 @@
 .termos{
     padding: 5%;
     color: #ff8c00;
+=======
+.Btn_Registro2:hover {
+    background-color: #125775;
+    transition: .5s;
+>>>>>>> 56fb0f9e45272c24af6c00a1e07fda5973e77c36
 }
