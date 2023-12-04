@@ -55,7 +55,7 @@ function PerfilPrestador() {
                 <div className="Localização">
                     <h1>Localização</h1>
                     <img className="local" src={local} alt="local" />
-                    <p>Jardim d’abril, Osasco-SP</p>
+                    <p>Jardim d'abril, Osasco-SP</p>
                 </div>
 
                 <div className="Opiniao">
