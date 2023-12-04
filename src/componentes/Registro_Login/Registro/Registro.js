@@ -14,7 +14,7 @@ function RegistroCliente() {
         <div className="reg">
             <div className="auth-containerrc">
                 <h2>CADASTRE-SE</h2>
-                <span className="clientere"> Seja um prestador em nossa plataforma e alavanque sua carreira</span>
+                <span className="clientere"> Faça parte da nossa plataforma</span>
 
                 <form>
 
