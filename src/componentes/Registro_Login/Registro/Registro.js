@@ -26,7 +26,7 @@ function RegistroCliente() {
                     </div>
 
                     <div>
-                        <input type="checkbox" id="scales" name="scales" />
+                        <input className='input' type="checkbox" id="scales" name="scales" />
                         <label for="scales">Aceito os termos de privacidade</label>
                     </div>
                     <Link to='/LoginPrestador'><button className='Btn_Registro2' type="submit">Registre-se</button></Link>

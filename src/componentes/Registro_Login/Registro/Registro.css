@@ -94,6 +94,17 @@
     color: #fff;
 }
 
+.input[type=checkbox]:checked:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    left: 0;
+    background-color: #1E85B1;
+}
+
 .Btn_Registro2 {
     width: 50%;
     height: 50px;

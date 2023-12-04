@@ -87,7 +87,7 @@
     color: #fff;
 }
 
-.Btn_Login2 {
+.Btn_Login22 {
     width: 50%;
     height: 50px;
     background-color: #1E85B1;
@@ -101,7 +101,7 @@
     transition: .5s;
 }
 
-.Btn_Login:hover {
+.Btn_Login22:hover {
     background-color: #125775;
     transition: .5s;
 }

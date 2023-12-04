@@ -23,7 +23,7 @@ function LoginCliente() {
                 <div>
                     <h3>Esqueci a senha</h3>
                 </div>
-                <Link to='/PerfilPrestador'><button className='Btn_Login2' type="submit">Login</button></Link>
+                <Link to='/PerfilPrestador'><button className='Btn_Login22' type="submit">Login</button></Link>
             </form>
         </div>
         </section>
