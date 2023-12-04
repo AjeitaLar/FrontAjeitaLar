@@ -1,76 +1,103 @@
-.auth-containerr {
-    width: 50%;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    background-color: #e8f8ff;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.auth-containerr h2{
-    color: #df931d;
-    text-shadow: 2px 2px #ac7116;
+.Registro_fundo2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Linhas_Registro2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.Logo_Registro2{
+    position: relative;
+    width: 150px;
+}
+
+
+.Registro_container2 {
+    position: relative;
+    width: 40%;
+    height: 65vh;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    text-align: center;
+    background-color: #e8f8ff;
+    float: right;
+    top: 20vh;
+    right: 20vh;
+}
+
+.Registro_container2 h2{
+    color: #1E85B1;
+    text-shadow: 2px 2px #125775;
     font-size: 3em;
     padding: 30px;
 }
 
-.auth-containerr form {
+.Registro_container2 form {
     display: flex;
     flex-direction: column;
 }
 
-.auth-containerr input {
+.Registro_container2 input {
     padding: 15px;
     margin-bottom: 15px;
-    background-color: #df911db7;
+    background-color: #1e85b1c9;
     border-radius: 20px;
-    border: 1px solid #df911db7;
+    border: 1px solid #1e85b1c9;
     box-shadow: 0 3px #3d3d3d80;
 }
 
-.Usuario {
+.Usuario2 {
     background-image: url("../../imgs/Usuario.png");
     background-repeat: no-repeat;
     background-size: 3em;
     background-position: left;
 }
 
-.Usuario::placeholder{
+.Usuario2::placeholder{
     padding: 30px;
     color: #fff;
 }
 
-.Senha {
-    width: 65%;
+.Senha2 {
+    width: 100%;
     background-image: url("../../imgs/Senha.png");
     background-repeat: no-repeat;
     background-size: 3.5em;
     background-position: left;
 }
 
-.Senha::placeholder{
+.Senha2::placeholder{
     padding: 30px;
     color: #fff;
 }
 
-.Email {
-    width: 65%;
+.Email2 {
+    width: 100%;
     background-image: url("../../imgs/Email.png");
     background-repeat: no-repeat;
     background-size: 2.2em;
     background-position:left;
 }
 
-.Email::placeholder{
+.Email2::placeholder{
     padding: 30px;
     color: #fff;
 }
 
-.Btn_Registro {
+.Btn_Registro2 {
     width: 50%;
     height: 50px;
-    background-color: #df931d;
+    background-color: #1E85B1;
     color: white;
     font-size: 2em;
     border: none;
@@ -81,7 +108,7 @@
     transition: .5s;
 }
 
-.Btn_Registro:hover {
-    background-color: #ac7116;
+.Btn_Registro2:hover {
+    background-color: #125775;
     transition: .5s;
 }

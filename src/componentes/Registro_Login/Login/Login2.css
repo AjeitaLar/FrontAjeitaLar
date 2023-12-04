@@ -62,7 +62,7 @@
 }
 
 .Senha {
-    width: 65%;
+    width: 75%;
     background-image: url("../../imgs/Senha.png");
     background-repeat: no-repeat;
     background-size: 3.5em;
@@ -75,7 +75,7 @@
 }
 
 .Email {
-    width: 65%;
+    width: 75%;
     background-image: url("../../imgs/Email.png");
     background-repeat: no-repeat;
     background-size: 2.2em;
