@@ -1,9 +1,9 @@
 import '../Prestadorcomponents/css/Servicos.css'
 import CurvaLaranja from '../imgs/Rectangle.png'
 import PropsServicos from '../../props/PropsServicos'
-import fotoperfil from '../imgs/fotoperfil.png';
+import fotoperfil from '../imgs/avatar.png';
 import Feed1 from '../imgs/feed.png'
-import Feed2 from '../imgs/feed2.png'
+import Feed2 from '../imgs/MaquinaDeLavar.png'
 import Modal from 'react-modal'
 import { useState } from "react";
 import NavBar from './NavBar';
@@ -210,13 +210,13 @@ function Serviços() {
 
                         <PropsServicos
                             titulo='Preciso de um reparo:'
-                            Descr='A minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água '
+                            Descr='Minha lâmpada queimou, preciso que troquem ela para mim'
                             imagem={fotoperfil}
-                            nome='Larissa Silva'
+                            nome='Teodoro Souza'
                             publi={Feed1}
                         />
 
-                        <button className="BotaoCandidatar" onClick={openModal}>Candidaturas</button>
+                        <button className="BotaoCandidatar" onClick={openModal}>Ver ficha</button>
 
                         <Modal
                             isOpen={modalIsOpen}
@@ -272,13 +272,13 @@ function Serviços() {
 
                         <PropsServicos
                             titulo='Preciso de um reparo:'
-                            Descr='A minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água '
+                            Descr='A minha maquina de lavar esta fazendo um barulho muito estranho e esta vazando muita água'
                             imagem={fotoperfil}
-                            nome='Larissa Silva'
+                            nome='Teodoro Souza'
                             publi={Feed2}
                         />
 
-                        <button className="BotaoCandidatar" onClick={openModal}>Candidaturas</button>
+                        <button className="BotaoCandidatar" onClick={openModal}>Ver ficha</button>
 
                         <Modal
                             isOpen={modalIsOpen}
@@ -334,22 +334,22 @@ function Serviços() {
 
                         <PropsServicos
                             titulo='Preciso de um reparo:'
-                            Descr='A minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água '
+                            Descr='Minha lâmpada queimou, preciso que troquem ela para mim'
                             imagem={fotoperfil}
-                            nome='Larissa Silva'
+                            nome='Teodoro Souza'
                             publi={Feed1}
                         />
-                        <button className="BotaoCandidatar" onClick={openModal}>Candidatar-se</button>
+                        <button className="BotaoCandidatar" onClick={openModal}>Ver ficha</button>
                         <hr />
 
                         <PropsServicos
                             titulo='Preciso de um reparo:'
-                            Descr='A minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água '
+                            Descr='A minha maquina de lavar esta fazendo um barulho muito estranho e esta vazando muita água'
                             imagem={fotoperfil}
-                            nome='Larissa Silva'
+                            nome='Teodoro Souza'
                             publi={Feed2}
                         />
-                        <button className="BotaoCandidatar" onClick={openModal}>Candidaturas</button>
+                        <button className="BotaoCandidatar" onClick={openModal}>Ver ficha</button>
                         <hr />
 
                     </div>

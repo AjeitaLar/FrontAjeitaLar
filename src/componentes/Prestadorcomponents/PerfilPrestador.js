@@ -9,7 +9,7 @@ import LinhaG from '../imgs/Line 15.png'
 import LinhaM from '../imgs/Line 16.png'
 import LinhaP from '../imgs/Line 17.png'
 import Feed1 from '../imgs/feed.png'
-import Feed2 from '../imgs/feed2.png'
+import Feed2 from '../imgs/MaquinaDeLavar.png'
 import PropsFeed from '../../props/PropsFeed'
 import NavBar from './NavBar'
 
@@ -97,21 +97,21 @@ function PerfilPrestador() {
 
             <div className="Feed">
             <PropsFeed 
-            titulo='Reparo feito em 19/12/2023'
+            titulo='Reparo feito em 05/12/2023'
             Descr='Troca de lâmpada com descarte ecológico '
             imagem={Feed1}
             />
             <hr />
 
             <PropsFeed 
-            titulo='Reparo feito em 19/12/2023'
-            Descr='Troca de lâmpada com descarte ecológico '
+            titulo='Reparo feito em 25/11/2023'
+            Descr='Conserto de uma maquina de lavar'
             imagem={Feed2}
             />
             <hr />
             
             <PropsFeed 
-            titulo='Reparo feito em 19/12/2023'
+            titulo='Reparo feito em 19/11/2023'
             Descr='Troca de lâmpada com descarte ecológico '
             imagem={Feed1}
             />

@@ -6,7 +6,7 @@ import Logo from '../imgs/logo doido.png'
 import MenuProfile from "./MenuProfile";
 import Modal from 'react-modal'
 import PropsCandidatura from '../../props/PropsCandidatura'
-import fotoperfil from '../imgs/fotoperfil.png';
+import fotoperfil from '../imgs/avatar.png';
 
 
 Modal.setAppElement("#root");
