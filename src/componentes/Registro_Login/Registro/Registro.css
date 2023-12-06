@@ -1,87 +1,128 @@
-.auth-containerr {
-    width: 50%;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-    background-color: #e8f8ff;
-}
-
-.auth-containerr h2{
-    color: #df931d;
-    text-shadow: 2px 2px #ac7116;
-    font-size: 3em;
-    padding: 30px;
-}
-
-.auth-containerr form {
+.reg {
+    background-image: url(../../imgs/registre.png);
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
 
-.auth-containerr input {
-    padding: 15px;
-    margin-bottom: 15px;
-    background-color: #df911db7;
+.auth-containerrc {
+    width: 45%;
+    height: 90vh;
+    margin-left: 10%;
+    padding: 20px;
     border-radius: 20px;
-    border: 1px solid #df911db7;
-    box-shadow: 0 3px #3d3d3d80;
+    text-align: center;
+    background: #E8F8FF;
+    box-shadow: -17px 11px 16px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.Usuario {
-    background-image: url("../../imgs/Usuario.png");
-    background-repeat: no-repeat;
-    background-size: 3em;
-    background-position: left;
+.titlere {
+    color: #1E85B1;
+    text-shadow: 2px 2px #1eb7f8;
+    text-align: center; 
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
 }
 
-.Usuario::placeholder{
-    padding: 30px;
+
+.input-container {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ffc86a;
+    background-color: #ffc86a;
+    width: 48%;
+    margin-right: 2%;
     color: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.Senha {
-    width: 65%;
-    background-image: url("../../imgs/Senha.png");
-    background-repeat: no-repeat;
-    background-size: 3.5em;
-    background-position: left;
-}
 
-.Senha::placeholder{
-    padding: 30px;
+.input-container svg {
     color: #fff;
+    margin-right: 5px;
+    font-size: 17px;
 }
 
-.Email {
-    width: 65%;
-    background-image: url("../../imgs/Email.png");
-    background-repeat: no-repeat;
-    background-size: 2.2em;
-    background-position:left;
-}
 
-.Email::placeholder{
-    padding: 30px;
-    color: #fff;
-}
-
-.Btn_Registro {
-    width: 50%;
-    height: 50px;
-    background-color: #df931d;
-    color: white;
-    font-size: 2em;
+.input-container input {
+    flex: 1;
     border: none;
-    border-radius: 15px;
-    cursor: pointer;
-    margin: auto;
-    margin-top: 50px;
-    transition: .5s;
+    outline: none;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
 }
 
-.Btn_Registro:hover {
-    background-color: #ac7116;
-    transition: .5s;
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+.tamnho {
+    width: 98%;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.Btn_Registrop {
+    width: 326.383px;
+    height: 55px;
+    border-radius: 20px;
+    background: #E8A330;
+    border: 1px solid #E8A330;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 30px;
+    color: #fff;
+
+}
+
+.Btn_Registrop:hover {
+    /* Estilos quando o botão está em estado de hover */
+    background-color: #ff8c00;
+    /* Altere a cor de fundo ao passar por cima */
+}
+
+.clientere{
+    padding: 5%;
+    color: #ff8c00;
+    
+}
+
+.termos{
+    padding: 5%;
+    color: #ff8c00;
+}
+
+.colorblue{
+    background: rgb(66, 140, 244);
+    border: 1px solid  rgb(66, 140, 244);
+    
+}
+
+.colorbluet{
+    color: rgb(1, 43, 102) ;
 }

@@ -1,81 +1,144 @@
-.auth-container {
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Registro_fundo2{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../imgs/LoginCliente.png);
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.flex{
     width: 50%;
-    margin: 20px auto;
-    padding: 20px;
+}
+.Login_fundo2{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.Linhas_Login2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.Logo_Login2{
+    position: relative;
+    width: 150px;
+    margin-left: 50px;
+
+}
+.caixalogo2{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+.Login_container2 {
+    position: relative;
+    width: 80%;
+    height: auto;
     border: 1px solid #ccc;
     border-radius: 20px;
     text-align: center;
     background-color: #e8f8ff;
 }
 
-.auth-container h3{
+.Login_container2 h3{
     cursor: pointer;
     text-decoration:underline;
 }
 
-.auth-container h2{
-    color: #df931d;
-    text-shadow: 2px 2px #ac7116;
+.Login_container2 h2{
+    color: #1E85B1;
+    text-shadow: 2px 2px #125775;
     font-size: 3em;
     padding: 30px;
 }
 
-.auth-container form {
+.Login_container2 form {
     display: flex;
     flex-direction: column;
 }
 
 
-.auth-container input {
+.Login_container2 input {
     padding: 15px;
     margin-bottom: 15px;
-    background-color: #df911db7;
+    background-color: #1e85b1c9;
     border-radius: 20px;
-    border: 1px solid #df911db7;
+    border: 1px solid #1e85b1c9;
     box-shadow: 0 3px #3d3d3d80;
 }
 
-.Senha {
-    width: 65%;
+.Senha2 {
+    width: 75%;
     background-image: url("../../imgs/Senha.png");
     background-repeat: no-repeat;
     background-size: 3.5em;
     background-position: left;
+
+    text-align: center;
+    color: #fff; 
 }
 
-.Senha::placeholder{
+.Senha2::placeholder{
     padding: 30px;
     color: #fff;
 }
 
-.Email {
-    width: 65%;
+.Email2 {
+    width: 75%;
     background-image: url("../../imgs/Email.png");
     background-repeat: no-repeat;
     background-size: 2.2em;
     background-position:left;
+
+    text-align: center;
+    color: #fff; 
 }
 
-.Email::placeholder{
+.Email2::placeholder{
     padding: 30px;
     color: #fff;
 }
 
-.Btn_Login {
+.Btn_Login22 {
     width: 50%;
     height: 50px;
-    background-color: #df931d;
+    background-color: #1E85B1;
     color: white;
     font-size: 2em;
     border: none;
     border-radius: 15px;
     cursor: pointer;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
+    margin-bottom: 15px;
     transition: .5s;
 }
 
-.Btn_Login:hover {
-    background-color: #ac7116;
+.Btn_Login22:hover {
+    background-color: #125775;
     transition: .5s;
+}
+
+@media  only screen and (max-width: 480px) {
+    .Registro_fundo2{
+        height: 180vh;
+    }
+    .flex{
+        height: 180vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

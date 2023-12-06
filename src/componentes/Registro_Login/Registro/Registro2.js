@@ -1,38 +1,61 @@
-import './Registro2.css'
+import './Registro.css'
 import { Link } from "react-router-dom";
-import LinhasLogin from '../../imgs/REGISTRE-SE.png'
-import Logo from '../../imgs/logo doido.png'
+//ICONS
+import { FaUser } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { RiLockPasswordFill } from "react-icons/ri";
+import { MdBadge } from "react-icons/md";
 
 function RegistroPrestador() {
     return (
-        <section className='Registro_fundo'>
+        <div className="reg">
+            <div className="auth-containerrc">
+                <h2>CADASTRE-SE</h2>
+                <span className="clientere"> Seja um prestador em nossa plataforma e eleve sua carreira</span>
 
-            <img src={LinhasLogin} className='Linhas_Registro' alt="Linhas Laranja" />
-            <img src={Logo} className='Logo_Registro' alt="Logo" />
-
-
-            <div className="Registro_container">
-                <h2>Registre-se</h2>
                 <form>
-                    <div>
-                        <input className='Usuario' type="text" placeholder="Digite seu nome" />
-                        <input className='Usuario' type="text" placeholder="Digite seu sobrenome" />
-                    </div>
-                    <div>
-                        <input className='Email' type="email" placeholder="Digite seu email" />
-                    </div>
-                    <div>
-                        <input className='Senha' type="password" placeholder="Digite sua senha" />
+
+                    <div className="flex-row">
+                        <div className="input-container">
+                            <FaUser /><input className='Nomep registroclient' type="text" placeholder='nome...' />
+                        </div>
+
+                        <div className="input-container">
+                            <FaUser /><input className='Nomep registroclient' type="text" placeholder='Sobrenome...' />
+                        </div>
                     </div>
 
-                    <div>
-                        <input type="checkbox" id="scales" name="scales" />
-                        <label for="scales">Aceito os termos de privacidade</label>
+                    <div className="input-container tamnho">
+                        <MdBadge /><input className='CPF registroclient ' type='text' placeholder='CPF' />
                     </div>
-                    <Link to='/LoginPrestador'><button className='Btn_Registro' type="submit">Registre-se</button></Link>
+
+                    <div className="input-container tamnho">
+                        <MdEmail /><input className='Emailc registroclient ' type="email" placeholder='E-mail' />
+                    </div>
+
+                    <div className="flex-row">
+                        <div className="input-container">
+                            <RiLockPasswordFill /><input className='Senhac registroclient' type="password" placeholder='Senha' />
+                        </div>
+
+                        <div className="input-container">
+                            <RiLockPasswordFill /><input className='Senhac registroclient' type="password" placeholder='Confirme sua senha' />
+                        </div>
+                    </div>
+
+
                 </form>
+
+                <div className='termos'>
+                    <input type="checkbox" id="aceitarTermos" name="scales" />
+                    <label htmlFor="aceitarTermos">Aceito os termos de privacidade</label>
+                </div>
+
+
+                <Link to='/LoginCliente'><button className='Btn_Registrop' type="submit">CADASTRE-SE</button></Link>
             </div>
-        </section>
+        </div>
+       
     );
 };
 

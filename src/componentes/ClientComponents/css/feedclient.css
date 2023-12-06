@@ -69,7 +69,9 @@
     width: 100%;
 }
 
-.reque, .plane, .config {
+.reque,
+.plane,
+.config {
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -99,31 +101,34 @@
     line-height: normal;
     z-index: 9999;
     cursor: pointer;
-    
+
 }
 
 
-.reque svg, .plane svg, .config svg{
+.reque svg,
+.plane svg,
+.config svg {
     color: #DF931D;
     font-size: 20px;
 }
 
-.plane, .config{
+.plane,
+.config {
     height: 6vh;
 }
 
-.plane button{
+.plane button {
     padding-bottom: 10%;
 }
 
-.config p{
+.config p {
     padding-top: 15%;
 
 }
 
 
-/*LATERAL*/ 
-.feedcon{
+/*LATERAL*/
+.feedcon {
     width: 72%;
     height: 100vh;
     background-color: #fff;
@@ -135,6 +140,74 @@
     padding-bottom: 3%;
 }
 
-.post{
+.post {
     width: 100%;
+}
+
+@media screen and (min-width: 960px) and (max-width: 1500px) {
+    .pinfo p {
+        font-size: 13px;
+    }
+
+    .lateralfeed {
+        height: 75vh;
+    }
+
+    .latebtn {
+        padding: 2%;
+        font-size: 14px;
+    }
+
+    .latebtn svg {
+        font-size: 17px;
+    }
+
+    
+}
+
+@media screen and (max-width: 960px) {
+    .pinfo p {
+        font-size: 12px;
+    }
+
+    .lateralfeed {
+        height: 75vh;
+    }
+
+    .latebtn {
+        padding: 10%;
+        font-size: 16px;
+
+    }
+
+    .latebtn svg {
+        font-size: 18px;
+    }
+
+    .reque {
+        height: 40vh;
+    }
+
+    .lateralfeed {
+        height: 85vh;
+        width: 25%;
+    }
+
+    .pinfo {
+        width: 95%;
+        height: 25vh;
+    }
+
+    .pinfo h2 {
+        font-size: 20px;
+    }
+
+    .perfilfo {
+        width: 40%;
+        height: 10vh;
+    }
+
+    .feedcon {
+        margin-left: 1%;
+    }
 }

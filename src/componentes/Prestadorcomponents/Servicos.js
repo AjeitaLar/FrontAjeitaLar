@@ -1,12 +1,13 @@
 import '../Prestadorcomponents/css/Servicos.css'
 import CurvaLaranja from '../imgs/Rectangle.png'
 import PropsServicos from '../../props/PropsServicos'
-import fotoperfil from '../imgs/fotoperfil.png';
+import fotoperfil from '../imgs/avatar.png';
 import Feed1 from '../imgs/feed.png'
-import Feed2 from '../imgs/feed2.png'
+import Feed2 from '../imgs/MaquinaDeLavar.png'
 import Modal from 'react-modal'
 import { useState } from "react";
 import NavBar from './NavBar';
+
 Modal.setAppElement("#root");
 
 function Serviços() {
@@ -210,13 +211,13 @@ function Serviços() {
 
                         <PropsServicos
                             titulo='Preciso de um reparo:'
-                            Descr='A minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água '
+                            Descr='Minha lâmpada queimou, preciso que troquem ela para mim'
                             imagem={fotoperfil}
-                            nome='Larissa Silva'
+                            nome='Teodoro Souza'
                             publi={Feed1}
                         />
 
-                        <button className="BotaoCandidatar" onClick={openModal}>Candidaturas</button>
+                        <button className="BotaoCandidatar" onClick={openModal}>Ver ficha</button>
 
                         <Modal
                             isOpen={modalIsOpen}
@@ -250,7 +251,7 @@ function Serviços() {
                                 </div>
                                 <div className='mapa'>
                                     <h1>R. Tito, 45 - São Paulo/SP </h1>
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58515.970146037456!2d-46.741999!3d-23.5595301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1695829855165!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <br /> <br /> <br />
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58515.970146037456!2d-46.741999!3d-23.5595301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1695829855165!5m2!1spt-BR!2sbr" title='mapa' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <br /> <br /> <br />
 
                                     <h1>Informações adicionais: </h1>
                                     <h1>____________________________ </h1>
@@ -272,13 +273,13 @@ function Serviços() {
 
                         <PropsServicos
                             titulo='Preciso de um reparo:'
-                            Descr='A minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água '
+                            Descr='A minha maquina de lavar esta fazendo um barulho muito estranho e esta vazando muita água'
                             imagem={fotoperfil}
-                            nome='Larissa Silva'
+                            nome='Teodoro Souza'
                             publi={Feed2}
                         />
 
-                        <button className="BotaoCandidatar" onClick={openModal}>Candidaturas</button>
+                        <button className="BotaoCandidatar" onClick={openModal}>Ver ficha</button>
 
                         <Modal
                             isOpen={modalIsOpen}
@@ -312,7 +313,7 @@ function Serviços() {
                                 </div>
                                 <div className='mapa'>
                                     <h1>R. Tito, 45 - São Paulo/SP </h1>
-                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58515.970146037456!2d-46.741999!3d-23.5595301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1695829855165!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <br /> <br /> <br />
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58515.970146037456!2d-46.741999!3d-23.5595301!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef8775663b04f%3A0x923835e9005f8309!2sSenac%20Lapa%20Tito!5e0!3m2!1spt-BR!2sbr!4v1695829855165!5m2!1spt-BR!2sbr" title='mapa' allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> <br /> <br /> <br />
 
                                     <h1>Informações adicionais: </h1>
                                     <h1>____________________________ </h1>
@@ -334,22 +335,22 @@ function Serviços() {
 
                         <PropsServicos
                             titulo='Preciso de um reparo:'
-                            Descr='A minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água '
+                            Descr='Minha lâmpada queimou, preciso que troquem ela para mim'
                             imagem={fotoperfil}
-                            nome='Larissa Silva'
+                            nome='Teodoro Souza'
                             publi={Feed1}
                         />
-                        <button className="BotaoCandidatar" onClick={openModal}>Candidatar-se</button>
+                        <button className="BotaoCandidatar" onClick={openModal}>Ver ficha</button>
                         <hr />
 
                         <PropsServicos
                             titulo='Preciso de um reparo:'
-                            Descr='A minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água '
+                            Descr='A minha maquina de lavar esta fazendo um barulho muito estranho e esta vazando muita água'
                             imagem={fotoperfil}
-                            nome='Larissa Silva'
+                            nome='Teodoro Souza'
                             publi={Feed2}
                         />
-                        <button className="BotaoCandidatar" onClick={openModal}>Candidaturas</button>
+                        <button className="BotaoCandidatar" onClick={openModal}>Ver ficha</button>
                         <hr />
 
                     </div>
