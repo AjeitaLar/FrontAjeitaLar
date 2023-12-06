@@ -133,6 +133,7 @@
 @media  (max-width: 480px) {
     
     .flex{
+        height: 100vh;
         width: 100%;
         display: flex;
         align-items: center;

@@ -11,7 +11,7 @@ function LoginCliente() {
         
             <div className="flex">
                 <div className="Login_container2">
-                    <h2>Login</h2>
+                    <h2>Logina</h2>
                     <form>
                         <div>
                             <input className='Email2' type="email" placeholder="Digite seu email" />
