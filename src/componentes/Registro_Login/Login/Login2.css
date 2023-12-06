@@ -2,7 +2,25 @@
     margin: 0;
     padding: 0;
 }
+.Registro_fundo{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../../imgs/LOGIN.png);
+    background-size: cover;
+    background-position: center;
 
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.flex{
+    width: 50%;
+}
+.caixalogo{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
 .Login_fundo{
     position: relative;
     width: 100%;
@@ -23,15 +41,12 @@
 
 .Login_container {
     position: relative;
-    width: 40%;
-    height: 60vh;
+    width: 80%;
+    height: auto;
     border: 1px solid #ccc;
     border-radius: 20px;
     text-align: center;
     background-color: #e8f8ff;
-    top: 20vh;
-    right: 20vh;
-    float: right;
 }
 
 .Login_container h3{
@@ -67,6 +82,9 @@
     background-repeat: no-repeat;
     background-size: 3.5em;
     background-position: left;
+
+    text-align: center;
+    color: #fff; 
 }
 
 .Senha::placeholder{
@@ -80,6 +98,9 @@
     background-repeat: no-repeat;
     background-size: 2.2em;
     background-position:left;
+
+    text-align: center;
+    color: #fff; 
 }
 
 .Email::placeholder{
@@ -97,11 +118,24 @@
     border-radius: 15px;
     cursor: pointer;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 10px;
+    margin-bottom: 15px;
     transition: .5s;
 }
 
 .Btn_Login:hover {
     background-color: #ac7116;
     transition: .5s;
+}
+@media  only screen and (max-width: 480px)  {
+    .Registro_fundo{
+        height: 200vh;
+    }
+    .flex{
+        height: 200vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }

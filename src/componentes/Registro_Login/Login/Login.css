@@ -130,10 +130,12 @@
     transition: .5s;
 }
 
-@media  (max-width: 480px) {
-    
+@media  only screen and (max-width: 480px) {
+    .Registro_fundo2{
+        height: 200vh;
+    }
     .flex{
-        height: 100vh;
+        height: 200vh;
         width: 100%;
         display: flex;
         align-items: center;
