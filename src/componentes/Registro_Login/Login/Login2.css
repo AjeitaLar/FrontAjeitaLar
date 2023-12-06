@@ -57,7 +57,7 @@
 .Login_container h2{
     color: #df931d;
     text-shadow: 2px 2px #ac7116;
-    font-size: 3em;
+    font-size: 3.5em;
     padding: 30px;
 }
 
@@ -80,9 +80,10 @@
     width: 75%;
     background-image: url("../../imgs/Senha.png");
     background-repeat: no-repeat;
-    background-size: 3.5em;
+    background-size: 2.8em;
     background-position: left;
 
+    font-size: 1.5em;
     text-align: center;
     color: #fff; 
 }
@@ -100,6 +101,7 @@
     background-position:left;
 
     text-align: center;
+    font-size: 1.5em;
     color: #fff; 
 }
 
@@ -128,10 +130,21 @@
     transition: .5s;
 }
 @media  only screen and (max-width: 480px)  {
+    .Logo_Login{
+        width: 250px;
+    }
+
     .Registro_fundo{
         height: 180vh;
         background-position: right;
     }
+    .Login_container{
+        height: 65%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .flex{
         height: 180vh;
         width: 100%;
