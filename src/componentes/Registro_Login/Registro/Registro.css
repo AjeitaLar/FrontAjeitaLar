@@ -28,8 +28,9 @@
     padding-right: 5%;
 }
 
-.auth-containerrc h2 {
-    color: #E8A330;
+.titlere {
+    color: #1E85B1;
+    text-shadow: 2px 2px #1eb7f8;
     text-align: center; 
     font-size: 48px;
     font-style: normal;
@@ -114,4 +115,14 @@
 .termos{
     padding: 5%;
     color: #ff8c00;
+}
+
+.colorblue{
+    background: rgb(66, 140, 244);
+    border: 1px solid  rgb(66, 140, 244);
+    
+}
+
+.colorbluet{
+    color: rgb(1, 43, 102) ;
 }
