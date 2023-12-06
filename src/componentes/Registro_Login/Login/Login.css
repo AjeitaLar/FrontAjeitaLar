@@ -132,10 +132,10 @@
 
 @media  only screen and (max-width: 480px) {
     .Registro_fundo2{
-        height: 200vh;
+        height: 180vh;
     }
     .flex{
-        height: 200vh;
+        height: 180vh;
         width: 100%;
         display: flex;
         align-items: center;
