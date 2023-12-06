@@ -11,7 +11,7 @@
     align-items: start;
 }
 
-.auth-containerrc {
+.containerrc {
     width: 45%;
     height: 90vh;
     margin-left: 10%;
@@ -27,7 +27,7 @@
     padding-right: 5%;
 }
 
-.titlere {
+.titlere2 {
     color: #1E85B1;
     text-shadow: 2px 2px #1eb7f8;
     text-align: center; 
@@ -39,7 +39,7 @@
 }
 
 
-.input-container {
+.input-container2 {
     display: flex;
     align-items: center;
     border-radius: 10px;
@@ -54,14 +54,14 @@
 }
 
 
-.input-container svg {
+.input-container2 svg {
     color: #fff;
     margin-right: 5px;
     font-size: 17px;
 }
 
 
-.input-container input {
+.input-container2 input {
     flex: 1;
     border: none;
     outline: none;
@@ -71,7 +71,7 @@
 }
 
 
-.flex-row {
+.flex-rowa {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -87,7 +87,7 @@
     color: #fff;
 }
 
-.Btn_Registrop {
+.Btn_Registrop2 {
     width: 326.383px;
     height: 55px;
     border-radius: 20px;
@@ -99,19 +99,19 @@
 
 }
 
-.Btn_Registrop:hover {
+.Btn_Registrop2:hover {
     /* Estilos quando o botão está em estado de hover */
-    background-color: #ff8c00;
+    background-color: rgb(1, 43, 102);
     /* Altere a cor de fundo ao passar por cima */
 }
 
-.clientere{
+.clientere2{
     padding: 5%;
-    color: #ff8c00;
+    color: rgb(1, 43, 102) ;
     
 }
 
-.termos{
+.termos2{
     padding: 5%;
     color: #ff8c00;
 }
@@ -122,7 +122,7 @@
     
 }
 
-.colorbluet{
+.colorbluet2{
     color: rgb(1, 43, 102) ;
 }
 
@@ -131,7 +131,7 @@
     .reg{
         height: 180vh;
     }
-    .auth-containerrc{
+    .containerrc{
         width: 80%;
         height: 65%;
     }
