@@ -879,6 +879,19 @@ h5 {
         margin-left: 0px;
     }
 
+    .ContVideo{
+        justify-content: start;
+        overflow-y: hidden;
+        margin-left: 10px;
+    }
+    
+    
+    .Video {
+        width: 700px !important;
+        height: 400px !important;
+        margin-top: 150px;    
+    }
+
     /*  */
 
     .ImgSeguranca {

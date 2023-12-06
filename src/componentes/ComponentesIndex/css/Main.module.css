@@ -745,6 +745,7 @@ h5{
         height: 350px; 
         top: -100px;
         right: -450px;
+        overflow-x: hidden;
     }
 
     .ImgCirc2{
@@ -752,6 +753,7 @@ h5{
         height: 300px;
         top: -50px;
         right: -400px;
+        overflow-x: hidden;
     }
 
     .ImgCirc3{
@@ -759,6 +761,7 @@ h5{
         height: 150px;
         top: 140px;
         right: -210px; 
+        overflow-x: hidden;
     }
 
     /*  */
@@ -831,10 +834,42 @@ h5{
         margin-left: 0px;
     }
 
+    .ContVideo{
+        justify-content: start;
+        overflow-y: hidden;
+        margin-left: 10px;
+    }
+    
+    
+    .Video {
+        width: 700px !important;
+        height: 400px !important;
+        margin-top: 150px;    
+    }
+
     /*  */
+
+     .ImgQuemSomos {
+        width: 500px;
+        margin-left: -200px;
+    } 
+
+    .TextQuemSomos {
+        width: 600px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    /*  */
+
+    .TextSeguranca {
+        width: 400px;
+        margin-left: 30px;
+    }
 
      .ImgSeguranca{
         width: 400px;
+        margin: -100px;
     }
     .TextSeguranca{
         margin-left: 20px;
@@ -846,7 +881,7 @@ h5{
     /* */
 
     .Eco{
-        width: 100%;
+        width: 94.5%;
         height: auto;
         position: relative;
     }
@@ -862,8 +897,8 @@ h5{
     }
     
     .TextEco{
-        width: 400px;
-        top: 100px;
+        width: 350px;
+        top: 80px;
     }
 
     /*  */

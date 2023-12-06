@@ -16,6 +16,7 @@ import { RiWhatsappFill } from "react-icons/ri";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaTiktok } from "react-icons/fa";
 import { Link as ScrollLink } from 'react-scroll';
+import { Link } from "react-router-dom";
 import { Element } from 'react-scroll';
 import HeaderCliente from './HeaderCliente'
 
@@ -37,12 +38,16 @@ function MainCliente(){
                     Aqui você encontra os pedidos perfeito para realizar os reparos!
                 </p>
                 <section className={Styles.ContBtnLogin}>
+                <Link to='/LoginCliente'>
                     <button className={Styles.BtnEntrar}>
                         Entrar
                     </button>
+                </Link>
+                <Link to='/RegistroCliente'>
                     <button className={Styles.BtnEntrar}>
                         cadastre-se
                     </button>
+                </Link>
                 </section>
                 
             </section>
