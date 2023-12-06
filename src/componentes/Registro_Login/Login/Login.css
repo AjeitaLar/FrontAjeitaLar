@@ -131,9 +131,7 @@
 }
 
 @media  (max-width: 480px) {
-    .Registro_fundo2{
-        height: 200vh;
-    }
+    
     .flex{
         width: 100%;
         display: flex;
