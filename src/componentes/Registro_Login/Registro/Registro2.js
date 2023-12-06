@@ -52,7 +52,7 @@ function RegistroPrestador() {
                 </div>
 
 
-                <Link to='/LoginCliente'><button className='Btn_Registrop' type="submit">CADASTRE-SE</button></Link>
+                <Link to='/LoginPrestador'><button className='Btn_Registrop' type="submit">CADASTRE-SE</button></Link>
             </div>
         </div>
        

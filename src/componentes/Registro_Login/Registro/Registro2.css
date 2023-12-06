@@ -2,7 +2,6 @@
     background-image: url(../../imgs/registre.png);
     width: 100%;
     height: 100vh;
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -115,4 +114,14 @@
 .termos{
     padding: 5%;
     color: #ff8c00;
+}
+
+@media  only screen and (max-width: 480px) {
+    .regze{
+        height: 180vh;
+    }
+    .containerrc{
+        width: 80%;
+        height: 65%;
+    }
 }

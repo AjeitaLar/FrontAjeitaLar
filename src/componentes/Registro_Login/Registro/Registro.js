@@ -1,8 +1,5 @@
 import './Registro.css'
 import { Link } from "react-router-dom";
-//IMG
-import DonaMaria from "../../imgs/dona-maria (1).png"
-import CurvaLo from "../../imgs/curvalog.png"
 //ICONS
 import { FaUser } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
@@ -57,6 +54,7 @@ function RegistroCliente() {
 
                 <Link to='/LoginCliente'><button className='Btn_Registrop colorblue' type="submit">CADASTRE-SE</button></Link>
             </div>
+            
         </div>
     );
 };
