@@ -29,9 +29,9 @@ function NavBarCli() {
         <>
             <nav className="navbar2">
                 <div className="nav-container2">
-                    <NavLink exact to="/" className="nav-logo2">
+                    
                         <span><img src={LogoD} alt="Logo AjeitaLaar" className="Logo2" /></span>
-                    </NavLink>
+                
 
                     <ul className={click ? "nav-menu2 active" : "nav-menu2"}>
                         <li className="nav-item2">
