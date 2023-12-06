@@ -734,25 +734,29 @@ h5{
         overflow-x: hidden;
     }
     main{
-        width: 750px;
+        width: 730px;
     }
     html{
-        width: 750px;
+        width: 730px;
     }
+
+    /* .ContImgCirc1{
+        display: none;
+    } */
 
     .ImgCirc1{
         width: 350px;
         height: 350px; 
         top: -100px;
-        right: -450px;
+        right: -300px;
         overflow-x: hidden;
     }
 
     .ImgCirc2{
         width: 300px;
         height: 300px;
-        top: -50px;
-        right: -400px;
+        top: -43px;
+        right: -270px;
         overflow-x: hidden;
     }
 
@@ -777,14 +781,14 @@ h5{
         width: 400px;
         height: 400px;
         top: 650px;
-        right: -350px;
+        right: -300px;
     }
 
     .CircRep2{
         width: 350px;
         height: 350px;
-        top: 700px;
-        right: -290px;
+        top: 720px;
+        right: -240px;
     }
 
     .ImgCircCasa{
@@ -816,7 +820,7 @@ h5{
         width: 200px;
         height: 200px;
         top: 850px;
-        right: -60px;
+        right: -20px;
  
     }
 
@@ -881,12 +885,13 @@ h5{
     /* */
 
     .Eco{
-        width: 94.5%;
+        width: 700px;
         height: auto;
         position: relative;
     }
     
     .ImgEco{
+        width: 750px;
         margin-top: 100px;
     }
     

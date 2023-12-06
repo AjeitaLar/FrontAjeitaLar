@@ -780,12 +780,11 @@ h5 {
         overflow-x: hidden;
     }
 
-    main {
-        width: 750px;
+    main{
+        width: 700px;
     }
-
-    html {
-        width: 750px;
+    html{
+        width: 700px;
     }
 
     .ImgCirc1 {
@@ -894,54 +893,71 @@ h5 {
 
     /*  */
 
-    .ImgSeguranca {
-        width: 400px;
+    .ImgQuemSomos {
+        width: 500px;
+        margin-left: -200px;
+    } 
+
+    .TextQuemSomos {
+        width: 600px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
+
+    /*  */
 
     .TextSeguranca {
-        margin-left: 20px;
+        width: 400px;
+        margin-left: 30px;
     }
 
-    .TextSeguranca .Bgc {
+     .ImgSeguranca{
+        width: 400px;
+        margin: -100px;
+    }
+    .TextSeguranca{
+        margin-left: 20px;
+    }
+    .TextSeguranca .Bgc{
         width: 250px;
     }
 
     /* */
 
-    .Eco {
-        width: 100%;
+    .Eco{
+        width: 94.5%;
         height: auto;
         position: relative;
     }
-
-    .ImgEco {
+    
+    .ImgEco{
         margin-top: 100px;
     }
-
-    .ImgCircEco {
+    
+    .ImgCircEco{
         width: 300px;
         top: 200px;
         left: 50px;
     }
-
-    .TextEco {
-        width: 400px;
-        top: 100px;
+    
+    .TextEco{
+        width: 350px;
+        top: 80px;
     }
 
     /*  */
 
-    .logos img {
+    .logos img{
         width: 200px;
     }
-
+    
     /*  */
 
-    hr {
+    hr{
         display: none;
     }
 
-    .ContFoot {
+    .ContFoot{
         width: 700px;
         justify-content: start;
         margin-left: 10px;

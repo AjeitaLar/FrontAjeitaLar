@@ -52,7 +52,7 @@ function Main(){
                 </section>
                 
             </section>
-            <section>
+            <section className={Styles.ContImgCirc1}>
                 <div className={Styles.ImgCirc1}></div>
                 <div className={Styles.ImgCirc2}></div>
                 <div className={Styles.ImgCirc3}></div>
