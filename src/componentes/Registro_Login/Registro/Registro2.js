@@ -1,4 +1,4 @@
-import './Registro.css'
+import './Registro2.css'
 import { Link } from "react-router-dom";
 //ICONS
 import { FaUser } from "react-icons/fa";
@@ -8,7 +8,7 @@ import { MdBadge } from "react-icons/md";
 
 function RegistroPrestador() {
     return (
-        <div className="reg">
+        <div className="rege">
             <div className="auth-containerrc">
                 <h2>CADASTRE-SE</h2>
                 <span className="clientere"> Seja um prestador em nossa plataforma e eleve sua carreira</span>
@@ -52,7 +52,7 @@ function RegistroPrestador() {
                 </div>
 
 
-                <Link to='/LoginCliente'><button className='Btn_Registrop' type="submit">CADASTRE-SE</button></Link>
+                <Link to='/LoginPrestador'><button className='Btn_Registrop' type="submit">CADASTRE-SE</button></Link>
             </div>
         </div>
        
