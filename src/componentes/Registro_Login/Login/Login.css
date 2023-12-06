@@ -133,6 +133,7 @@
 @media  only screen and (max-width: 480px) {
     .Registro_fundo2{
         height: 180vh;
+        background-position: right;
     }
     .flex{
         height: 180vh;

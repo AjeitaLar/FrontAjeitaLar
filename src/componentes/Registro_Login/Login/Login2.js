@@ -7,7 +7,9 @@ function LoginPrestador() {
         <section className='Registro_fundo'>
 
             <div className='caixalogo'>
+            <Link to='/'>
                 <img src={Logo} className='Logo_Login' alt="Logo" />
+            </Link>
             </div>
 
             <div className="flex">
