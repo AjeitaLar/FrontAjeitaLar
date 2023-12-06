@@ -19,6 +19,11 @@ import { Link as ScrollLink } from 'react-scroll';
 import { Element } from 'react-scroll';
 import Header from './Header'
 
+import Casa from './img_home/mecanico.png'
+import Eletricista from './img_home/eletricista.png'
+import Encanador from './img_home/encanador.png'
+import Pintor from './img_home/tinta-de-rolo.png'
+
 function Main(){
     return(
     <>
@@ -66,18 +71,31 @@ function Main(){
                 </h1>
                 <div className={Styles.CircRep}></div>
                 <div className={Styles.CircRep2}>
-                     {/* <p>teste</p> */}
+                    
+                    <div className={Styles.CircRepSpan}>
+                        
+                            <span className={Styles.FlexRepSpan}>
+                                <img src={Casa} alt='Casa com uma mão segurando uma ferramenta' className={Styles.ImgCircCasa} />
+                                <p>Manutenção</p>
+                            </span> 
+
+                            <span className={Styles.FlexRepSpan}>
+                                <img src={Eletricista} alt='Casa com uma mão segurando uma ferramenta' className={Styles.ImgCircCasa} />
+                                <p>Eletricidade</p>
+                            </span> 
+
+                            <span className={Styles.FlexRepSpan}>
+                                <img src={Pintor} alt='Casa com uma mão segurando uma ferramenta' className={Styles.ImgCircCasa} />
+                                <p>Pintura</p>
+                            </span> 
+
+                            <span className={Styles.FlexRepSpan}>
+                                <img src={Encanador} alt='Casa com uma mão segurando uma ferramenta' className={Styles.ImgCircCasa} />
+                                <p>Encanamento</p>
+                            </span> 
+                    </div> 
                 </div>
                 <div className={Styles.CircRep3}></div>
-                    {/* <div className={Styles.Circ}>
-                        <div className={Styles.words}>
-                        <span>fantastic</span>
-                        <span>interesting</span>
-                        <span>awesome</span>
-                        <span>incredible</span>
-                        <span>fantastic</span>
-                        </div>
-                        </div>*/}
             </section> 
             <Element name="section1">
                 <section className={Styles.ComoFunc}>
