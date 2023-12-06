@@ -6,7 +6,9 @@ function LoginCliente() {
     return (
         <section className='Registro_fundo2'>
             <div className='caixalogo2'>
-                <img src={Logo} className='Logo_Login2' alt="Logo" />
+                <Link to='/'>
+                    <img src={Logo} className='Logo_Login2' alt="Logo" />
+                </Link>
             </div>
         
             <div className="flex">
