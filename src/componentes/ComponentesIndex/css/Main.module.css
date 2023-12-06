@@ -140,12 +140,14 @@
     width: 680px;
     height: 680px;
     border-radius: 923px;
-    background-image: url(../img_home/ImgSlide3.png);
+    background-image: url(../img_home/ImgSlideBg.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
     top: 950px;
     right: -40px;
+
+    
 
 }
 
@@ -162,67 +164,70 @@
     right: 380px;
     z-index: -1 ;
 
+    
+
 }
 
-.CircRep2 p{
-    position: absolute;
-    top: 325px;
-    right: 300px;
-}
-/*.wrapper{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    box-sizing: content-box;
-    background-color: #491288;
-    font-size: 30px;
-    padding: 100px 30px;
+.FlexRepSpan{
     display: flex;
-    box-sizing: border-box;
-    box-shadow: 0 20px 25px rgba(0,0,0,0.2);
+    flex-direction: column;
+    align-items: center;
+}
 
-    position: absolute;
-    right: 2px;
-}
-.words{
-    overflow: hidden;
-}
-span{
-    display: block;
+.ImgCircCasa{
+    width: 300px;
+} 
+
+  .CircRepSpan{
+    width: 100%;
     height: 100%;
-    padding-left: 10px;
-    color: #0e6ffc;
-    margin-top: 20px;
-    margin-left: 20px;
-    animation: spin_words 6s infinite;
+    overflow: hidden;
+    margin-top: 0px;
+    border-radius: 50%;
+}   
+
+.CircRep2 span{
+    overflow: hidden;
+    position: relative;
+    top: 150px;
+    font-size: 50px;
+    
+    display: flex;
+
+    animation: spin_words 15s infinite;
+
 }
- @keyframes spin_words{
+.CircRep2 span p{
+    font-size: 50px;
+}
+.CircRep2 span:nth-child(1){
+    margin-bottom: 250px;
+
+}
+.CircRep2 span:nth-child(2){
+    margin-bottom: 250px;
+
+}
+.CircRep2 span:nth-child(3){
+    margin-bottom: 250px;
+
+}
+
+
+  @keyframes spin_words{
     10%{
-        transform: translateY(-112%);
+        transform: translateY(-180%);
     }
     25%{
-        transform: translateY(-100%);
+        transform: translateY(-350%);
     }
     35%{
-        transform: translateY(-212%);
+        transform: translateY(-540%);
     }
-    50%{
-        transform: translateY(-200%);
-    }
-    60%{
-        transform: translateY(-312%);
-    }
-    75%{
-        transform: translateY(-300%);
-    }
-    85%{
-        transform: translateY(-412%);
-    }
-    100%{
-        transform: translateY(-400%);
-    }
-} */
+    
+    }  
 
+/*  */
 
 .ComoFunc{
     
@@ -759,7 +764,7 @@ h5{
     /*  */
 
     .ScrollPage{
-        width: 700px;
+        width: 650px;
         margin-top: 50px;
     }
 
@@ -778,6 +783,31 @@ h5{
         top: 700px;
         right: -290px;
     }
+
+    .ImgCircCasa{
+        width: 150px;
+    }
+
+    .CircRep2 span{
+        top: 90px;
+    }
+
+    .CircRep2 span p{
+        font-size: 40px;
+    }
+
+    @keyframes spin_words{
+        10%{
+            transform: translateY(-250%);
+        }
+        25%{
+            transform: translateY(-480%);
+        }
+        35%{
+            transform: translateY(-700%);
+        }
+        
+        }
 
     .CircRep3{
         width: 200px;
