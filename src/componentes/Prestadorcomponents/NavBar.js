@@ -50,6 +50,11 @@ function NavBar() {
                                 Artigos
                             </NavLink>
                         </li>
+                        <li className="nav-item">
+                            <NavLink exact to="/Planos" activeClassName="active" className="nav-links" onClick={handleClick}>
+                                Planos
+                            </NavLink>
+                        </li>
                         <li className="nav-items">
                             <button className="BotaoCand" onClick={openModal}>Candidaturas</button>
                             <Modal

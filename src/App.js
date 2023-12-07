@@ -11,7 +11,7 @@ import RegistroPrestador from './componentes/Registro_Login/Registro/Registro2';
 import LoginPrestador from './componentes/Registro_Login/Login/Login2';
 import RegistroCliente from './componentes/Registro_Login/Registro/Registro';
 import LoginCliente from './componentes/Registro_Login/Login/Login';
-
+import Planos from './componentes/Prestadorcomponents/Planos';
 function App() {
   return (
     <>
@@ -24,6 +24,7 @@ function App() {
           <Route exact path='MainCliente' element={<MainCliente />} />
           <Route exact path='Servicos' element={<Servicos />} />
           <Route exact path='Artigos' element={<Artigos />} />
+          <Route exact path='Planos' element={<Planos />} />
 
 
           <Route exact path='RegistroPrestador' element={<RegistroPrestador />} />
