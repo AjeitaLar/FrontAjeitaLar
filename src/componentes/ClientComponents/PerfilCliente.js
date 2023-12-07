@@ -19,11 +19,9 @@ function PerfilCliente() {
             <NavBarCli />
             <section className="cliperfil">
                 <div className="color">
-                    <img className="curvazul" src={CurvaAzul} alt="curva azul" />
                     <div className="perficontainer">
-
                         {/*FOTO DE PERFIL*/}
-                        <img className="photoperfil" src={FotodePcli} alt="foto de perfil cliente" />
+                        <div className="photoperfil"></div>
                         {/*FOTO DE PERFIL*/}
 
 
