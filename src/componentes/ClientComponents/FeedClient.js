@@ -42,8 +42,6 @@ function Feedcli() {
         <>
             <NavBarCli />
             <section className="misolici">
-                <img className="curvazul" src={CurvaAzul} alt="curva azul" />
-
                 <div className="lateralfeed">
                     <div className="pinfo">
                         <img className="perfilfo" src={FotoPerfilCli} alt="foto de perfil" />
