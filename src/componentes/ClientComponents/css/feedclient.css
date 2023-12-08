@@ -21,7 +21,6 @@
     height: 78vh;
     border-radius: 5px;
     filter: drop-shadow(7px 4px 4px rgba(0, 0, 0, 0.25));
-    z-index: 99999;
 }
 
 .curvazul {
@@ -138,7 +137,6 @@
     margin-left: 3%;
     border-radius: 5px;
     padding-left: 5%;
-    z-index: 9999;
     overflow-y: scroll;
     padding-bottom: 3%;
 }
