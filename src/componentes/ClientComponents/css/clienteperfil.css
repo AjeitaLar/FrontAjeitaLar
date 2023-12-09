@@ -92,7 +92,6 @@
     height: 49vh;
     margin-left: 5%;
     margin-top: 1%;
-    z-index: 2;
 }
 
 .loc {
@@ -446,16 +445,18 @@ hr {
 
     .lateralcli{
         width: 90%;
-        height: 37vh;
+        height: 43vh;
     }
 
     .loc h3{
         text-align: center;
         margin: 0;
+        font-size: 35px;
     }
 
     .loc p{
         margin: 0;
+        font-size: 25px;
     }
 
     .loc{
@@ -468,13 +469,14 @@ hr {
     }
 
     .comentext{
-        font-size: 16px;
+        font-size: 20px;
     }
 
     .esqava{
         height: 20vh;
         overflow-y: scroll;
         padding: 0;
+        margin-top: 2.5%;
     }
 
     .reco{
@@ -485,6 +487,7 @@ hr {
     .feedcli{
         margin: auto;
         width: 90%;
+        margin-top: 0;
     }
 
     .cliperfil{
@@ -492,7 +495,13 @@ hr {
     }
 
     .color{
-        height: 220vh;
+        height: 225vh;
+    }
+
+    .comen{
+        height: 15vh;
+        margin-top: 0%;
+        padding-bottom: 0;
     }
     
 }

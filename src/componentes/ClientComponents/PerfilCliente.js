@@ -60,8 +60,9 @@ function PerfilCliente() {
                             <div className="esqava">{/*SECTION QUE CONTEM OS ELEMENTOS INFERIORES DA LATERAL*/}
 
                                 {/*COMENTARIOS*/}
-                                <div className="title"><span className="reco">Recomendações de prestadores</span></div>
+
                                 <div className="comen">
+                                    <div className="title"><span className="reco">Recomendações de prestadores</span></div>
                                     <h3 className="comename"><BsEmojiLaughing /> Lorena Souza</h3>
                                     <p className="comentext">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde</p>
                                     <h3 className="comename"><BsEmojiLaughing /> Marcos Mion</h3>
