@@ -4,8 +4,6 @@
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    background: rgba(221, 221, 221, 0.37);
-    box-shadow: 3px 4px 9.3px 0px rgba(0, 0, 0, 0.25);
     margin-top: 3%;
     margin-left: 2%;
     border-radius: 20px;
@@ -51,6 +49,9 @@
     width: 80%;
     margin-bottom: 10px;
     margin-left: 10%;
+    height: 50vh;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .link {
@@ -66,18 +67,8 @@
     font-size: 15px;
 }
 
-@media screen and (min-width: 1600px) {
-    .Feddimg {
-        width: 95%;
-    }
-
-    .Perfilname {
-        font-size: 25px;
-        padding: 10px;
-    }
-
-    .Descri {
-        font-size: 25px;
-        padding: 10px;
+@media screen and (min-width: 960px) and (max-width: 1139px){
+    .descri h3{
+        padding: 0;
     }
 }

@@ -7,8 +7,10 @@ import FotoPerfil from '../imgs/fotoperfilcli.png'
 import Feed1 from '../imgs/feed.png';
 import Feed2 from '../imgs/feed2.png'
 import PropsFeedCli from "../../props/PropsFeedclient";
-import PerfilFoto from "../imgs/fotoperfilcli.png"
 import PropsOrcamento from "../../props/PropsOrcamento";
+import Parede from "../imgs/parede.jpeg"
+import Cano from "../imgs/cano.jpeg"
+import Prateleira from "../imgs/quadro.jpeg"
 //IMG
 import CurvaAzul from "../imgs/curvaazul.png"
 import FotoPerfilCli from "../imgs/fotoperfilcli.png"
@@ -128,22 +130,22 @@ function Feedcli() {
                     <PropsFeedCli
                         perfoto={FotoPerfil}
                         Perfilname="Teodoro Souza"
-                        Descri="Preciso de um reparo para a minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água "
-                        Feddimg={Feed1}
+                        Descri="Minha filha colou uns quadros com cola quente na parede e, ao retirá-los, o reboco também se soltou. Gostaria de solicitar um reparo para isso. Eu ainda tenho a tinta utilizada. "
+                        Feddimg={Parede}
                     />
 
                     <PropsFeedCli
                         perfoto={FotoPerfil}
                         Perfilname="Teodoro Souza"
-                        Descri="Preciso de um reparo para a minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água "
-                        Feddimg={Feed1}
+                        Descri="Gostaria de solicitar um reparo no encanamento. O cano da pia do meu banheiro está apresentando vazamento."
+                        Feddimg={Cano}
                     />
 
                     <PropsFeedCli
                         perfoto={FotoPerfil}
                         Perfilname="Teodoro Souza"
-                        Descri="Preciso de um reparo para a minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água "
-                        Feddimg={Feed1}
+                        Descri="Gostaria de solicitar a instalação de uma prateleira na parede do quarto da minha filha, por isso estou solicitando um serviço de reparo. Essa aqui é a parede."
+                        Feddimg={Prateleira}
                     />
 
 

@@ -261,6 +261,14 @@ hr {
     margin-left: 1%;
 }
 
+.titlefeedcli{
+    font-size: 45px;
+    color: #DF931D;
+    margin-top: 6%;
+    font-style: normal;
+    font-weight: 400;
+}
+
 @media screen and (min-width: 1920px) {
     .photoperfi {
         width: 25rem;

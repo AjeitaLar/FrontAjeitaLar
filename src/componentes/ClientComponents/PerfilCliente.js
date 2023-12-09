@@ -4,6 +4,8 @@ import FotoPerfi from '../imgs/fotoperfilcli.png'
 import Feed1 from '../imgs/feed.png';
 import PropsFeedCli from "../../props/PropsFeedclient";
 import NavBarCli from "./NavbarClie";
+import Maquina from "../imgs/maquina.jpeg"
+import Aquecedor from "../imgs/aquecedor.jpeg"
 //ICONS
 import { FaLocationDot } from "react-icons/fa6";
 import { BsEmojiLaughing } from "react-icons/bs";
@@ -81,24 +83,26 @@ function PerfilCliente() {
                         {/*SECTION DO FEED*/}
 
                         <div className="feedcli">
-                            <PropsFeedCli
-                                perfoto={FotoPerfi}
-                                Perfilname="Teodoro Souza"
-                                Descri="Preciso de um reparo para a minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água "
-                                Feddimg={Feed1}
-                            />
+                            <h3 className="titlefeedcli">Reparos Finalizados</h3>
                             <hr />
                             <PropsFeedCli
                                 perfoto={FotoPerfi}
                                 Perfilname="Teodoro Souza"
-                                Descri="Preciso de um reparo para a minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água "
-                                Feddimg={Feed1}
+                                Descri="Preciso de um reparo para a minha máquina de lavar Brastemp, modelo BWK13AB. Ela está fazendo um barulho muito estranho e está vazando muita água. "
+                                Feddimg={Maquina}
                             />
-                            <hr />
+                            
                             <PropsFeedCli
                                 perfoto={FotoPerfi}
                                 Perfilname="Teodoro Souza"
-                                Descri="Preciso de um reparo para a minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água "
+                                Descri="Esse negócio aí do meu aquecedor está furado. Preciso de um reparo emergencial, pois está vazando gás e eu preciso tomar banho. "
+                                Feddimg={Aquecedor}
+                            />
+                            
+                            <PropsFeedCli
+                                perfoto={FotoPerfi}
+                                Perfilname="Teodoro Souza"
+                                Descri="Gostaria de solicitar a troca de uma lâmpada. "
                                 Feddimg={Feed1}
                             />
                         </div>
