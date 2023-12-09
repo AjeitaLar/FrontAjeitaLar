@@ -1,7 +1,7 @@
 import "./css/feedclient.css";
 import NavBarCli from "./NavbarClie";
 import Modal from 'react-modal'
-import { useState } from "react";
+import React, { useEffect, useState } from 'react';
 //PROPS
 import FotoPerfil from '../imgs/fotoperfilcli.png'
 import Feed1 from '../imgs/feed.png';
@@ -40,6 +40,19 @@ function Feedcli() {
         setIsOpen(false);
     }
 
+    //Backend
+
+    const[ajeitalar,setAjeitalar]=useState([]);
+
+    useEffect(()=>{
+      fetch("https://backajeitalar.up.railway.app/AjeitaLar/ListarPedidos")
+      .then(res=>res.json())
+      .then((result)=>{
+        setAjeitalar(result);
+      }
+    )
+    },[])
+
     return (
         <>
             <NavBarCli />
@@ -64,7 +77,6 @@ function Feedcli() {
                             <h4>Gostariam de fazer este serviço</h4>
 
                             <div className="ModalCand">
-
                                 <PropsOrcamento
                                     title='Nome do Perfil'
                                     subtitle='Troca de lampada'
@@ -127,29 +139,17 @@ function Feedcli() {
                 </div>
 
                 <div className="feedcon">
-                    <PropsFeedCli
+
+                    {ajeitalar.map(ajeitalar=>(
+                        <PropsFeedCli key={ajeitalar.PK_idpedi}
                         perfoto={FotoPerfil}
                         Perfilname="Teodoro Souza"
-                        Descri="Minha filha colou uns quadros com cola quente na parede e, ao retirá-los, o reboco também se soltou. Gostaria de solicitar um reparo para isso. Eu ainda tenho a tinta utilizada. "
-                        Feddimg={Parede}
-                    />
+                        Descri={ajeitalar.pedi_descr}
+                        Feddimg={ajeitalar.pedi_img}>
 
-                    <PropsFeedCli
-                        perfoto={FotoPerfil}
-                        Perfilname="Teodoro Souza"
-                        Descri="Gostaria de solicitar um reparo no encanamento. O cano da pia do meu banheiro está apresentando vazamento."
-                        Feddimg={Cano}
-                    />
-
-                    <PropsFeedCli
-                        perfoto={FotoPerfil}
-                        Perfilname="Teodoro Souza"
-                        Descri="Gostaria de solicitar a instalação de uma prateleira na parede do quarto da minha filha, por isso estou solicitando um serviço de reparo. Essa aqui é a parede."
-                        Feddimg={Prateleira}
-                    />
-
-
-
+                        </PropsFeedCli>
+                    ))
+                    }
                 </div>
 
             </section>
