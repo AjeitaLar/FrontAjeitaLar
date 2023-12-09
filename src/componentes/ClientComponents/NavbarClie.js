@@ -1,4 +1,5 @@
 import { useState } from "react";
+import React, { useEffect } from 'react';
 import { NavLink } from "react-router-dom";
 import Modal from 'react-modal'
 import { HamburgetMenuClose, HamburgetMenuOpen } from "../Prestadorcomponents/Icons";
@@ -23,6 +24,41 @@ function NavBarCli() {
 
     function closeModal() {
         setIsOpen(false);
+    }
+
+    // BACKEND
+
+    const [pedi_descr, setPedido] = useState('')
+    const [pedi_img, setImg] = useState('')
+    const [pedi_nece_material, setNeceListamaterial] = useState('')
+    const [pedi_material, setListamaterial] = useState('')
+    const [pedi_tipo, setTipo] = useState('')
+    const [ped_tipo_imovel, setTipoimovel] = useState('')
+    const [pedi_informacao, setInformacao] = useState('')
+    const [pedi_data] = useState(new Date().toISOString().split('T')[0]);
+    const [pedi_status] = useState('pendente')
+
+    const handleClickCadastro = (e)=>{
+
+        e.preventDefault()
+        const ajeitalar = {pedi_descr, pedi_img, pedi_material,pedi_status,pedi_nece_material,pedi_tipo,ped_tipo_imovel,pedi_informacao,pedi_data}
+        console.log(ajeitalar)
+
+        fetch("https://backajeitalar.up.railway.app/AjeitaLar/CadastroPedido",{
+            method:"POST",
+            headers:{"Content-Type":"application/json"},
+            body:JSON.stringify(ajeitalar)
+      
+        }).then(()=>{
+          console.log("O ajeitalar foi adicionado")
+        })
+
+        setPedido('')
+        setImg('')
+        setListamaterial('')
+        setInformacao('')
+        setTipo('Selecione')
+        setTipoimovel('Selecione')
     }
 
     return (
@@ -61,7 +97,12 @@ function NavBarCli() {
                                     <div className="modalposition">
                                         <h3>Descreva com detalhes o que você precisa</h3>
                                         <div className="cixtxt">
-                                            <textarea name="detalhe" id="detalhe" rows="150" placeholder='Ex: Preciso trocar a resistência do meu chuveiro da marca...' required></textarea>
+
+                                            <textarea name="detalhe" id="detalhe" rows="150" placeholder='Ex: Preciso trocar a resistência do meu chuveiro da marca...' required
+                                              value ={pedi_descr}
+                                              onChange={(e)=>setPedido(e.target.value)}>
+                                              </textarea>
+
                                             <div className="file-input">
                                                 <label htmlFor="arquivo" className="imgenvio">
                                                     <span className="file-icon"><IoMdImages/></span>
@@ -84,46 +125,74 @@ function NavBarCli() {
                                             <div className="formesq">
                                                 <label>
                                                     <p>Tipo de reparo</p>
-                                                    <input className="campotxt" type="text" placeholder="Ex: Troca de resistência" required />
+                                                    <select id="dropdown1" value={pedi_tipo} onChange={(e) => setTipo(e.target.value)}>
+                                                        <option value="Selecione" >Selecione</option>
+                                                        <option value="Encanamento" >Encanamento</option>
+                                                        <option value="Pintura" >Pintura</option>
+                                                        <option value="Eletricidade" >Eletricidade</option>
+                                                        <option value="Alvenaria" >Alvenaria</option>
+                                                        <option value="Marcenaria" >Marcenaria</option>
+                                                        <option value="Instalações" >Instalações</option>
+                                                    </select>
                                                 </label>
 
                                                 <label>
                                                     <p>Tipo de imóvel</p>
-                                                    <input className="campotxt" type="text" placeholder="Ex: Casa" required />
-                                                </label>
-
-                                                <label>
-                                                    <p>Tem restrição de horário?</p>
-                                                    <input className="esco" name="grupoOpcoes" type="radio" required /> Sim <br />
-
-                                                    <input className="esco" name="grupoOpcoes" type="radio" required /> Não
+                                                    <select id="dropdown1" value={ped_tipo_imovel} onChange={(e) => setTipoimovel(e.target.value)}>
+                                                        <option value="Selecione" >Selecione</option>
+                                                        <option value="Casa" >Casa</option>
+                                                        <option value="Apartamento" >Apartamento</option>
+                                                        <option value="Kitnet" >Kitnet</option>
+                                                        <option value="Sobrado" >Sobrado</option>
+                                                        <option value="Flat" >Flat</option>
+                                                    </select>
                                                 </label>
 
                                                 <label>
                                                     <p>O prestador necessita comprar ou trazer os materiais?</p>
-                                                    <input className="esco" name="grupoOpcoes" type="radio" required /> Sim <br />
-                                                    <input className="esco" name="grupoOpcoes" type="radio" required /> Não
+                                                    <input className="esco" name="grupoOpcoes" type="radio" required 
+                                                    value = {true}
+                                                    onChange={(e)=>setNeceListamaterial(e.target.value) == true}
+                                                    /> Sim <br />
+
+                                                    <input className="esco" name="grupoOpcoes" type="radio" required 
+                                                    value = {false}
+                                                    onChange={(e)=>setNeceListamaterial(e.target.value == false)}
+                                                    defaultChecked={false}
+                                                    /> Não
                                                 </label>
 
-                                                <label>
-                                                    <p>Quais materiais?</p>
-                                                    <input className="campotxt" type="text" placeholder="Ex: resistência, escada" required />
-                                                </label>
-
+                                                {pedi_nece_material && (
+                                                    <label>
+                                                        <p>Quais materiais?</p>
+                                                        <input
+                                                        className="campotxt"
+                                                        type="text"
+                                                        placeholder="Ex: resistência, escada"
+                                                        required
+                                                        value={pedi_material}
+                                                        onChange={(e) => setListamaterial(e.target.value)}
+                                                        />
+                                                    </label>
+                                                )}
                                             </div>
 
                                             <div className="formdi">
-                                                <p>CEP:</p>
-                                                <input className="end" type="text" required />
-                                                <p>Rua:</p>
-                                                <input className="end" type="text" required />
-                                                <p>Bairro:</p>
-                                                <input className="end" type="text" required />
-                                                <p>Cidade</p>
-                                                <input className="end" type="text" required />
+
+                                                <p>URL da Imagem:</p>
+
+                                                <input className="end" type="text" required 
+                                                value ={pedi_img}
+                                                onChange={(e)=>setImg(e.target.value)}/>
+
                                                 <div className="infoadd">
                                                     <p>Informações adicionais</p>
-                                                    <input className="end" type="text" />
+                                                    <input className="end" type="text" 
+                                                    value ={pedi_informacao}
+                                                    onChange={(e)=>setInformacao(e.target.value)}/>
+                                                </div>
+                                                <div>
+
                                                 </div>
                                             </div>
 
@@ -133,7 +202,7 @@ function NavBarCli() {
 
                                 <div className="butal">
                                     <button className=" modalbtn1" onClick={closeModal}>Fechar</button>
-                                    <button className="BotaoFechar modalbtn" onClick={closeModal}>Enviar</button>
+                                    <button className="BotaoFechar modalbtn" onClick={handleClickCadastro}>Enviar</button>
                                 </div>
 
                             </Modal>
