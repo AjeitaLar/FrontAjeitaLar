@@ -38,12 +38,12 @@ function MainCliente(){
                     Aqui você encontra os pedidos perfeito para realizar os reparos!
                 </p>
                 <section className={Styles.ContBtnLogin}>
-                <Link to='/LoginCliente'>
+                <Link to='/LoginPrestador'>
                     <button className={Styles.BtnEntrar}>
                         Entrar
                     </button>
                 </Link>
-                <Link to='/RegistroCliente'>
+                <Link to='/RegistroPrestador'>
                     <button className={Styles.BtnEntrar}>
                         cadastre-se
                     </button>
