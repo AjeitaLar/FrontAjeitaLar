@@ -30,24 +30,19 @@ function Serviços() {
         setSelectedPedido(null);
     };
     const handleOptionChange = (option) => {
-        // Verifica se a opção já está na lista de opções selecionadas
         if (selectedOptions.includes(option)) {
-            // Remove a opção da lista se já estiver presente
             setSelectedOptions((prevOptions) =>
                 prevOptions.filter((prevOption) => prevOption !== option)
             );
         } else {
-            // Adiciona a opção à lista se ainda não estiver presente
             setSelectedOptions((prevOptions) => [...prevOptions, option]);
         }
     };
 
     const shouldDisplayService = (ajeitalar) => {
         if (selectedOptions.length === 0) {
-            return true; // Se nenhuma opção estiver selecionada, exiba todos os serviços
+            return true; // Se nenhuma opção estiver selecionada vai exibir tudo :D
         }
-
-        // Verifique se pelo menos uma opção selecionada corresponde ao pedi_tipo do serviço
         return selectedOptions.some((option) => ajeitalar.pedi_tipo === option);
     };
         //Backend
