@@ -33,6 +33,8 @@ function PropsFeedCli({ Feddimg, Perfilname, Descri, perfoto }) {
                 <button className="linkvbu" onClick={openModal}>Veja quem aceitou o seu reparo</button>
             </div>
 
+            <hr />
+
             <Modal isOpen={modalIsOpen}
                 onRequestClose={closeModal}
                 contentLabel="Example Modal"

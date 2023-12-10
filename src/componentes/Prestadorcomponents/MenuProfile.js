@@ -46,7 +46,7 @@ function MenuProfile() {
                 <div className={`dropdown-menu ${open ? 'active' : 'inactive'}`} >
                     <h3>Lorena Silva<br /><span>Prestadora</span></h3>
                     <ul>
-                        <NavLink exact to="/" activeClassName="active" className="nav-links">
+                        <NavLink exact to="" activeClassName="active" className="nav-links">
                             <DropdownItem img={user} text={"Meu Perfil"} />
                         </NavLink>
                         
@@ -55,7 +55,7 @@ function MenuProfile() {
                         <DropdownItem img={settings} text={"Configurações"} />
                         <DropdownItem img={help} text={"Ajuda"} />
 
-                        <NavLink exact to="/PerCliente" activeClassName="active" className="nav-links">
+                        <NavLink exact to="/" activeClassName="active" className="nav-links">
                             <DropdownItem img={logout} text={"Sair"} /> 
                         </NavLink>
 

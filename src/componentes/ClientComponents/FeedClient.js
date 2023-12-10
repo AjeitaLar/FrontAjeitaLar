@@ -1,14 +1,16 @@
 import "./css/feedclient.css";
 import NavBarCli from "./NavbarClie";
 import Modal from 'react-modal'
-import { useState } from "react";
+import React, { useEffect, useState } from 'react';
 //PROPS
 import FotoPerfil from '../imgs/fotoperfilcli.png'
 import Feed1 from '../imgs/feed.png';
 import Feed2 from '../imgs/feed2.png'
 import PropsFeedCli from "../../props/PropsFeedclient";
-import PerfilFoto from "../imgs/fotoperfilcli.png"
 import PropsOrcamento from "../../props/PropsOrcamento";
+import Parede from "../imgs/parede.jpeg"
+import Cano from "../imgs/cano.jpeg"
+import Prateleira from "../imgs/quadro.jpeg"
 //IMG
 import CurvaAzul from "../imgs/curvaazul.png"
 import FotoPerfilCli from "../imgs/fotoperfilcli.png"
@@ -38,12 +40,23 @@ function Feedcli() {
         setIsOpen(false);
     }
 
+    //Backend
+
+    const[ajeitalar,setAjeitalar]=useState([]);
+
+    useEffect(()=>{
+      fetch("https://backajeitalar.up.railway.app/AjeitaLar/ListarPedidos")
+      .then(res=>res.json())
+      .then((result)=>{
+        setAjeitalar(result);
+      }
+    )
+    },[])
+
     return (
         <>
             <NavBarCli />
             <section className="misolici">
-                <img className="curvazul" src={CurvaAzul} alt="curva azul" />
-
                 <div className="lateralfeed">
                     <div className="pinfo">
                         <img className="perfilfo" src={FotoPerfilCli} alt="foto de perfil" />
@@ -64,7 +77,6 @@ function Feedcli() {
                             <h4>Gostariam de fazer este serviço</h4>
 
                             <div className="ModalCand">
-
                                 <PropsOrcamento
                                     title='Nome do Perfil'
                                     subtitle='Troca de lampada'
@@ -127,29 +139,17 @@ function Feedcli() {
                 </div>
 
                 <div className="feedcon">
-                    <PropsFeedCli
+
+                    {ajeitalar.map(ajeitalar=>(
+                        <PropsFeedCli key={ajeitalar.PK_idpedi}
                         perfoto={FotoPerfil}
                         Perfilname="Teodoro Souza"
-                        Descri="Preciso de um reparo para a minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água "
-                        Feddimg={Feed1}
-                    />
+                        Descri={ajeitalar.pedi_descr}
+                        Feddimg={ajeitalar.pedi_img}>
 
-                    <PropsFeedCli
-                        perfoto={FotoPerfil}
-                        Perfilname="Teodoro Souza"
-                        Descri="Preciso de um reparo para a minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água "
-                        Feddimg={Feed1}
-                    />
-
-                    <PropsFeedCli
-                        perfoto={FotoPerfil}
-                        Perfilname="Teodoro Souza"
-                        Descri="Preciso de um reparo para a minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água "
-                        Feddimg={Feed1}
-                    />
-
-
-
+                        </PropsFeedCli>
+                    ))
+                    }
                 </div>
 
             </section>

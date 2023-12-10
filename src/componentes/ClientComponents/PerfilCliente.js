@@ -4,6 +4,8 @@ import FotoPerfi from '../imgs/fotoperfilcli.png'
 import Feed1 from '../imgs/feed.png';
 import PropsFeedCli from "../../props/PropsFeedclient";
 import NavBarCli from "./NavbarClie";
+import Maquina from "../imgs/maquina.jpeg"
+import Aquecedor from "../imgs/aquecedor.jpeg"
 //ICONS
 import { FaLocationDot } from "react-icons/fa6";
 import { BsEmojiLaughing } from "react-icons/bs";
@@ -19,11 +21,9 @@ function PerfilCliente() {
             <NavBarCli />
             <section className="cliperfil">
                 <div className="color">
-                    <img className="curvazul" src={CurvaAzul} alt="curva azul" />
                     <div className="perficontainer">
-
                         {/*FOTO DE PERFIL*/}
-                        <img className="photoperfil" src={FotodePcli} alt="foto de perfil cliente" />
+                        <div className="photoperfil"></div>
                         {/*FOTO DE PERFIL*/}
 
 
@@ -62,8 +62,9 @@ function PerfilCliente() {
                             <div className="esqava">{/*SECTION QUE CONTEM OS ELEMENTOS INFERIORES DA LATERAL*/}
 
                                 {/*COMENTARIOS*/}
-                                <div className="title"><span className="reco">Recomendações de prestadores</span></div>
+
                                 <div className="comen">
+                                    <div className="title"><span className="reco">Recomendações de prestadores</span></div>
                                     <h3 className="comename"><BsEmojiLaughing /> Lorena Souza</h3>
                                     <p className="comentext">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde</p>
                                     <h3 className="comename"><BsEmojiLaughing /> Marcos Mion</h3>
@@ -82,24 +83,26 @@ function PerfilCliente() {
                         {/*SECTION DO FEED*/}
 
                         <div className="feedcli">
-                            <PropsFeedCli
-                                perfoto={FotoPerfi}
-                                Perfilname="Teodoro Souza"
-                                Descri="Preciso de um reparo para a minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água "
-                                Feddimg={Feed1}
-                            />
+                            <h3 className="titlefeedcli">Reparos Finalizados</h3>
                             <hr />
                             <PropsFeedCli
                                 perfoto={FotoPerfi}
                                 Perfilname="Teodoro Souza"
-                                Descri="Preciso de um reparo para a minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água "
-                                Feddimg={Feed1}
+                                Descri="Preciso de um reparo para a minha máquina de lavar Brastemp, modelo BWK13AB. Ela está fazendo um barulho muito estranho e está vazando muita água. "
+                                Feddimg={Maquina}
                             />
-                            <hr />
+                            
                             <PropsFeedCli
                                 perfoto={FotoPerfi}
                                 Perfilname="Teodoro Souza"
-                                Descri="Preciso de um reparo para a minha maquina de lavar. Ela esta fazendo um barulho muito estranho e esta vazando muita água "
+                                Descri="Esse negócio aí do meu aquecedor está furado. Preciso de um reparo emergencial, pois está vazando gás e eu preciso tomar banho. "
+                                Feddimg={Aquecedor}
+                            />
+                            
+                            <PropsFeedCli
+                                perfoto={FotoPerfi}
+                                Perfilname="Teodoro Souza"
+                                Descri="Gostaria de solicitar a troca de uma lâmpada. "
                                 Feddimg={Feed1}
                             />
                         </div>
