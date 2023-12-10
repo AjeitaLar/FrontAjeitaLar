@@ -824,6 +824,7 @@ h5 {
         height: 400px;
         top: 650px;
         right: -350px;
+        overflow-x: hidden;
     }
 
     .CircRep2 {
@@ -831,6 +832,7 @@ h5 {
         height: 350px;
         top: 700px;
         right: -290px;
+        overflow-x: hidden;
     }
 
     .ImgCircCasa{
@@ -864,6 +866,7 @@ h5 {
         height: 200px;
         top: 850px;
         right: -60px;
+        overflow-x: hidden;
 
     }
 
