@@ -792,6 +792,7 @@ h5 {
         height: 350px;
         top: -100px;
         right: -450px;
+        overflow-x: hidden;
     }
 
     .ImgCirc2 {
@@ -799,6 +800,7 @@ h5 {
         height: 300px;
         top: -50px;
         right: -400px;
+        overflow-x: hidden;
     }
 
     .ImgCirc3 {
@@ -806,6 +808,7 @@ h5 {
         height: 150px;
         top: 140px;
         right: -210px;
+        overflow-x: hidden;
     }
 
     /*  */
