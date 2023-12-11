@@ -733,12 +733,12 @@ h5{
     *{
         overflow-x: hidden;
     }
-    main{
+    /* main{
         width: 730px;
     }
     html{
         width: 730px;
-    }
+    } */
 
     /* .ContImgCirc1{
         display: none;
