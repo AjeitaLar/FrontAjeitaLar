@@ -33,11 +33,12 @@ function PerfilPrestador() {
                             <img className="Estrela" src={Estrela} alt="Estrela" />
                             <img className="Estrela" src={Estrela} alt="Estrela" />
                             <img className="Estrela" src={Estrela} alt="Estrela" />
+                            <img className="Estrela" src={Estrela} alt="Estrela" />
                         </div>
                     </div>
 
                     <div className="Texto">
-                        <p>Sou a Lorena Silva, presto serviços de manutenção a alguns anos, tenho experiencia na área de pequenos reparos </p>
+                        <p>Sou a Lorena Silva, presto serviços de manutenção a alguns anos, tenho experiência na área de pequenos reparos.</p>
                     </div>
                 </div>
 
@@ -59,7 +60,7 @@ function PerfilPrestador() {
                 </div>
 
                 <div className="Opiniao">
-                    <h1>Opiniao dos seus clientes</h1>
+                    <h1>Opinião dos seus clientes</h1>
                     <h2>30</h2>
                     <div className="Linhas">
                         <img className="LinhaG" src={LinhaG} alt="Linha" />
@@ -74,21 +75,21 @@ function PerfilPrestador() {
 
                     <div className="Rank">
                         <h1>Regular</h1>
-                        <p>Um trabalho bem feito </p>
+                        <p>Um trabalho bem feito.</p>
 
                         <h1>Ruim</h1>
-                        <p>Poderia ter feito melhor</p>
+                        <p>Poderia ter feito melhor.</p>
 
                         <h1>Bom</h1>
-                        <p>Um excelente trabalho, gostei muito, parabéns </p>
+                        <p>Um excelente trabalho, gostei muito, parabéns.</p>
 
                         <h2>Ver mais +</h2>
                     </div>
                 </div>
 
                 <div className="Preferencias">
-                    <h1>Experiencias e preferencias</h1>
-                    <p>Conserto de maquinas de lavar</p>
+                    <h1>Experiências e Preferências</h1>
+                    <p>Conserto de Máquinas de Lavar</p>
                     <p>Conserto de geladeira </p>
                     <h2>Ver mais +</h2>
                 </div>
@@ -105,16 +106,10 @@ function PerfilPrestador() {
 
             <PropsFeed 
             titulo='Reparo feito em 25/11/2023'
-            Descr='Conserto de uma maquina de lavar'
+            Descr='Conserto de uma máquina de lavar'
             imagem={Feed2}
             />
             <hr />
-            
-            <PropsFeed 
-            titulo='Reparo feito em 19/11/2023'
-            Descr='Troca de lâmpada com descarte ecológico '
-            imagem={Feed1}
-            />
 
             </div>
             </div>

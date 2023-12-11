@@ -30,7 +30,7 @@ function NavBar() {
         <>
             <nav className="navbar">
                 <div className="nav-container">
-                    <NavLink exact to="/" className="nav-logo">
+                    <NavLink exact to="" className="nav-logo">
                         <span><img className="Logo" src={Logo} alt="Logo" /></span>
                     </NavLink>
 

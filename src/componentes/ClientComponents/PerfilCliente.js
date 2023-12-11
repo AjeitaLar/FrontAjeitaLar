@@ -66,9 +66,9 @@ function PerfilCliente() {
                                 <div className="comen">
                                     <div className="title"><span className="reco">Recomendações de prestadores</span></div>
                                     <h3 className="comename"><BsEmojiLaughing /> Lorena Souza</h3>
-                                    <p className="comentext">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde</p>
-                                    <h3 className="comename"><BsEmojiLaughing /> Marcos Mion</h3>
-                                    <p className="comentext">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde</p>
+                                    <p className="comentext">Recomendo a Lorena sem hesitação. Seu trabalho é excepcional, demonstrando comprometimento e habilidade excepcionais. Confie nela para resultados de alta qualidade.</p>
+                                    <h3 className="comename"><BsEmojiLaughing /> Val Silva</h3>
+                                    <p className="comentext">Recomendo Val Silva como prestador de serviços. Seu profissionalismo e eficiência são notáveis. Confie na experiência de Val Silva para resultados excepcionais.</p>
 
                                     <div className="more">
                                         ver mais+
