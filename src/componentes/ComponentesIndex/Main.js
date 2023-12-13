@@ -25,10 +25,13 @@ import Eletricista from './img_home/eletricista.png'
 import Encanador from './img_home/encanador.png'
 import Pintor from './img_home/tinta-de-rolo.png'
 
+import TidioScript from './teste'
+
 function Main(){
     return(
     <>
     <Header/>
+    <TidioScript />
         <main>
             <section className={Styles.ContInfo}>
                 <h1>
