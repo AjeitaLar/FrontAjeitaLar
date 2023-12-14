@@ -8,6 +8,8 @@ function Planos() {
                 
                 <div className="caixonap">
 
+                    <h1 className="planotitulo">Planos</h1>
+
                     <div className="planos">
 
                         <div className="planoG">

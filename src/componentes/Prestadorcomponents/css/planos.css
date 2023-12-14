@@ -4,8 +4,15 @@
 
     background-color: #eefaff;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.planotitulo{
+    margin-top: 40px;
+    margin-bottom: -60px;
+    color: #d27c2c;
+    font-size: 100px;
 }
 .planos{
     width: 80%;
