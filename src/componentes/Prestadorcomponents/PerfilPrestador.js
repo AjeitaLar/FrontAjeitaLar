@@ -16,7 +16,7 @@ import NavBar from './NavBar'
 function PerfilPrestador() {
     return (
         <>
-            <NavBar />
+        <NavBar />
         <section className="perfiltudo">
             <img className="curva" src={CurvaLaranja} alt="Laranja" />
 

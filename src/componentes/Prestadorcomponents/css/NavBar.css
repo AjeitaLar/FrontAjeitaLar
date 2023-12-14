@@ -154,8 +154,9 @@
     text-align: center;
     padding: 20px;
 }
-
-
+.menufora{
+    display: none ;
+}
 @media screen and (max-width: 960px) {
     .nav-menu {
         display: flex;
@@ -207,5 +208,21 @@
         height: 2rem;
         cursor: pointer;
         color: #f5ac02;
+    }
+}
+@media screen and (max-width: 480px) {
+
+    .menufora{
+        display: block;
+        overflow: hidden;
+    }
+    .nav-menu2{
+        overflow: hidden;
+    }
+    .nav-container{
+        overflow: hidden;
+    }
+    .nav-icon, .icon{
+        overflow: hidden;
     }
 }
