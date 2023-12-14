@@ -240,6 +240,11 @@ function NavBarCli() {
                                 Meus Posts
                             </NavLink>
                         </li>
+                        <li className="nav-item2">
+                            <NavLink exact to="/" activeClassName="active" className="nav-links2" onClick={handleClick}>
+                                Sair
+                            </NavLink>
+                        </li>
                         <li className="nav-items2">
                             <button className="Btn" onClick={openModal}>Novo Reparo</button>
 
