@@ -11,9 +11,6 @@ import { FaLocationDot } from "react-icons/fa6";
 import { BsEmojiLaughing } from "react-icons/bs";
 import { FaStar } from "react-icons/fa";
 import { NavLink } from 'react-router-dom';
-//IMGS
-import CurvaAzul from "../imgs/curvaazul.png"
-import FotodePcli from "../imgs/fotoperfilcli.png"
 
 function PerfilCliente() {
     return (

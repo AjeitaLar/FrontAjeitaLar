@@ -335,7 +335,9 @@ hr {
 
     .comentext {
         font-size: 15px;
+ 
     }
+    
 }
 
 
@@ -343,7 +345,7 @@ hr {
 @media screen and (min-width: 960px) and (max-width: 1139px){
     .perficontainer{
         flex-direction: column;
-        height: 80vh; 
+        height: auto !important; 
     }
 
     .photoperfil{
@@ -421,13 +423,16 @@ hr {
 @media screen and (min-width: 200px) and (max-width: 959px){
     .perficontainer{
         flex-direction: column;
-        height: 80vh; 
-    }
+        height: auto; 
+    }    
+    .cliperfil{
+        height: 300vh;
 
+    }
     .photoperfil{
         width: 18rem;
         height: 18rem;
-        margin-top: 5%;
+        margin-top: 15%;
     }
 
     .infoper{
@@ -453,7 +458,7 @@ hr {
 
     .lateralcli{
         width: 90%;
-        height: 43vh;
+        height: auto;
     }
 
     .loc h3{
@@ -481,7 +486,7 @@ hr {
     }
 
     .esqava{
-        height: 20vh;
+        height: 60vh;
         overflow-y: scroll;
         padding: 0;
         margin-top: 2.5%;
@@ -497,17 +502,13 @@ hr {
         width: 90%;
         margin-top: 0;
     }
-
-    .cliperfil{
-        height: 220vh;
-    }
-
     .color{
         height: 225vh;
+        overflow: hidden;
     }
 
     .comen{
-        height: 15vh;
+        height: auto;
         margin-top: 0%;
         padding-bottom: 0;
     }
