@@ -108,8 +108,7 @@ function MainCliente(){
 
                         <div className={Styles.TitleComoFunc}>
                             <h1>COMO FUNCIONA?</h1>
-                            <p>Encontrar um profissional qualificado e que atenda suas necessidades nunca foi tão fácil
-                            </p>
+                            <p>Encontrar um profissional qualificado e que atenda suas necessidades nunca foi tão fácil</p>
                             <div className={Styles.BtnComoFunc}>
                                 <button>
                                     Sou Repardor
@@ -146,7 +145,8 @@ function MainCliente(){
                     <img src={ImgQuemSomos} alt='avatar user' className={Styles.ImgQuemSomos} />
                     <div className={Styles.TextQuemSomos}>
                         <h1>QUEM SOMOS</h1>
-                        <p>Somos uma empresa que conecta trabalhadores autônomos na área de reparos domiciliares, com pessoas que precisam desses serviços em suas casas</p>
+                        <p>AjeitaLar é uma plataforma eficiente que facilita a conexão entre usuários e profissionais de reparo domiciliar. Com foco em valorizar talentos locais, tornamos o processo de encontrar serviços de reparo simples e direto.</p>
+                        <p>Nosso compromisso vai além da conexão entre clientes e prestadores, incluindo a busca pela sustentabilidade e a promoção da segurança.</p>
                     </div>
                 </section>
             </Element>
@@ -154,7 +154,7 @@ function MainCliente(){
             <section className={Styles.Seguranca}>
                 <div className={Styles.TextSeguranca}>
                     <h1>SEGURANÇA</h1>
-                    <p>Junto a BGC - uma empresa de gestão de dados e analise de risco de pessoas, garantimos a segurança dos seus dados e a veracidade de todos os presente na nossa plataforma. </p>
+                    <p>Em parceria com a BGC, uma empresa especializada em gestão de dados e análise de risco de pessoas, garantimos a segurança dos seus dados e a veracidade de todos os presentes em nossa plataforma.</p>
                     <img src={Bgc} alt='avatar user' className={Styles.Bgc} />
                 </div>
                 <img src={Seguranca} alt='avatar user' className={Styles.ImgSeguranca} />
@@ -165,7 +165,7 @@ function MainCliente(){
                 <img src={CircEco} alt='Imagem ecologica' className={Styles.ImgCircEco} />
                 <div className={Styles.TextEco}>
                     <h1>DESCARTE</h1>
-                    <p>Nossa plataforma visa a conscientização do descarte ecológico dos resíduos que podem ser gerados nos reparos.  </p>
+                    <p>Nossa plataforma está empenhada em promover a conscientização sobre o descarte ecológico apropriado dos resíduos gerados durante os reparos.</p>
                 </div>
             </section>
             <section className={Styles.parceiros}>
