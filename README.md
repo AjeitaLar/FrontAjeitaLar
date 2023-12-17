@@ -3,6 +3,8 @@
 
 Somos uma empresa que conecta trabalhadores autônomos na área de reparos domiciliares, com pessoas que precisam desses serviços em suas casas 🏘️🛠️
 
+<img src='1.png'>
+
 ## Veja nosso Dossiê
 
 [Dossiê](https://drive.google.com/file/d/1NzeJCi2vIz7yXMj0cg_1yGXBqmx-uUY0/view)
@@ -14,6 +16,7 @@ Somos uma empresa que conecta trabalhadores autônomos na área de reparos domic
 
 ## Nossa Equipe
 
+<img src='2.png'>
 
 - [@IsabellaPachec](https://github.com/IsabellaPachec)
 - [@Morinian](https://github.com/Morinian)
@@ -23,4 +26,6 @@ Somos uma empresa que conecta trabalhadores autônomos na área de reparos domic
 - [@sosolps](https://github.com/sosolps)
 - [@EduardaSL](https://github.com/EduardaSL)
 - [@Kioshiew](https://github.com/Kioshiew)
+
+
 
